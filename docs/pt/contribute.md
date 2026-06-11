@@ -1,21 +1,17 @@
-<div align="center">
-
 # Contribuir
 
-[PT](/pt/contribute.md) | [EN](/en/contribute.md)
-
-</div>
+[PT](pt/contribute.md) | [EN](en/contribute.md)
 
 ---
 
 ## Navegação
 
 | | |
-|---|---|
-| 🏠 [Home](/pt/index.md) | Visão geral do projeto |
-| ⚙️ [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
-| 📋 [Exemplos](/pt/examples.md) | Issues reais como referência |
-| ✍️ [Contribuir](/pt/contribute.md) | Guia de submissão |
+|:---|:---|
+| [Home](pt/index.md) | Visão geral do projeto |
+| [Como Funciona](pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| [Exemplos](pt/examples.md) | Issues reais como referência |
+| [Contribuir](pt/contribute.md) | Guia de submissão |
 
 ---
 
@@ -31,11 +27,7 @@ Qualquer pessoa. Não precisas de conhecimentos técnicos. Se tens um problema p
 
 A forma mais rápida de reportar um problema:
 
-<div align="center">
-
 ### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
-
-</div>
 
 1. Clica no botão acima
 2. Preenche os campos (podes escrever em **PT ou EN**)
@@ -56,45 +48,43 @@ A issue é criada automaticamente com a estrutura correta. Se escreveres em port
 
 Copia e preenche:
 
-```markdown
-## Problema
-[Descrição curta e clara do problema]
+    ## Problema
+    [Descrição curta e clara do problema]
 
-## Passos para reproduzir
-1.
-2.
-3.
+    ## Passos para reproduzir
+    1.
+    2.
+    3.
 
-## Quem é afetado
-[Cidadãos / empresas / instituições]
+    ## Quem é afetado
+    [Cidadãos / empresas / instituições]
 
-## Impacto
-- [Tempo perdido / custo / complexidade / fiabilidade]
+    ## Impacto
+    - [Tempo perdido / custo / complexidade / fiabilidade]
 
-## Sistema envolvido
-[Ex: saúde, educação, transportes, justiça, finanças públicas, serviços digitais]
+    ## Sistema envolvido
+    [Ex: saúde, educação, transportes, justiça, finanças públicas, serviços digitais]
 
-## Evidência
-- [Notícias, relatórios, dados, legislação]
+    ## Evidência
+    - [Notícias, relatórios, dados, legislação]
 
-## Causa raiz possível (opcional)
+    ## Causa raiz possível (opcional)
 
-## Issues relacionadas
-#123, #456
-```
+    ## Issues relacionadas
+    #123, #456
 
 ---
 
 ## Regras
 
-### ✅ O que é aceite
+### O que é aceite
 
 - Problemas **observáveis e reprodutíveis**
 - Evidência **concreta** (notícias, dados, relatórios)
 - Descrições **factuais** e neutras
 - Propostas **estruturadas** (separadas da issue)
 
-### ❌ O que é rejeitado
+### O que é rejeitado
 
 - **Opiniões** sem evidência
 - **Dados pessoais** de terceiros
@@ -108,16 +98,14 @@ Copia e preenche:
 
 Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de solução** como comentário ou issue separada com a label `proposta`:
 
-```markdown
-## Proposta
-[Descrição da solução]
+    ## Proposta
+    [Descrição da solução]
 
-## Impacto estimado
-[Quem beneficia, custo estimado, prazo]
+    ## Impacto estimado
+    [Quem beneficia, custo estimado, prazo]
 
-## Evidência de viabilidade
-[Exemplos de onde foi implementado, estudos, dados]
-```
+    ## Evidência de viabilidade
+    [Exemplos de onde foi implementado, estudos, dados]
 
 ---
 
@@ -125,17 +113,13 @@ Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de 
 
 Usa estas labels para categorizar:
 
-### Setor
-`saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
+**Setor:** `saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
 
-### Tipo
-`eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
+**Tipo:** `eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
 
-### Urgência
-`alto` · `médio` · `baixo`
+**Urgência:** `alto` · `médio` · `baixo`
 
-### Estado
-`rascunho` · `confirmado` · `analisado` · `proposto`
+**Estado:** `rascunho` · `confirmado` · `analisado` · `proposto`
 
 ---
 

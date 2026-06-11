@@ -1,21 +1,17 @@
-<div align="center">
-
 # Contribute
 
-[PT](/pt/contribute.md) | [EN](/en/contribute.md)
-
-</div>
+[PT](pt/contribute.md) | [EN](en/contribute.md)
 
 ---
 
 ## Navigation
 
 | | |
-|---|---|
-| 🏠 [Home](/en/index.md) | Project overview |
-| ⚙️ [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
-| 📋 [Examples](/en/examples.md) | Real issues as reference |
-| ✍️ [Contribute](/en/contribute.md) | Submission guide |
+|:---|:---|
+| [Home](en/index.md) | Project overview |
+| [How It Works](en/how-it-works.md) | Model, lifecycle, evidence |
+| [Examples](en/examples.md) | Real issues as reference |
+| [Contribute](en/contribute.md) | Submission guide |
 
 ---
 
@@ -31,11 +27,7 @@ Anyone. No technical background needed. If you have a problem to report or an id
 
 The fastest way to report a problem:
 
-<div align="center">
-
 ### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
-
-</div>
 
 1. Click the button above
 2. Fill in the fields (you can write in **PT or EN**)
@@ -56,45 +48,43 @@ The issue is created automatically with the correct structure. If you write in P
 
 Copy and fill in:
 
-```markdown
-## Problem
-[Short, clear problem description]
+    ## Problem
+    [Short, clear problem description]
 
-## Steps to reproduce
-1.
-2.
-3.
+    ## Steps to reproduce
+    1.
+    2.
+    3.
 
-## Who is affected
-[citizens / businesses / institutions]
+    ## Who is affected
+    [citizens / businesses / institutions]
 
-## Impact
-- [Time lost / cost / complexity / reliability]
+    ## Impact
+    - [Time lost / cost / complexity / reliability]
 
-## System involved
-[e.g. healthcare, education, transport, justice, public finance, digital services]
+    ## System involved
+    [e.g. healthcare, education, transport, justice, public finance, digital services]
 
-## Evidence
-[News, reports, data, legislation]
+    ## Evidence
+    [News, reports, data, legislation]
 
-## Possible root cause (optional)
+    ## Possible root cause (optional)
 
-## Related issues
-#123, #456
-```
+    ## Related issues
+    #123, #456
 
 ---
 
 ## Rules
 
-### ✅ What is accepted
+### What is accepted
 
 - **Observable, reproducible** problems
 - **Concrete** evidence (news, data, reports)
 - **Factual**, neutral descriptions
 - **Structured** proposals (separate from the issue)
 
-### ❌ What is rejected
+### What is rejected
 
 - **Opinions** without evidence
 - **Personal data** of third parties
@@ -108,16 +98,14 @@ Copy and fill in:
 
 When an issue reaches `Analyzed` state, a **solution proposal** can be created as a comment or separate issue with the `proposal` label:
 
-```markdown
-## Proposal
-[Solution description]
+    ## Proposal
+    [Solution description]
 
-## Estimated impact
-[Who benefits, estimated cost, timeline]
+    ## Estimated impact
+    [Who benefits, estimated cost, timeline]
 
-## Feasibility evidence
-[Examples of where it was implemented, studies, data]
-```
+    ## Feasibility evidence
+    [Examples of where it was implemented, studies, data]
 
 ---
 
@@ -125,17 +113,13 @@ When an issue reaches `Analyzed` state, a **solution proposal** can be created a
 
 Use these labels to categorize:
 
-### Sector
-`healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
+**Sector:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
-### Type
-`efficiency` · `accessibility` · `transparency` · `reliability` · `redundancy`
+**Type:** `efficiency` · `accessibility` · `transparency` · `reliability` · `redundancy`
 
-### Urgency
-`high` · `medium` · `low`
+**Urgency:** `high` · `medium` · `low`
 
-### State
-`draft` · `confirmed` · `analyzed` · `proposed`
+**State:** `draft` · `confirmed` · `analyzed` · `proposed`
 
 ---
 

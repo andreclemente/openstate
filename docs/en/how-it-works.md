@@ -1,21 +1,17 @@
-<div align="center">
-
 # How It Works
 
-[PT](/pt/how-it-works.md) | [EN](/en/how-it-works.md)
-
-</div>
+[PT](pt/how-it-works.md) | [EN](en/how-it-works.md)
 
 ---
 
 ## Navigation
 
 | | |
-|---|---|
-| 🏠 [Home](/en/index.md) | Project overview |
-| ⚙️ [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
-| 📋 [Examples](/en/examples.md) | Real issues as reference |
-| ✍️ [Contribute](/en/contribute.md) | Submission guide |
+|:---|:---|
+| [Home](en/index.md) | Project overview |
+| [How It Works](en/how-it-works.md) | Model, lifecycle, evidence |
+| [Examples](en/examples.md) | Real issues as reference |
+| [Contribute](en/contribute.md) | Submission guide |
 
 ---
 
@@ -34,7 +30,7 @@ Draft → Confirmed → Analyzed → Proposed
 ```
 
 | State | Description |
-|-------|-------------|
+|:------|:------------|
 | **Draft** | Problem described, awaiting evidence |
 | **Confirmed** | Evidence attached, problem verifiable |
 | **Analyzed** | Root cause identified, impact documented |
@@ -49,12 +45,12 @@ Draft → Confirmed → Analyzed → Proposed
 ### Accepted evidence types
 
 | Type | Examples |
-|------|----------|
-| 📰 **News** | Newspaper articles, reports |
-| 📊 **Official data** | Government reports, public statistics |
-| 📜 **Legislation** | Laws, regulations, decrees |
-| 📝 **Real cases** | Factual descriptions of concrete situations |
-| 🔬 **Studies** | Academic research, organization reports |
+|:-----|:---------|
+| **News** | Newspaper articles, reports |
+| **Official data** | Government reports, public statistics |
+| **Legislation** | Laws, regulations, decrees |
+| **Real cases** | Factual descriptions of concrete situations |
+| **Studies** | Academic research, organization reports |
 
 ---
 
@@ -79,10 +75,10 @@ What to do. Structured, actionable proposals with impact estimates.
 
 OpenState is not a forum. It is not for discussing ideas — it is for **documenting problems**.
 
-- ❌ No personal data of third parties
-- ❌ No political or ideological language
-- ❌ No opinions — only factual observations
-- ❌ No duplication — each problem is unique
+- No personal data of third parties
+- No political or ideological language
+- No opinions — only factual observations
+- No duplication — each problem is unique
 
 ---
 
@@ -90,14 +86,10 @@ OpenState is not a forum. It is not for discussing ideas — it is for **documen
 
 Issues are organized by labels:
 
-### Sector
-`healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
+**Sector:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
-### Type
-`efficiency` · `accessibility` · `transparency` · `reliability` · `redundancy`
+**Type:** `efficiency` · `accessibility` · `transparency` · `reliability` · `redundancy`
 
-### Urgency
-`high` · `medium` · `low`
+**Urgency:** `high` · `medium` · `low`
 
-### State
-`draft` · `confirmed` · `analyzed` · `proposed`
+**State:** `draft` · `confirmed` · `analyzed` · `proposed`

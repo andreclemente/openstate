@@ -1,21 +1,17 @@
-<div align="center">
-
 # Como Funciona
 
-[PT](/pt/how-it-works.md) | [EN](/en/how-it-works.md)
-
-</div>
+[PT](pt/how-it-works.md) | [EN](en/how-it-works.md)
 
 ---
 
 ## Navegação
 
 | | |
-|---|---|
-| 🏠 [Home](/pt/index.md) | Visão geral do projeto |
-| ⚙️ [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
-| 📋 [Exemplos](/pt/examples.md) | Issues reais como referência |
-| ✍️ [Contribuir](/pt/contribute.md) | Guia de submissão |
+|:---|:---|
+| [Home](pt/index.md) | Visão geral do projeto |
+| [Como Funciona](pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| [Exemplos](pt/examples.md) | Issues reais como referência |
+| [Contribuir](pt/contribute.md) | Guia de submissão |
 
 ---
 
@@ -34,7 +30,7 @@ Rascunho → Confirmado → Analisado → Proposto
 ```
 
 | Estado | Descrição |
-|--------|-----------|
+|:-------|:----------|
 | **Rascunho** | Problema descrito, aguarda evidência |
 | **Confirmado** | Evidência anexada, problema verificável |
 | **Analisado** | Causa raiz identificada, impacto documentado |
@@ -49,12 +45,12 @@ Rascunho → Confirmado → Analisado → Proposto
 ### Tipos de evidência aceites
 
 | Tipo | Exemplos |
-|------|----------|
-| 📰 **Notícias** | Artigos de jornais, reportagens |
-| 📊 **Dados oficiais** | Relatórios governamentais, estatísticas públicas |
-| 📜 **Legislação** | Leis, regulamentos, portarias |
-| 📝 **Casos reais** | Descrições factuais de situações concretas |
-| 🔬 **Estudos** | Investigação académica, relatórios de organizações |
+|:-----|:---------|
+| **Notícias** | Artigos de jornais, reportagens |
+| **Dados oficiais** | Relatórios governamentais, estatísticas públicas |
+| **Legislação** | Leis, regulamentos, portarias |
+| **Casos reais** | Descrições factuais de situações concretas |
+| **Estudos** | Investigação académica, relatórios de organizações |
 
 ---
 
@@ -79,10 +75,10 @@ O que fazer. Propostas estruturadas, acionáveis, com estimativa de impacto.
 
 OpenState não é um fórum. Não é para discutir ideias — é para **documentar problemas**.
 
-- ❌ Sem dados pessoais de terceiros
-- ❌ Sem linguagem política ou ideológica
-- ❌ Sem opiniões — apenas observações factuais
-- ❌ Sem duplicação — cada problema é único
+- Sem dados pessoais de terceiros
+- Sem linguagem política ou ideológica
+- Sem opiniões — apenas observações factuais
+- Sem duplicação — cada problema é único
 
 ---
 
@@ -90,14 +86,10 @@ OpenState não é um fórum. Não é para discutir ideias — é para **document
 
 As issues são organizadas por labels:
 
-### Setor
-`saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
+**Setor:** `saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
 
-### Tipo
-`eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
+**Tipo:** `eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
 
-### Urgência
-`alto` · `médio` · `baixo`
+**Urgência:** `alto` · `médio` · `baixo`
 
-### Estado
-`rascunho` · `confirmado` · `analisado` · `proposto`
+**Estado:** `rascunho` · `confirmado` · `analisado` · `proposto`

@@ -1,23 +1,19 @@
-<div align="center">
-
 # OpenState
 
 **Public Systems Bug Tracker**
 
-[PT](/pt/index.md) | [EN](/en/index.md)
-
-</div>
+[PT](pt/index.md) | [EN](en/index.md)
 
 ---
 
 ## Navigation
 
 | | |
-|---|---|
-| 🏠 [Home](/en/index.md) | Project overview |
-| ⚙️ [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
-| 📋 [Examples](/en/examples.md) | Real issues as reference |
-| ✍️ [Contribute](/en/contribute.md) | Submission guide |
+|:---|:---|
+| [Home](en/index.md) | Project overview |
+| [How It Works](en/how-it-works.md) | Model, lifecycle, evidence |
+| [Examples](en/examples.md) | Real issues as reference |
+| [Contribute](en/contribute.md) | Submission guide |
 
 ---
 
@@ -36,12 +32,6 @@ It is not a discussion forum. It is not a political manifesto. It is a structure
 
 ### How it works
 
-```
-GitHub (backend)  →  Structured issues with evidence
-       ↓
-GitHub Pages (frontend)  →  Documentation and public interface
-```
-
 The **GitHub repository** is the source of truth. All issues, structured data, labels, and proposals live there.
 
 This site is the **reading layer** — a human interface over the data.
@@ -52,45 +42,43 @@ This site is the **reading layer** — a human interface over the data.
 
 > **Problem:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
 
-```markdown
-## Problem
-Hospital triage without effective prioritization criteria
+    ## Problem
+    Hospital triage without effective prioritization criteria
 
-## Steps to reproduce
-1. Patient arrives at emergency department
-2. Registers at reception
-3. Waits for call with no visible priority criteria
-4. Less urgent cases seen before critical ones
+    ## Steps to reproduce
+    1. Patient arrives at emergency department
+    2. Registers at reception
+    3. Waits for call with no visible priority criteria
+    4. Less urgent cases seen before critical ones
 
-## Who is affected
-Public health service users
+    ## Who is affected
+    Public health service users
 
-## Impact
-- Average wait time: 4+ hours
-- Worsening of urgent conditions
-- Waste of hospital resources
+    ## Impact
+    - Average wait time: 4+ hours
+    - Worsening of urgent conditions
+    - Waste of hospital resources
 
-## System involved
-Healthcare — hospital emergency services
+    ## System involved
+    Healthcare — hospital emergency services
 
-## Evidence
-- Health Regulatory Authority report 2024
-- News: Público, 15/03/2024
-- Data: average wait times per hospital (transparency.gov.pt)
+    ## Evidence
+    - Health Regulatory Authority report 2024
+    - News: Público, 15/03/2024
+    - Data: average wait times per hospital (transparency.gov.pt)
 
-## Possible root cause
-Absence of mandatory triage protocol with priority levels
-```
+    ## Possible root cause
+    Absence of mandatory triage protocol with priority levels
 
 ---
 
-<div align="center">
+## Report a problem
+
+Got a problem to report? Use the structured form:
 
 ### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 Write in **Portuguese or English**. Auto-translation included.
-
-</div>
 
 ---
 
