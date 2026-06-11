@@ -1,0 +1,123 @@
+name: "🐛 Reportar Problema / Report Problem"
+description: "Reporta um problema num sistema público / Report a public system problem"
+title: "[Problema] "
+labels: ["rascunho"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Como preencher
+
+        Escreve na tua língua (PT ou EN). Se não estiver em inglês, uma tradução automática será adicionada como comentário.
+
+        Write in your language (PT or EN). If not in English, an auto-translation will be added as a comment.
+
+        **Regras / Rules:**
+        - Problemas observáveis e reprodutíveis / Observable, reproducible problems
+        - Evidência concreta quando possível / Concrete evidence when possible
+        - Sem dados pessoais / No personal data
+        - Sem linguagem política ou ideológica / No political or ideological language
+
+  - type: input
+    id: problema
+    attributes:
+      label: "Problema / Problem"
+      description: "Descrição curta e clara do problema / Short, clear problem description"
+      placeholder: "Ex: Tempo excessivo de espera para consultas de especialidade"
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: "Passos para reproduzir / Steps to reproduce"
+      description: "Como é que o problema se manifesta? / How does the problem manifest?"
+      placeholder: |
+        1. Utente é encaminhado para...
+        2. Aguarda na lista de espera...
+        3. Após X meses/ dias...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: afetados
+    attributes:
+      label: "Quem é afetado / Who is affected"
+      description: "Quem sofre com este problema? / Who is affected by this problem?"
+      placeholder: "Ex: Utentes do SNS, empresas, cidadãos"
+    validations:
+      required: true
+
+  - type: textarea
+    id: impacto
+    attributes:
+      label: "Impacto / Impact"
+      description: "Qual é o impacto concreto? / What is the concrete impact?"
+      placeholder: |
+        - Tempo perdido: X horas/ dias
+        - Custo estimado: €X
+        - Complexidade / fiabilidade
+      render: markdown
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: "Sistema envolvido / System involved"
+      description: "Qual o setor do sistema público? / Which public system sector?"
+      options:
+        - "Saúde / Healthcare"
+        - "Educação / Education"
+        - "Transportes / Transport"
+        - "Justiça / Justice"
+        - "Finanças Públicas / Public Finance"
+        - "Serviços Digitais / Digital Services"
+        - "Outro / Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgencia
+    attributes:
+      label: "Urgência / Urgency"
+      options:
+        - "Alto / High"
+        - "Médio / Medium"
+        - "Baixo / Low"
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: "Evidência / Evidence"
+      description: "Notícias, relatórios, dados, legislação / News, reports, data, legislation"
+      placeholder: |
+        - Notícia: [título, fonte, data]
+        - Relatório: [nome, entidade, ano]
+        - Dados: [fonte, link]
+        - Legislação: [lei, decreto]
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: causa_raiz
+    attributes:
+      label: "Causa raiz possível / Possible root cause (optional)"
+      description: "Na tua opinião, qual é a causa principal? / In your opinion, what is the main cause?"
+      placeholder: "Ex: Ausência de critérios de prioridade uniformes"
+      render: markdown
+    validations:
+      required: false
+
+  - type: input
+    id: relacionadas
+    attributes:
+      label: "Issues relacionadas / Related issues (optional)"
+      description: "Números de issues relacionadas separados por vírgula"
+      placeholder: "12, 34"
+    validations:
+      required: false

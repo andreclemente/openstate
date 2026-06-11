@@ -17,10 +17,22 @@ Qualquer pessoa. Não precisas de conta no GitHub para sugerir problemas (podes 
 
 ## Como submeter uma issue
 
+### Opção 1: Formulário estruturado (recomendado)
+
+A forma mais rápida de reportar um problema:
+
+1. Vai ao [formulário de nova issue](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+2. Preenche os campos (podes escrever em PT ou EN)
+3. Submete
+
+A issue é criada automaticamente com a estrutura correta. Se escreveres em português, uma tradução para inglês será adicionada automaticamente como comentário.
+
+### Opção 2: Manual
+
 1. Vai ao [repositório no GitHub](https://github.com/andreclemente/openstate/issues)
 2. Clica em **"New Issue"**
-3. Usa o template abaixo
-4. Adiciona labels relevantes (setor, tipo, urgência)
+3. Seleciona o template **"Reportar Problema / Report Problem"**
+4. Preenche e submete
 
 ## Template de issue
 
@@ -101,6 +113,10 @@ Usa estas labels para categorizar:
 2. **Confirmado** — Anexas evidência verificável
 3. **Analisado** — Comunidade identifica causa raiz
 4. **Proposto** — Solução estruturada é submetida
+
+## Tradução automática
+
+Issues escritas em português são automaticamente traduzidas para inglês por um bot. A tradução aparece como comentário na issue. O texto original em português mantém-se como versão de referência.
 
 ## Contacto
 

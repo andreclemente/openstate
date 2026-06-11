@@ -17,10 +17,22 @@ Anyone. You don't need a GitHub account to suggest problems (you can open issues
 
 ## How to submit an issue
 
+### Option 1: Structured form (recommended)
+
+The fastest way to report a problem:
+
+1. Go to the [new issue form](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+2. Fill in the fields (you can write in PT or EN)
+3. Submit
+
+The issue is created automatically with the correct structure. If you write in Portuguese, an English translation will be automatically added as a comment.
+
+### Option 2: Manual
+
 1. Go to the [repository on GitHub](https://github.com/andreclemente/openstate/issues)
 2. Click **"New Issue"**
-3. Use the template below
-4. Add relevant labels (sector, type, urgency)
+3. Select the **"Reportar Problema / Report Problem"** template
+4. Fill in and submit
 
 ## Issue template
 
@@ -101,6 +113,10 @@ Use these labels to categorize:
 2. **Confirmed** — You attach verifiable evidence
 3. **Analyzed** — Community identifies root cause
 4. **Proposed** — Structured solution is submitted
+
+## Automatic translation
+
+Issues written in Portuguese are automatically translated to English by a bot. The translation appears as a comment on the issue. The original Portuguese text remains as the authoritative version.
 
 ## Contact
 

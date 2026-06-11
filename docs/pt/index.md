@@ -62,9 +62,19 @@ Saúde — serviço de urgência hospitalar
 Ausência de protocolo de triagem com níveis de prioridade obrigatórios
 ```
 
-## Contribuir
+## Reportar um problema
 
-Queres reportar um problema? Lê o guia [Contribuir](/pt/contribute.md) primeiro.
+Tens um problema para reportar? Usa o formulário estruturado no GitHub:
+
+<div align="center">
+
+### [🐛 Reportar Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+</div>
+
+Escreve em **Português ou Inglês**. Se não estiver em inglês, uma tradução automática será adicionada.
+
+Ou consulta o guia [Contribuir](/pt/contribute.md) para mais detalhes.
 
 ## Repositório
 

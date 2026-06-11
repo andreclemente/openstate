@@ -62,9 +62,19 @@ Healthcare — hospital emergency services
 Absence of mandatory triage protocol with priority levels
 ```
 
-## Contribute
+## Report a problem
 
-Want to report a problem? Read the [Contribute](/en/contribute.md) guide first.
+Got a problem to report? Use the structured form on GitHub:
+
+<div align="center">
+
+### [🐛 Report Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+</div>
+
+Write in **Portuguese or English**. If not in English, an automatic translation will be added.
+
+Or see the [Contribute](/en/contribute.md) guide for more details.
 
 ## Repository
 
