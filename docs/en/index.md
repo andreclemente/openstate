@@ -11,30 +11,61 @@
 
 ---
 
-OpenState is a structured, evidence-based system for documenting real-world issues in public services, treated as reproducible system problems.
-
 ## What it is
 
-OpenState applies software engineering discipline to public service failures: each problem is documented with structure, evidence, and proposed solutions.
+OpenState is a **public systems bug tracker**.
 
-The GitHub repository is the source of truth for structured data (issues, proposals, labels). This site is the public-facing layer that explains the project in a human-readable way.
+It is not a discussion forum. It is not a political manifesto. It is a structured knowledge system for documenting public service failures the same way we document software bugs:
 
-## Example
+- **Each problem is an issue** — like a bug report
+- **Evidence is mandatory** — no data, no issue
+- **Problems and solutions are separated** — describe first, propose later
+- **Focus is analysis, not debate** — structure over opinion
+
+## How it works
+
+**GitHub is the source of truth.** All issues, structured data, labels, and proposals live in the repository.
+
+This site (GitHub Pages) is the **reading layer** — a human interface over the structured data.
+
+## Example issue
 
 **Problem:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
 
-**How OpenState documents it:**
-- **Title:** Hospital triage without effective prioritization
-- **Context:** Hospital X, day Y, triage system Z
-- **Evidence:** Average wait times, number of affected patients
-- **Proposal:** Triage criteria with clear priority levels
+```
+## Problem
+Hospital triage without effective prioritization criteria
 
-## Navigation
+## Steps to reproduce
+1. Patient arrives at emergency department
+2. Registers at reception
+3. Waits for call with no visible priority criteria
+4. Less urgent cases seen before critical ones
 
-- [How It Works](/en/how-it-works.md) — Issue structure, rules, states, and categorization
-- [Examples](/en/examples.md) — Real-world problems documented as examples
-- [Contribute](/en/contribute.md) — How to propose new issues or improve documentation
+## Who is affected
+Public health service users
+
+## Impact
+- Average wait time: 4+ hours
+- Worsening of urgent conditions
+- Waste of hospital resources
+
+## System involved
+Healthcare — hospital emergency services
+
+## Evidence
+- Health Regulatory Authority report 2024
+- News: Público, 15/03/2024
+- Data: average wait times per hospital (transparency.gov.pt)
+
+## Possible root cause
+Absence of mandatory triage protocol with priority levels
+```
+
+## Contribute
+
+Want to report a problem? Read the [Contribute](/en/contribute.md) guide first.
 
 ## Repository
 
-Source code and structured data: [github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)
+[github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)

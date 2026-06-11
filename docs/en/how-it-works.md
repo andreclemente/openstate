@@ -11,41 +11,73 @@
 
 ---
 
-## Issue structure
+## The model
 
-Every OpenState issue follows a fixed template:
+OpenState treats public services as complex systems that can be analyzed and improved — just like software.
+
+Each problem is documented as a **structured issue**, comparable to a bug report.
+
+## Issue lifecycle
 
 ```
-Title: [short, clear description]
-What: [what happens]
-Where: [location, service, affected system]
-When: [frequency or timing]
-Evidence: [data, screenshots, testimonies]
-Impact: [who is affected and how]
-Proposal: [suggested solution]
+Draft → Confirmed → Analyzed → Proposed
 ```
-
-## Quality rules
-
-- **Titles** short and descriptive
-- **Evidence** concrete (not opinions)
-- **Proposals** realistic and actionable
-- **No personal data** of third parties
-- **No political** or ideological language
-
-## Issue states
 
 | State | Meaning |
 |-------|---------|
-| `open` | Identified, no resolution yet |
-| `under review` | Being investigated by the community |
-| `proposal made` | Solution suggested, awaiting implementation |
-| `resolved` | Problem fixed in practice |
-| `archived` | No activity or not reproducible |
+| `Draft` | Problem described, awaiting evidence |
+| `Confirmed` | Evidence attached, problem verifiable |
+ |
+| `Analyzed` | Root cause identified, impact documented |
+| `Proposed` | Structured solution submitted |
 
-## Categorization
+## The role of evidence
+
+Without evidence, there is no issue. Evidence turns an opinion into a documented problem.
+
+Accepted evidence types:
+- **News** — newspaper articles, reports
+- **Official data** — government reports, public statistics
+- **Legislation** — laws, regulations, decrees
+- **Real cases** — factual descriptions of concrete situations
+- **Studies** — academic research, organization reports
+
+## Separation of concerns
+
+The system strictly separates three layers:
+
+### 1. Problems (Issues)
+What is happening. Factual, reproducible description with evidence.
+
+### 2. Analysis (Discussion)
+Why it is happening. Root cause, contributing factors, impact.
+
+### 3. Solutions (Proposals)
+What to do. Structured, actionable proposals with impact estimates.
+
+**An issue without a solution is valid. A solution without an issue is not.**
+
+## Why structure matters more than debate
+
+OpenState is not a forum. It is not for discussing ideas — it is for documenting problems.
+
+- **No personal data** of third parties
+- **No political** or ideological language
+- **No opinions** — only factual observations
+- **No duplication** — each problem is unique
+
+## Labels
 
 Issues are organized by labels:
-- **Sector:** health, education, transport, justice, public finance
-- **Type:** accessibility, efficiency, transparency, quality
-- **Urgency:** high, medium, low
+
+**Sector:**
+- `healthcare`, `education`, `transport`, `justice`, `public-finance`, `digital-services`
+
+**Type:**
+- `efficiency`, `accessibility`, `transparency`, `reliability`, `redundancy`
+
+**Urgency:**
+- `high`, `medium`, `low`
+
+**State:**
+- `draft`, `confirmed`, `analyzed`, `proposed`

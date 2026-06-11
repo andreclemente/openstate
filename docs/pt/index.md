@@ -11,30 +11,61 @@
 
 ---
 
-OpenState é um sistema estruturado e baseado em evidências para documentar problemas do mundo real em serviços públicos, tratados como problemas de sistema reprodutíveis.
-
 ## O que é
 
-OpenState trata falhas em serviços públicos com a mesma disciplina que usamos em engenharia de software: cada problema é documentado de forma estruturada, com evidências, contexto e propostas de resolução.
+OpenState é um **bug tracker de sistemas públicos**.
 
-O repositório do GitHub é a fonte de verdade para dados estruturados (issues, propostas, labels). Este site é a camada pública que explica o projeto de forma legível.
+Não é um fórum de discussão. Não é um manifesto político. É um sistema de conhecimento estruturado para documentar falhas em serviços públicos da mesma forma que documentamos bugs em software:
 
-## Exemplo
+- **Cada problema é uma issue** — como um bug report
+- **Evidência é obrigatória** — sem dados, não há issue
+- **Problemas e soluções são separados** — primeiro descreve-se, depois propõe-se
+- **O foco é análise, não debate** — estrutura acima de opinião
+
+## Como funciona
+
+O **GitHub** é a fonte de verdade. Todas as issues, dados estruturados, labels e propostas vivem no repositório.
+
+Este site (GitHub Pages) é a **camada de leitura** — uma interface humana por cima dos dados estruturados.
+
+## Issue de exemplo
 
 **Problema:** Utente esperou 4 horas num hospital público porque o sistema de triagem não distinguia entre casos urgentes e não-urgentes.
 
-**Como OpenState documenta:**
-- **Título:** Triagem hospitalar sem priorização eficaz
-- **Contexto:** Hospital X, dia Y, sistema de triagem Z
-- **Evidências:** Tempos médios de espera, número de utentes afetados
-- **Proposta:** Critérios de triagem com níveis de prioridade claros
+```
+## Problema
+Triagem hospitalar sem critérios de priorização eficazes
 
-## Navegação
+## Passos para reproduzir
+1. Utente chega ao serviço de urgência
+2. Regista-se na receção
+3. Aguarda chamada sem critério de prioridade visível
+4. Utentes com condições menos graves são atendidos primeiro
 
-- [Como Funciona](/pt/how-it-works.md) — Estrutura de um problema, regras, estados e categorização
-- [Exemplos](/pt/examples.md) — Problemas reais documentados como exemplo
-- [Contribuir](/pt/contribute.md) — Como propor novos problemas ou melhorar documentação
+## Quem é afetado
+Utentes do serviço nacional de saúde
+
+## Impacto
+- Tempo médio de espera: 4+ horas
+- Agravamento de condições em casos urgentes
+- Desperdício de recursos hospitalares
+
+## Sistema envolvido
+Saúde — serviço de urgência hospitalar
+
+## Evidência
+- Relatório da Entidade Reguladora da Saúde 2024
+- Notícia: Público, 15/03/2024
+- Dados: tempo médio de espera por hospital (transparência.gov.pt)
+
+## Causa raiz possível
+Ausência de protocolo de triagem com níveis de prioridade obrigatórios
+```
+
+## Contribuir
+
+Queres reportar um problema? Lê o guia [Contribuir](/pt/contribute.md) primeiro.
 
 ## Repositório
 
-O código-fonte e os dados estruturados estão em: [github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)
+[github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)

@@ -11,41 +11,72 @@
 
 ---
 
-## Estrutura de um problema
+## O modelo
 
-Cada problema no OpenState segue uma estrutura fixa:
+OpenState trata serviços públicos como sistemas complexos que podem ser analisados e melhorados — tal como fazemos com software.
+
+Cada problema é documentado como uma **issue estruturada**, comparável a um bug report.
+
+## Ciclo de vida de uma issue
 
 ```
-Título: [descrição curta e clara]
-O quê: [o que acontece]
-Onde: [local, serviço, sistema afetado]
-Quando: [frequência ou momento]
-Evidências: [dados, screenshots, testemunhos]
-Impacto: [quem é afetado e como]
-Proposta: [solução sugerida]
+Rascunho → Confirmado → Analisado → Proposto
 ```
-
-## Regras de qualidade
-
-- **Títulos** curtos e descritivos
-- **Evidências** concretas (não opiniões)
-- **Propostas** realistas e acionáveis
-- **Sem dados pessoais** de terceiros
-- **Sem linguagem política** ou ideológica
-
-## Estados de um problema
 
 | Estado | Significado |
 |--------|-------------|
-| `aberto` | Problema identificado, ainda sem resolução |
-| `em análise` | A ser investigado pela comunidade |
-| `proposta feita` | Solução sugerida, aguarda implementação |
-| `resolvido` | Problema corrigido na prática |
-| `arquivado` | Sem atividade ou não reprodutível |
+| `Rascunho` | Problema descrito, aguarda evidência |
+| `Confirmado` | Evidência anexada, problema verificável |
+| `Analisado` | Causa raiz identificada, impacto documentado |
+| `Proposto` | Solução estruturada submetida |
 
-## Categorização
+## O papel da evidência
 
-Os problemas são organizados por etiquetas (labels):
-- **Setor:** saúde, educação, transportes, justiça, finanças públicas
-- **Tipo:** acessibilidade, eficiência, transparência, qualidade
-- **Urgência:** alto, médio, baixo
+Sem evidência, não há issue. A evidência transforma uma opinião em problema documentado.
+
+Tipos de evidência aceites:
+- **Notícias** — artigos de jornais, reportagens
+- **Dados oficiais** — relatórios governamentais, estatísticas públicas
+- **Legislação** — leis, regulamentos, portarias
+- **Casos reais** — descrições factuais de situações concretas
+- **Estudos** — investigação académica, relatórios de organizações
+
+## Separação de responsabilidades
+
+O sistema separa estritamente três camadas:
+
+### 1. Problemas (Issues)
+O que está a acontecer. Descrição factual, reproduzível, com evidência.
+
+### 2. Análise (Discussion)
+Porquê está a acontecer. Causa raiz, fatores contribuintes, impacto.
+
+### 3. Soluções (Proposals)
+O que fazer. Propostas estruturadas, acionáveis, com estimativa de impacto.
+
+**Uma issue sem solução é válida. Uma solução sem issue não é.**
+
+## Porquê estrutura importa mais que debate
+
+OpenState não é um fórum. Não é para discutir ideias — é para documentar problemas.
+
+- **Sem dados pessoais** de terceiros
+- **Sem linguagem política** ou ideológica
+- **Sem opiniões** — apenas observações factuais
+- **Sem duplicação** — cada problema é único
+
+## Labels
+
+As issues são organizadas por labels:
+
+**Setor:**
+- `saúde`, `educação`, `transportes`, `justiça`, `finanças-públicas`, `serviços-digitais`
+
+**Tipo:**
+- `eficiência`, `acessibilidade`, `transparência`, `fiabilidade`, `redundância`
+
+**Urgência:**
+- `alto`, `médio`, `baixo`
+
+**Estado:**
+- `rascunho`, `confirmado`, `analisado`, `proposto`

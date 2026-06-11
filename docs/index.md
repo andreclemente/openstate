@@ -4,12 +4,20 @@
 
 ---
 
-**Português:** OpenState é um sistema estruturado e baseado em evidências para documentar problemas do mundo real em serviços públicos, tratados como problemas de sistema reprodutíveis.
+**EN** | [PT](/pt/index.md)
 
-→ [Ler em Português](/pt/index.md)
+OpenState is a **public systems bug tracker** — a structured, evidence-based system for documenting real-world problems in public services.
+
+Think of it as a GitHub Issues repository where each issue is a reproducible bug report about a public system failure.
+
+→ [Read the full documentation in English](/en/index.md)
 
 ---
 
-**English:** OpenState is a structured, evidence-based system for documenting real-world issues in public services, treated as reproducible system problems.
+**PT** | [EN](/en/index.md)
 
-→ [Read in English](/en/index.md)
+OpenState é um **bug tracker de sistemas públicos** — um sistema estruturado e baseado em evidências para documentar problemas do mundo real em serviços públicos.
+
+Pensa nele como um repositório de GitHub Issues onde cada issue é um bug report reprodutível sobre uma falha num sistema público.
+
+→ [Ler a documentação completa em Português](/pt/index.md)

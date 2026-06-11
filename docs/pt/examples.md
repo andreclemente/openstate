@@ -11,61 +11,124 @@
 
 ---
 
+Exemplos de issues reais, escritas no formato estruturado do OpenState.
+
+---
+
 ## Exemplo 1 — Saúde
 
-**Título:** Tempo excessivo de espera para consultas de especialidade
+**Labels:** `saúde` · `eficiência` · `alto` · `confirmado`
 
-**O quê:** Utentes esperam em média 8 meses para primeira consulta de especialidade.
+```
+## Problema
+Tempo excessivo de espera para consultas de especialidade no SNS
 
-**Onde:** Centros de saúde e hospitais do serviço nacional de saúde.
+## Passos para reproduzir
+1. Utente é encaminhado pelo médico de família para consulta de especialidade
+2. Aguarda na lista de espera sem previsão de data
+3. Após 8+ meses, consulta ainda não foi agendada
+4. Utente agrava condição ou recorre ao privado
 
-**Quando:** Recorrente, agravado nos últimos 2 anos.
+## Quem é afetado
+Utentes do Serviço Nacional de Saúde
 
-**Evidências:**
+## Impacto
 - Tempo médio de espera: 240 dias
 - 15% dos utentes desistem antes da consulta
-- Comparação com média europeia: 45 dias
+- Custo estimado do recurso ao privado: €200-500 por consulta
 
-**Impacto:** Perda de qualidade de vida, agravamento de condições de saúde.
+## Sistema envolvido
+Saúde — cuidados hospitalares especializados
 
-**Proposta:** Sistema de interligação entre cuidados primários e secundários com critérios de prioridade clínicos.
+## Evidência
+- Relatório ERS 2024: tempos de espera por especialidade
+- Notícia: "Listas de espera no SNS atingem máximo", Público, 2024
+- Dados: SIGIC (Sistema de Informação de Gestão de Inscritos para Cirurgia)
+
+## Causa raiz possível
+Capacidade insuficiente de resposta hospitalar vs. procura;
+ausência de critérios de prioridade clínicos uniformes
+
+## Issues relacionadas
+#12 (falta de médicos de família), #34 (SNS24 triagem)
+```
 
 ---
 
 ## Exemplo 2 — Educação
 
-**Título:** Falta de professores substitutos interrompe aulas
+**Labels:** `educação` · `eficiência` · `médio` · `confirmado`
 
-**O quê:** Quando um professor falta, a turma fica sem aula porque não existe substituição automática.
+```
+## Problema
+Falta de professores substitutos interrompe aulas no ensino básico
 
-**Onde:** Escolas públicas do ensino básico.
+## Passos para reproduzir
+1. Professor falta por doença ou outra razão
+2. Escola não tem substituto disponível
+3. Turma fica sem aula ou é distribuída por outras turmas
+4. Conteúdo programático não é lecionado
 
-**Quando:** Em cada ausência de professor, podendo representar 5-10% do ano letivo.
+## Quem é afetado
+Alunos do ensino básico público (1.º, 2.º, 3.º ciclos)
 
-**Evidências:**
-- Média de 12 dias/ano por turma sem aula por falta de substituto
+## Impacto
+- Média de 12 dias/ano por turma sem aula
 - 60% das escolas reportam falta de professores em dado momento
+- Desigualdade entre escolas com e sem recursos
 
-**Impacto:** Perda de aprendizagem, desigualdade entre escolas com e sem recursos.
+## Sistema envolvido
+Educação — ensino básico público
 
-**Proposta:** Bolsa de professores substitutos por zona geográfica, convocável em menos de 24h.
+## Evidência
+- Relatório do Conselho Nacional de Educação 2023
+- Notícia: "Falta de professores obriga a fechar escolas", Diário de Notícias, 2024
+- Dados: taxa de absentismo docente por distrito (DGEEC)
+
+## Causa raiz possível
+Bolsa de substituição com número insuficiente de professores;
+processo de contratação demasiado lento (>48h)
+
+## Issues relacionadas
+#45 (condições de trabalho docente)
+```
 
 ---
 
-## Exemplo 3 — Transportes
+## Exemplo 3 — Serviços Digitais
 
-**Título:** Horários de autocarros não correspondem à realidade
+**Labels:** `serviços-digitais` · `fiabilidade` · `médio` · `analisado`
 
-**O quê:** Os horários publicados não refletem os tempos reais de chegada.
+```
+## Problema
+Portal do cidadão apresenta inconsistência de dados entre serviços
 
-**Onde:** Rede de transportes urbanos de uma cidade média.
+## Passos para reproduzir
+1. Cidadão atualiza morada no portal da Segurança Social
+2. Acede ao portal das Finanças — morada antiga ainda aparece
+3. Acede ao portal do SNS — morada diferente novamente
+4. Cidadão tem de atualizar morada em 3 portais separados
 
-**Quando:** Diariamente.
+## Quem é afetado
+Todos os cidadãos que utilizam serviços públicos digitais
 
-**Evidências:**
-- 40% dos autocarros atrasam mais de 10 minutos
-- Painéis em tempo real frequentemente desligados ou incorretos
+## Impacto
+- Redundância: mesma informação introduzida 3+ vezes
+- Erros de comunicação (correio enviado para morada errada)
+- Tempo perdido: ~15 minutos por atualização × 3 portais
 
-**Impacto:** Desconfiança no transporte público, aumento do uso do carro.
+## Sistema envolvido
+Serviços digitais — interoperabilidade entre plataformas públicas
 
-**Proposta:** Painéis com dados em tempo real via GPS + app com previsão de chegada fiável.
+## Evidência
+- Relatório da AMA (Agência para a Modernização Administrativa) 2023
+- Notícia: "Portais do Estado não falam entre si", Expresso, 2024
+- Dados: inquérito de satisfação aos serviços públicos digitais (eGov)
+
+## Causa raiz possível
+Ausência de base de dados centralizada de cidadão;
+sistemas desenvolvidos por diferentes entidades sem integração
+
+## Issues relacionadas
+#67 (autenticação única), #89 (interoperabilidade)
+```

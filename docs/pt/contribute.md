@@ -13,57 +13,95 @@
 
 ## Quem pode contribuir
 
-Qualquer pessoa. Não precisas de formação técnica. Se tens um problema para reportar ou uma ideia para propor, podes contribuir.
+Qualquer pessoa. Não precisas de conta no GitHub para sugerir problemas (podes abrir issues como convidado).
 
-## Formas de contribuir
+## Como submeter uma issue
 
-1. **Reportar um problema** — Criar uma nova issue no repositório com a estrutura definida.
-2. **Melhorar um problema existente** — Adicionar evidências, clarificar a descrição, sugerir propostas.
-3. **Revisar propostas** — Comentar e avaliar soluções sugeridas por outros contribuidores.
-4. **Traduzir** — Ajudar a manter a documentação bilingue.
+1. Vai ao [repositório no GitHub](https://github.com/andreclemente/openstate/issues)
+2. Clica em **"New Issue"**
+3. Usa o template abaixo
+4. Adiciona labels relevantes (setor, tipo, urgência)
 
-## Estrutura de uma issue
+## Template de issue
 
-Ao criar uma issue, usa este modelo:
+Copia e preenche:
 
 ```
-## Título
-[Descrição curta do problema]
+## Problema
+[Descrição curta e clara do problema]
 
-## O quê
-[O que acontece]
+## Passos para reproduzir
+1.
+2.
+3.
 
-## Onde
-[Serviço, local, sistema]
-
-## Quando
-[Frequência ou momento específico]
-
-## Evidências
-[Dados, links, documentos]
+## Quem é afetado
+[Cidadãos / empresas / instituições]
 
 ## Impacto
-[Quem é afetado e como]
+- [Tempo perdido / custo / complexidade / fiabilidade]
 
-## Proposta
-[Solução sugerida, se tiveres uma]
+## Sistema envolvido
+[Ex: saúde, educação, transportes, justiça, finanças públicas, serviços digitais]
+
+## Evidência
+- [Notícias, relatórios, dados, legislação]
+
+## Causa raiz possível (opcional)
+
+## Issues relacionadas
+#123, #456
 ```
 
 ## Regras
 
-- **Sê factual** — Evidências concretas, não opiniões
-- **Sê respeitoso** — O foco é o problema, não pessoas
-- **Sem dados pessoais** — Não incluas nomes, contactos ou dados sensíveis de terceiros
-- **Sem política partidária** — O projeto é técnico, não ideológico
+### O que é aceite
+- Problemas **observáveis e reprodutíveis**
+- Evidência **concreta** (notícias, dados, relatórios)
+- Descrições **factuais** e neutras
+- Propostas **estruturadas** (separadas da issue)
+
+### O que é rejeitado
+- **Opiniões** sem evidência
+- **Dados pessoais** de terceiros
+- **Linguagem política** ou ideológica
+- **Duplicações** — procura se o problema já existe primeiro
+- **Soluções sem problema** — descreve o problema primeiro
+
+## Formato de propostas de solução
+
+Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de solução** como comentário ou issue separada com a label `proposta`:
+
+```
+## Proposta
+[Descrição da solução]
+
+## Impacto estimado
+[Quem beneficia, custo estimado, prazo]
+
+## Evidência de viabilidade
+[Exemplos de onde foi implementado, estudos, dados]
+```
+
+## Labels
+
+Usa estas labels para categorizar:
+
+**Setor:** `saúde`, `educação`, `transportes`, `justiça`, `finanças-públicas`, `serviços-digitais`
+
+**Tipo:** `eficiência`, `acessibilidade`, `transparência`, `fiabilidade`, `redundância`
+
+**Urgência:** `alto`, `médio`, `baixo`
+
+**Estado:** `rascunho`, `confirmado`, `analisado`, `proposto`
 
 ## Processo
 
-1. Cria a issue no [GitHub](https://github.com/andreclemente/openstate/issues)
-2. A comunidade revê e comenta
-3. O problema é categorizado com labels
-4. Propostas são discutidas e refinadas
-5. Quando resolvido, o estado é atualizado
+1. **Rascunho** — Descreves o problema
+2. **Confirmado** — Anexas evidência verificável
+3. **Analisado** — Comunidade identifica causa raiz
+4. **Proposto** — Solução estruturada é submetida
 
 ## Contacto
 
-Para questões sobre o projeto, abre uma issue com a label `meta`.
+Para questões sobre o projeto em si, abre uma issue com a label `meta`.
