@@ -1,0 +1,75 @@
+---
+name: "💡 Proposta de Solução / Solution Proposal"
+description: "Submete uma solução para um problema já documentado / Submit a solution for a documented problem"
+title: "[Proposta] "
+labels: ["proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Como preencher
+
+        Este template é para propor soluções a problemas **já documentados** no OpenState.
+
+        This template is for proposing solutions to **already documented** problems.
+
+        Escreve na tua língua (PT ou EN). Se não estiver em inglês, uma tradução automática será adicionada.
+
+        Write in your language (PT or EN). If not in English, an auto-translation will be added.
+
+  - type: input
+    id: problema_relacionado
+    attributes:
+      label: "Problema relacionado / Related problem"
+      description: "Número da issue do problema que esta proposta resolve"
+      placeholder: "Ex: #12"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposta
+    attributes:
+      label: "Proposta / Proposal"
+      description: "Descrição clara da solução proposta"
+      placeholder: |
+        Descreve a solução de forma estruturada e acionável.
+        Ex: Criar um protocolo de triagem obrigatório com 5 níveis de prioridade...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: impacto
+    attributes:
+      label: "Impacto estimado / Estimated impact"
+      description: "Quem beneficia, custo estimado, prazo de implementação"
+      placeholder: |
+        - Quem beneficia: utentes do SNS, profissionais de saúde
+        - Custo estimado: €X
+        - Prazo estimado: X meses
+        - Impacto esperado: redução de X% no tempo de espera
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: viabilidade
+    attributes:
+      label: "Evidência de viabilidade / Feasibility evidence"
+      description: "Exemplos de onde foi implementado, estudos, dados"
+      placeholder: |
+        - Exemplo: País X implementou em 2020 com resultados Y
+        - Estudo: [título, fonte]
+        - Dados: [fonte, link]
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: notas
+    attributes:
+      label: "Notas adicionais / Additional notes"
+      description: "Qualquer informação relevante"
+      render: markdown
+    validations:
+      required: false

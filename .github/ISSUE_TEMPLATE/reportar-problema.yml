@@ -1,7 +1,7 @@
 name: "🐛 Reportar Problema / Report Problem"
 description: "Reporta um problema num sistema público / Report a public system problem"
 title: "[Problema] "
-labels: ["rascunho"]
+labels: ["draft"]
 body:
   - type: markdown
     attributes:
