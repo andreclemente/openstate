@@ -2,7 +2,7 @@
 
 **Bug Tracker de Sistemas Públicos**
 
-[PT](/pt/index.md) | [EN](/en/index.md)
+[PT](/openstate/pt/index.md) | [EN](/openstate/en/index.md)
 
 ---
 
@@ -10,10 +10,10 @@
 
 | | |
 |:---|:---|
-| [Home](/pt/index.md) | Visão geral do projeto |
-| [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/pt/examples.md) | Issues reais como referência |
-| [Contribuir](/pt/contribute.md) | Guia de submissão |
+| [Home](/openstate/pt/index.md) | Visão geral do projeto |
+| [Como Funciona](/openstate/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| [Exemplos](/openstate/pt/examples.md) | Issues reais como referência |
+| [Contribuir](/openstate/pt/contribute.md) | Guia de submissão |
 
 ---
 

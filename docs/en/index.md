@@ -2,7 +2,7 @@
 
 **Public Systems Bug Tracker**
 
-[PT](/pt/index.md) | [EN](/en/index.md)
+[PT](/openstate/pt/index.md) | [EN](/openstate/en/index.md)
 
 ---
 
@@ -10,10 +10,10 @@
 
 | | |
 |:---|:---|
-| [Home](/en/index.md) | Project overview |
-| [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
-| [Examples](/en/examples.md) | Real issues as reference |
-| [Contribute](/en/contribute.md) | Submission guide |
+| [Home](/openstate/en/index.md) | Project overview |
+| [How It Works](/openstate/en/how-it-works.md) | Model, lifecycle, evidence |
+| [Examples](/openstate/en/examples.md) | Real issues as reference |
+| [Contribute](/openstate/en/contribute.md) | Submission guide |
 
 ---
 
