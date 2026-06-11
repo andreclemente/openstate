@@ -1,13 +1,23 @@
+<div align="center">
+
 # OpenState
+
+**Public Systems Bug Tracker**
 
 [PT](/pt/index.md) | [EN](/en/index.md)
 
+</div>
+
 ---
 
-- [Home](/en/index.md)
-- [How It Works](/en/how-it-works.md)
-- [Examples](/en/examples.md)
-- [Contribute](/en/contribute.md)
+## Navigation
+
+| | |
+|---|---|
+| 🏠 [Home](/en/index.md) | Project overview |
+| ⚙️ [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
+| 📋 [Examples](/en/examples.md) | Real issues as reference |
+| ✍️ [Contribute](/en/contribute.md) | Submission guide |
 
 ---
 
@@ -15,24 +25,34 @@
 
 OpenState is a **public systems bug tracker**.
 
-It is not a discussion forum. It is not a political manifesto. It is a structured knowledge system for documenting public service failures the same way we document software bugs:
+It is not a discussion forum. It is not a political manifesto. It is a structured knowledge system for documenting public service failures the same way we document software bugs.
+
+### Principles
 
 - **Each problem is an issue** — like a bug report
 - **Evidence is mandatory** — no data, no issue
 - **Problems and solutions are separated** — describe first, propose later
 - **Focus is analysis, not debate** — structure over opinion
 
-## How it works
+### How it works
 
-**GitHub is the source of truth.** All issues, structured data, labels, and proposals live in the repository.
+```
+GitHub (backend)  →  Structured issues with evidence
+       ↓
+GitHub Pages (frontend)  →  Documentation and public interface
+```
 
-This site (GitHub Pages) is the **reading layer** — a human interface over the structured data.
+The **GitHub repository** is the source of truth. All issues, structured data, labels, and proposals live there.
+
+This site is the **reading layer** — a human interface over the data.
+
+---
 
 ## Example issue
 
-**Problem:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
+> **Problem:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
 
-```
+```markdown
 ## Problem
 Hospital triage without effective prioritization criteria
 
@@ -62,19 +82,17 @@ Healthcare — hospital emergency services
 Absence of mandatory triage protocol with priority levels
 ```
 
-## Report a problem
-
-Got a problem to report? Use the structured form on GitHub:
+---
 
 <div align="center">
 
-### [🐛 Report Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+Write in **Portuguese or English**. Auto-translation included.
 
 </div>
 
-Write in **Portuguese or English**. If not in English, an automatic translation will be added.
-
-Or see the [Contribute](/en/contribute.md) guide for more details.
+---
 
 ## Repository
 

@@ -1,13 +1,21 @@
+<div align="center">
+
 # Examples
 
 [PT](/pt/examples.md) | [EN](/en/examples.md)
 
+</div>
+
 ---
 
-- [Home](/en/index.md)
-- [How It Works](/en/how-it-works.md)
-- [Examples](/en/examples.md)
-- [Contribute](/en/contribute.md)
+## Navigation
+
+| | |
+|---|---|
+| 🏠 [Home](/en/index.md) | Project overview |
+| ⚙️ [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
+| 📋 [Examples](/en/examples.md) | Real issues as reference |
+| ✍️ [Contribute](/en/contribute.md) | Submission guide |
 
 ---
 
@@ -15,11 +23,15 @@ Real-world issues written in the OpenState structured format.
 
 ---
 
-## Example 1 — Healthcare
+## 🏥 Healthcare
 
 **Labels:** `healthcare` · `efficiency` · `high` · `confirmed`
 
-```
+**Problem:** Excessive waiting time for specialist appointments in the public health system
+
+**Summary:** Patients wait an average of 8 months for a first specialist consultation. 15% give up before the appointment.
+
+```markdown
 ## Problem
 Excessive waiting time for specialist appointments in the public health system
 
@@ -55,11 +67,15 @@ absence of uniform clinical priority criteria
 
 ---
 
-## Example 2 — Education
+## 🎓 Education
 
 **Labels:** `education` · `efficiency` · `medium` · `confirmed`
 
-```
+**Problem:** Lack of substitute teachers interrupts classes in public primary schools
+
+**Summary:** When a teacher is absent, the class has no lesson. Average of 12 days/year per class without lessons.
+
+```markdown
 ## Problem
 Lack of substitute teachers interrupts classes in public primary schools
 
@@ -95,11 +111,15 @@ hiring process too slow (>48h)
 
 ---
 
-## Example 3 — Digital Services
+## 💻 Digital Services
 
 **Labels:** `digital-services` · `reliability` · `medium` · `analyzed`
 
-```
+**Problem:** Citizen portal shows data inconsistency across services
+
+**Summary:** Citizens must update their address on 3 separate portals because the systems don't communicate.
+
+```markdown
 ## Problem
 Citizen portal shows data inconsistency across services
 

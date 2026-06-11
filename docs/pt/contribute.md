@@ -1,19 +1,29 @@
+<div align="center">
+
 # Contribuir
 
 [PT](/pt/contribute.md) | [EN](/en/contribute.md)
 
+</div>
+
 ---
 
-- [Home](/pt/index.md)
-- [Como Funciona](/pt/how-it-works.md)
-- [Exemplos](/pt/examples.md)
-- [Contribuir](/pt/contribute.md)
+## Navegação
+
+| | |
+|---|---|
+| 🏠 [Home](/pt/index.md) | Visão geral do projeto |
+| ⚙️ [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| 📋 [Exemplos](/pt/examples.md) | Issues reais como referência |
+| ✍️ [Contribuir](/pt/contribute.md) | Guia de submissão |
 
 ---
 
 ## Quem pode contribuir
 
-Qualquer pessoa. Não precisas de conta no GitHub para sugerir problemas (podes abrir issues como convidado).
+Qualquer pessoa. Não precisas de conhecimentos técnicos. Se tens um problema para reportar ou uma ideia para propor, podes contribuir.
+
+---
 
 ## Como submeter uma issue
 
@@ -21,11 +31,17 @@ Qualquer pessoa. Não precisas de conta no GitHub para sugerir problemas (podes 
 
 A forma mais rápida de reportar um problema:
 
-1. Vai ao [formulário de nova issue](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
-2. Preenche os campos (podes escrever em PT ou EN)
+<div align="center">
+
+### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+</div>
+
+1. Clica no botão acima
+2. Preenche os campos (podes escrever em **PT ou EN**)
 3. Submete
 
-A issue é criada automaticamente com a estrutura correta. Se escreveres em português, uma tradução para inglês será adicionada automaticamente como comentário.
+A issue é criada automaticamente com a estrutura correta. Se escreveres em português, uma **tradução para inglês** será adicionada automaticamente como comentário.
 
 ### Opção 2: Manual
 
@@ -34,11 +50,13 @@ A issue é criada automaticamente com a estrutura correta. Se escreveres em port
 3. Seleciona o template **"Reportar Problema / Report Problem"**
 4. Preenche e submete
 
+---
+
 ## Template de issue
 
 Copia e preenche:
 
-```
+```markdown
 ## Problema
 [Descrição curta e clara do problema]
 
@@ -65,26 +83,32 @@ Copia e preenche:
 #123, #456
 ```
 
+---
+
 ## Regras
 
-### O que é aceite
+### ✅ O que é aceite
+
 - Problemas **observáveis e reprodutíveis**
 - Evidência **concreta** (notícias, dados, relatórios)
 - Descrições **factuais** e neutras
 - Propostas **estruturadas** (separadas da issue)
 
-### O que é rejeitado
+### ❌ O que é rejeitado
+
 - **Opiniões** sem evidência
 - **Dados pessoais** de terceiros
 - **Linguagem política** ou ideológica
 - **Duplicações** — procura se o problema já existe primeiro
 - **Soluções sem problema** — descreve o problema primeiro
 
+---
+
 ## Formato de propostas de solução
 
 Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de solução** como comentário ou issue separada com a label `proposta`:
 
-```
+```markdown
 ## Proposta
 [Descrição da solução]
 
@@ -95,28 +119,42 @@ Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de 
 [Exemplos de onde foi implementado, estudos, dados]
 ```
 
+---
+
 ## Labels
 
 Usa estas labels para categorizar:
 
-**Setor:** `saúde`, `educação`, `transportes`, `justiça`, `finanças-públicas`, `serviços-digitais`
+### Setor
+`saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
 
-**Tipo:** `eficiência`, `acessibilidade`, `transparência`, `fiabilidade`, `redundância`
+### Tipo
+`eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
 
-**Urgência:** `alto`, `médio`, `baixo`
+### Urgência
+`alto` · `médio` · `baixo`
 
-**Estado:** `rascunho`, `confirmado`, `analisado`, `proposto`
+### Estado
+`rascunho` · `confirmado` · `analisado` · `proposto`
+
+---
 
 ## Processo
 
-1. **Rascunho** — Descreves o problema
-2. **Confirmado** — Anexas evidência verificável
-3. **Analisado** — Comunidade identifica causa raiz
-4. **Proposto** — Solução estruturada é submetida
+```
+1. Rascunho      → Descreves o problema
+2. Confirmado    → Anexas evidência verificável
+3. Analisado      → Comunidade identifica causa raiz
+4. Proposto       → Solução estruturada é submetida
+```
+
+---
 
 ## Tradução automática
 
-Issues escritas em português são automaticamente traduzidas para inglês por um bot. A tradução aparece como comentário na issue. O texto original em português mantém-se como versão de referência.
+Issues escritas em português são automaticamente traduzidas para inglês por um bot. A tradução aparece como **comentário** na issue. O texto original em português mantém-se como versão de referência.
+
+---
 
 ## Contacto
 

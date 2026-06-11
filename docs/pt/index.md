@@ -1,13 +1,23 @@
+<div align="center">
+
 # OpenState
+
+**Bug Tracker de Sistemas Públicos**
 
 [PT](/pt/index.md) | [EN](/en/index.md)
 
+</div>
+
 ---
 
-- [Home](/pt/index.md)
-- [Como Funciona](/pt/how-it-works.md)
-- [Exemplos](/pt/examples.md)
-- [Contribuir](/pt/contribute.md)
+## Navegação
+
+| | |
+|---|---|
+| 🏠 [Home](/pt/index.md) | Visão geral do projeto |
+| ⚙️ [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| 📋 [Exemplos](/pt/examples.md) | Issues reais como referência |
+| ✍️ [Contribuir](/pt/contribute.md) | Guia de submissão |
 
 ---
 
@@ -15,24 +25,34 @@
 
 OpenState é um **bug tracker de sistemas públicos**.
 
-Não é um fórum de discussão. Não é um manifesto político. É um sistema de conhecimento estruturado para documentar falhas em serviços públicos da mesma forma que documentamos bugs em software:
+Não é um fórum de discussão. Não é um manifesto político. É um sistema de conhecimento estruturado para documentar falhas em serviços públicos da mesma forma que documentamos bugs em software.
+
+### Princípios
 
 - **Cada problema é uma issue** — como um bug report
 - **Evidência é obrigatória** — sem dados, não há issue
 - **Problemas e soluções são separados** — primeiro descreve-se, depois propõe-se
 - **O foco é análise, não debate** — estrutura acima de opinião
 
-## Como funciona
-
-O **GitHub** é a fonte de verdade. Todas as issues, dados estruturados, labels e propostas vivem no repositório.
-
-Este site (GitHub Pages) é a **camada de leitura** — uma interface humana por cima dos dados estruturados.
-
-## Issue de exemplo
-
-**Problema:** Utente esperou 4 horas num hospital público porque o sistema de triagem não distinguia entre casos urgentes e não-urgentes.
+### Como funciona
 
 ```
+GitHub (backend)  →  Issues estruturadas com evidência
+       ↓
+GitHub Pages (frontend)  →  Documentação e interface pública
+```
+
+O **repositório do GitHub** é a fonte de verdade. Todas as issues, dados estruturados, labels e propostas vivem lá.
+
+Este site é a **camada de leitura** — uma interface humana por cima dos dados.
+
+---
+
+## Exemplo de issue
+
+> **Problema:** Utente esperou 4 horas num hospital público porque o sistema de triagem não distinguia entre casos urgentes e não-urgentes.
+
+```markdown
 ## Problema
 Triagem hospitalar sem critérios de priorização eficazes
 
@@ -62,19 +82,17 @@ Saúde — serviço de urgência hospitalar
 Ausência de protocolo de triagem com níveis de prioridade obrigatórios
 ```
 
-## Reportar um problema
-
-Tens um problema para reportar? Usa o formulário estruturado no GitHub:
+---
 
 <div align="center">
 
-### [🐛 Reportar Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+Escreve em **Português ou Inglês**. Tradução automática incluída.
 
 </div>
 
-Escreve em **Português ou Inglês**. Se não estiver em inglês, uma tradução automática será adicionada.
-
-Ou consulta o guia [Contribuir](/pt/contribute.md) para mais detalhes.
+---
 
 ## Repositório
 

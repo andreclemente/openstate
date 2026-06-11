@@ -1,23 +1,37 @@
+<div align="center">
+
 # OpenState
+
+**Public Systems Bug Tracker**
 
 [PT](/pt/index.md) | [EN](/en/index.md)
 
+</div>
+
 ---
 
-**EN** | [PT](/pt/index.md)
+## 🇬🇧 English
 
-OpenState is a **public systems bug tracker** — a structured, evidence-based system for documenting real-world problems in public services.
+OpenState is a **structured, evidence-based system** for documenting real-world problems in public services — treated as reproducible system failures.
 
-Think of it as a GitHub Issues repository where each issue is a reproducible bug report about a public system failure.
+Each issue works like a **bug report**: clear description, steps to reproduce, evidence, and impact.
 
 → [Read the full documentation in English](/en/index.md)
 
 ---
 
-**PT** | [EN](/en/index.md)
+## 🇵🇹 Português
 
-OpenState é um **bug tracker de sistemas públicos** — um sistema estruturado e baseado em evidências para documentar problemas do mundo real em serviços públicos.
+OpenState é um **sistema estruturado e baseado em evidências** para documentar problemas do mundo real em serviços públicos — tratados como falhas de sistema reprodutíveis.
 
-Pensa nele como um repositório de GitHub Issues onde cada issue é um bug report reprodutível sobre uma falha num sistema público.
+Cada issue funciona como um **bug report**: descrição clara, passos para reproduzir, evidência e impacto.
 
 → [Ler a documentação completa em Português](/pt/index.md)
+
+---
+
+<div align="center">
+
+### [🐛 Report an Issue](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+
+</div>

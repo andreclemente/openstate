@@ -1,13 +1,21 @@
+<div align="center">
+
 # Exemplos
 
 [PT](/pt/examples.md) | [EN](/en/examples.md)
 
+</div>
+
 ---
 
-- [Home](/pt/index.md)
-- [Como Funciona](/pt/how-it-works.md)
-- [Exemplos](/pt/examples.md)
-- [Contribuir](/pt/contribute.md)
+## Navegação
+
+| | |
+|---|---|
+| 🏠 [Home](/pt/index.md) | Visão geral do projeto |
+| ⚙️ [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| 📋 [Exemplos](/pt/examples.md) | Issues reais como referência |
+| ✍️ [Contribuir](/pt/contribute.md) | Guia de submissão |
 
 ---
 
@@ -15,11 +23,15 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
 
 ---
 
-## Exemplo 1 — Saúde
+## 🏥 Saúde
 
 **Labels:** `saúde` · `eficiência` · `alto` · `confirmado`
 
-```
+**Problema:** Tempo excessivo de espera para consultas de especialidade no SNS
+
+**Resumo:** Utentes esperam em média 8 meses para primeira consulta de especialidade. 15% desistem antes da consulta.
+
+```markdown
 ## Problema
 Tempo excessivo de espera para consultas de especialidade no SNS
 
@@ -55,11 +67,15 @@ ausência de critérios de prioridade clínicos uniformes
 
 ---
 
-## Exemplo 2 — Educação
+## 🎓 Educação
 
 **Labels:** `educação` · `eficiência` · `médio` · `confirmado`
 
-```
+**Problema:** Falta de professores substitutos interrompe aulas no ensino básico
+
+**Resumo:** Quando um professor falta, a turma fica sem aula. Média de 12 dias/ano por turma sem aula.
+
+```markdown
 ## Problema
 Falta de professores substitutos interrompe aulas no ensino básico
 
@@ -95,11 +111,15 @@ processo de contratação demasiado lento (>48h)
 
 ---
 
-## Exemplo 3 — Serviços Digitais
+## 💻 Serviços Digitais
 
 **Labels:** `serviços-digitais` · `fiabilidade` · `médio` · `analisado`
 
-```
+**Problema:** Portal do cidadão apresenta inconsistência de dados entre serviços
+
+**Resumo:** Cidadão tem de atualizar morada em 3 portais separados porque os sistemas não comunicam entre si.
+
+```markdown
 ## Problema
 Portal do cidadão apresenta inconsistência de dados entre serviços
 
