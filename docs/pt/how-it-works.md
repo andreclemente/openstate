@@ -1,6 +1,6 @@
 # Como Funciona
 
-[PT](pt/how-it-works.md) | [EN](en/how-it-works.md)
+[PT](/pt/how-it-works.md) | [EN](/en/how-it-works.md)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](pt/index.md) | Visão geral do projeto |
-| [Como Funciona](pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
-| [Exemplos](pt/examples.md) | Issues reais como referência |
-| [Contribuir](pt/contribute.md) | Guia de submissão |
+| [Home](/pt/index.md) | Visão geral do projeto |
+| [Como Funciona](/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
+| [Exemplos](/pt/examples.md) | Issues reais como referência |
+| [Contribuir](/pt/contribute.md) | Guia de submissão |
 
 ---
 

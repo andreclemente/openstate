@@ -1,6 +1,6 @@
 # Examples
 
-[PT](pt/examples.md) | [EN](en/examples.md)
+[PT](/pt/examples.md) | [EN](/en/examples.md)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](en/index.md) | Project overview |
-| [How It Works](en/how-it-works.md) | Model, lifecycle, evidence |
-| [Examples](en/examples.md) | Real issues as reference |
-| [Contribute](en/contribute.md) | Submission guide |
+| [Home](/en/index.md) | Project overview |
+| [How It Works](/en/how-it-works.md) | Model, lifecycle, evidence |
+| [Examples](/en/examples.md) | Real issues as reference |
+| [Contribute](/en/contribute.md) | Submission guide |
 
 ---
 
