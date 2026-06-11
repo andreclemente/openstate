@@ -1,5 +1,16 @@
 # Exemplos
 
+[PT](/pt/examples.md) | [EN](/en/examples.md)
+
+---
+
+- [Home](/pt/index.md)
+- [Como Funciona](/pt/how-it-works.md)
+- [Exemplos](/pt/examples.md)
+- [Contribuir](/pt/contribute.md)
+
+---
+
 ## Exemplo 1 — Saúde
 
 **Título:** Tempo excessivo de espera para consultas de especialidade

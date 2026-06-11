@@ -1,5 +1,16 @@
 # How It Works
 
+[PT](/pt/how-it-works.md) | [EN](/en/how-it-works.md)
+
+---
+
+- [Home](/en/index.md)
+- [How It Works](/en/how-it-works.md)
+- [Examples](/en/examples.md)
+- [Contribute](/en/contribute.md)
+
+---
+
 ## Issue structure
 
 Every OpenState issue follows a fixed template:

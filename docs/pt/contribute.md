@@ -1,4 +1,15 @@
-# Como Contribuir
+# Contribuir
+
+[PT](/pt/contribute.md) | [EN](/en/contribute.md)
+
+---
+
+- [Home](/pt/index.md)
+- [Como Funciona](/pt/how-it-works.md)
+- [Exemplos](/pt/examples.md)
+- [Contribuir](/pt/contribute.md)
+
+---
 
 ## Quem pode contribuir
 

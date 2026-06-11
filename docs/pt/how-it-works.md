@@ -1,5 +1,16 @@
 # Como Funciona
 
+[PT](/pt/how-it-works.md) | [EN](/en/how-it-works.md)
+
+---
+
+- [Home](/pt/index.md)
+- [Como Funciona](/pt/how-it-works.md)
+- [Exemplos](/pt/examples.md)
+- [Contribuir](/pt/contribute.md)
+
+---
+
 ## Estrutura de um problema
 
 Cada problema no OpenState segue uma estrutura fixa:

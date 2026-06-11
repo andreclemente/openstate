@@ -1,5 +1,16 @@
 # Examples
 
+[PT](/pt/examples.md) | [EN](/en/examples.md)
+
+---
+
+- [Home](/en/index.md)
+- [How It Works](/en/how-it-works.md)
+- [Examples](/en/examples.md)
+- [Contribute](/en/contribute.md)
+
+---
+
 ## Example 1 — Health
 
 **Title:** Excessive waiting time for specialist appointments

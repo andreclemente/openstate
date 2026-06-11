@@ -1,5 +1,16 @@
 # Contribute
 
+[PT](/pt/contribute.md) | [EN](/en/contribute.md)
+
+---
+
+- [Home](/en/index.md)
+- [How It Works](/en/how-it-works.md)
+- [Examples](/en/examples.md)
+- [Contribute](/en/contribute.md)
+
+---
+
 ## Who can contribute
 
 Anyone. No technical background needed. If you have a problem to report or an idea to propose, you can contribute.
