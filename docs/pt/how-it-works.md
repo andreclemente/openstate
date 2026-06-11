@@ -1,19 +1,10 @@
+---
+title: Como Funciona
+nav_order: 2
+parent: Português
+---
+
 # Como Funciona
-
-[PT](/pt/how-it-works) | [EN](/en/how-it-works)
-
----
-
-## Navegação
-
-| | |
-|:---|:---|
-| [Home](/pt/) | Visão geral do projeto |
-| [Como Funciona](/pt/how-it-works) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/pt/examples) | Issues reais como referência |
-| [Contribuir](/pt/contribute) | Guia de submissão |
-
----
 
 ## O modelo
 
@@ -30,7 +21,7 @@ Rascunho → Confirmado → Analisado → Proposto
 ```
 
 | Estado | Descrição |
-|:-------|:----------|
+:-------|:----------|
 | **Rascunho** | Problema descrito, aguarda evidência |
 | **Confirmado** | Evidência anexada, problema verificável |
 | **Analisado** | Causa raiz identificada, impacto documentado |

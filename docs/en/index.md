@@ -1,19 +1,12 @@
+---
+title: Home
+nav_order: 1
+parent: English
+---
+
 # OpenState
 
 **Public Systems Bug Tracker**
-
-[PT](/pt/) | [EN](/en/)
-
----
-
-## Navigation
-
-| | |
-|:---|:---|
-| [Home](/en/) | Project overview |
-| [How It Works](/en/how-it-works) | Model, lifecycle, evidence |
-| [Examples](/en/examples) | Real issues as reference |
-| [Contribute](/en/contribute) | Submission guide |
 
 ---
 
@@ -76,7 +69,7 @@ This site is the **reading layer** — a human interface over the data.
 
 Got a problem to report? Use the structured form:
 
-### [🐛 Report a Problem](https://github.com/andreclemente/issues/new?template=reportar-problema.yml)
+### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 Write in **Portuguese or English**. Auto-translation included.
 

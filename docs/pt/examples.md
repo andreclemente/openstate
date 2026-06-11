@@ -1,19 +1,10 @@
+---
+title: Exemplos
+nav_order: 3
+parent: Português
+---
+
 # Exemplos
-
-[PT](/pt/examples) | [EN](/en/examples)
-
----
-
-## Navegação
-
-| | |
-|:---|:---|
-| [Home](/pt/) | Visão geral do projeto |
-| [Como Funciona](/pt/how-it-works) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/pt/examples) | Issues reais como referência |
-| [Contribuir](/pt/contribute) | Guia de submissão |
-
----
 
 Exemplos de issues reais, escritas no formato estruturado do OpenState.
 

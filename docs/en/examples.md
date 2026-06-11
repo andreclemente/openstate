@@ -1,19 +1,10 @@
+---
+title: Examples
+nav_order: 3
+parent: English
+---
+
 # Examples
-
-[PT](/pt/examples) | [EN](/en/examples)
-
----
-
-## Navigation
-
-| | |
-|:---|:---|
-| [Home](/en/) | Project overview |
-| [How It Works](/en/how-it-works) | Model, lifecycle, evidence |
-| [Examples](/en/examples) | Real issues as reference |
-| [Contribute](/en/contribute) | Submission guide |
-
----
 
 Real-world issues written in the OpenState structured format.
 

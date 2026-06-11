@@ -1,8 +1,11 @@
+---
+title: OpenState
+nav_order: 0
+---
+
 # OpenState
 
 **Public Systems Bug Tracker**
-
-[PT](/pt/) | [EN](/en/)
 
 ---
 
@@ -10,7 +13,7 @@ OpenState is a **structured, evidence-based system** for documenting real-world 
 
 Each issue works like a **bug report**: clear description, steps to reproduce, evidence, and impact.
 
-[Read the documentation in English →](/en/)
+[Read the documentation in English →](en/)
 
 ---
 
@@ -18,8 +21,8 @@ OpenState é um **sistema estruturado e baseado em evidências** para documentar
 
 Cada issue funciona como um **bug report**: descrição clara, passos para reproduzir, evidência e impacto.
 
-[Ler a documentação em Português →](/pt/)
+[Ler a documentação em Português →](pt/)
 
 ---
 
-**[🐛 Report an Issue](https://github.com/andreclemente/issues/new?template=reportar-problema.yml)**
+**[🐛 Report an Issue](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)**

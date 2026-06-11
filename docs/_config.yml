@@ -1,4 +1,33 @@
-theme: jekyll-theme-minimal
+remote_theme: just-the-docs/just-the-docs
+
 title: OpenState
 description: Public Systems Bug Tracker
 show_downloads: false
+
+color_scheme: light
+
+search_enabled: true
+search.button: true
+
+aux_links:
+  "GitHub": "https://github.com/andreclemente/openstate"
+  "🇧🇷 PT": "/pt/"
+  "🇬🇧 EN": "/en/"
+
+nav_sort: case_insensitive
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red

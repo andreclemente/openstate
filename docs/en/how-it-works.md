@@ -1,19 +1,10 @@
+---
+title: How It Works
+nav_order: 2
+parent: English
+---
+
 # How It Works
-
-[PT](/pt/how-it-works) | [EN](/en/how-it-works)
-
----
-
-## Navigation
-
-| | |
-|:---|:---|
-| [Home](/en/) | Project overview |
-| [How It Works](/en/how-it-works) | Model, lifecycle, evidence |
-| [Examples](/en/examples) | Real issues as reference |
-| [Contribute](/en/contribute) | Submission guide |
-
----
 
 ## The model
 
