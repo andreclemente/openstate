@@ -133,3 +133,12 @@ Real-world issues written in the OpenState structured format.
 
     ## Related issues
     #67 (single sign-on), #89 (interoperability)
+
+---
+
+## Submit a proposal
+
+Have a solution for one of these problems? Submit a structured proposal:
+
+### [💡 Submit a Solution Proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
+

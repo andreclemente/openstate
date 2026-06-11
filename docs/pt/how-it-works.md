@@ -77,10 +77,10 @@ OpenState não é um fórum. Não é para discutir ideias — é para **document
 
 As issues são organizadas por labels:
 
-**Setor:** `saúde` · `educação` · `transportes` · `justiça` · `finanças-públicas` · `serviços-digitais`
+**Setor:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
-**Tipo:** `eficiência` · `acessibilidade` · `transparência` · `fiabilidade` · `redundância`
+**Tipo:** `efficiency` · `accessibility` · `transparency` · `reliability` · `redundancy`
 
-**Urgência:** `alto` · `médio` · `baixo`
+**Urgência:** `high` · `medium` · `low`
 
-**Estado:** `rascunho` · `confirmado` · `analisado` · `proposto`
+**Estado:** `draft` · `confirmed` · `analyzed` · `proposed`

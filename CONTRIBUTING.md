@@ -6,7 +6,7 @@ Thank you for your interest in contributing! OpenState is a community-driven pro
 
 1. **Found a problem?** → [Report it](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 2. **Have a solution?** → [Submit a proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
-3. **Want to discuss?** → Open an issue with the `meta` label
+3. **Want to discuss the project?** → [Open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml)
 
 ## Rules
 
@@ -54,4 +54,4 @@ You can write in either language. Issues written in Portuguese are automatically
 
 ## Contact
 
-For questions about the project itself, open an issue with the `meta` label.
+For questions about the project itself, [open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml).

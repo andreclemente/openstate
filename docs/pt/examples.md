@@ -133,3 +133,12 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
 
     ## Issues relacionadas
     #67 (autenticação única), #89 (interoperabilidade)
+
+---
+
+## Submeter uma proposta
+
+Tens uma solução para um destes problemas? Submete uma proposta estruturada:
+
+### [💡 Submeter Proposta de Solução](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
+
