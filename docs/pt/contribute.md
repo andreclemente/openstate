@@ -1,6 +1,6 @@
 # Contribuir
 
-[PT](/openstate/pt/contribute) | [EN](/openstate/en/contribute)
+[PT](/pt/contribute) | [EN](/en/contribute)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](/openstate/pt/) | Visão geral do projeto |
-| [Como Funciona](/openstate/pt/how-it-works) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/openstate/pt/examples) | Issues reais como referência |
-| [Contribuir](/openstate/pt/contribute) | Guia de submissão |
+| [Home](/pt/) | Visão geral do projeto |
+| [Como Funciona](/pt/how-it-works) | Modelo, ciclo de vida, evidência |
+| [Exemplos](/pt/examples) | Issues reais como referência |
+| [Contribuir](/pt/contribute) | Guia de submissão |
 
 ---
 
@@ -27,7 +27,7 @@ Qualquer pessoa. Não precisas de conhecimentos técnicos. Se tens um problema p
 
 A forma mais rápida de reportar um problema:
 
-### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Reportar um Problema](https://github.com/andreclemente/issues/new?template=reportar-problema.yml)
 
 1. Clica no botão acima
 2. Preenche os campos (podes escrever em **PT ou EN**)
@@ -37,7 +37,7 @@ A issue é criada automaticamente com a estrutura correta. Se escreveres em port
 
 ### Opção 2: Manual
 
-1. Vai ao [repositório no GitHub](https://github.com/andreclemente/openstate/issues)
+1. Vai ao [repositório no GitHub](https://github.com/andreclemente/issues)
 2. Clica em **"New Issue"**
 3. Seleciona o template **"Reportar Problema / Report Problem"**
 4. Preenche e submete

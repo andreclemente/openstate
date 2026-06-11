@@ -1,6 +1,6 @@
 # How It Works
 
-[PT](/openstate/pt/how-it-works) | [EN](/openstate/en/how-it-works)
+[PT](/pt/how-it-works) | [EN](/en/how-it-works)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](/openstate/en/) | Project overview |
-| [How It Works](/openstate/en/how-it-works) | Model, lifecycle, evidence |
-| [Examples](/openstate/en/examples) | Real issues as reference |
-| [Contribute](/openstate/en/contribute) | Submission guide |
+| [Home](/en/) | Project overview |
+| [How It Works](/en/how-it-works) | Model, lifecycle, evidence |
+| [Examples](/en/examples) | Real issues as reference |
+| [Contribute](/en/contribute) | Submission guide |
 
 ---
 

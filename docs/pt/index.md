@@ -2,7 +2,7 @@
 
 **Bug Tracker de Sistemas Públicos**
 
-[PT](/openstate/pt/) | [EN](/openstate/en/)
+[PT](/pt/) | [EN](/en/)
 
 ---
 
@@ -10,10 +10,10 @@
 
 | | |
 |:---|:---|
-| [Home](/openstate/pt/) | Visão geral do projeto |
-| [Como Funciona](/openstate/pt/how-it-works) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/openstate/pt/examples) | Issues reais como referência |
-| [Contribuir](/openstate/pt/contribute) | Guia de submissão |
+| [Home](/pt/) | Visão geral do projeto |
+| [Como Funciona](/pt/how-it-works) | Modelo, ciclo de vida, evidência |
+| [Exemplos](/pt/examples) | Issues reais como referência |
+| [Contribuir](/pt/contribute) | Guia de submissão |
 
 ---
 
@@ -76,7 +76,7 @@ Este site é a **camada de leitura** — uma interface humana por cima dos dados
 
 Tens um problema para reportar? Usa o formulário estruturado:
 
-### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Reportar um Problema](https://github.com/andreclemente/issues/new?template=reportar-problema.yml)
 
 Escreve em **Português ou Inglês**. Tradução automática incluída.
 
