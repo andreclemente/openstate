@@ -1,6 +1,6 @@
 # Contribute
 
-[PT](/openstate/pt/contribute.md) | [EN](/openstate/en/contribute.md)
+[PT](/openstate/pt/contribute) | [EN](/openstate/en/contribute)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](/openstate/en/index.md) | Project overview |
-| [How It Works](/openstate/en/how-it-works.md) | Model, lifecycle, evidence |
-| [Examples](/openstate/en/examples.md) | Real issues as reference |
-| [Contribute](/openstate/en/contribute.md) | Submission guide |
+| [Home](/openstate/en/) | Project overview |
+| [How It Works](/openstate/en/how-it-works) | Model, lifecycle, evidence |
+| [Examples](/openstate/en/examples) | Real issues as reference |
+| [Contribute](/openstate/en/contribute) | Submission guide |
 
 ---
 

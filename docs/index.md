@@ -2,7 +2,7 @@
 
 **Public Systems Bug Tracker**
 
-[PT](/openstate/pt/index.md) | [EN](/openstate/en/index.md)
+[PT](/openstate/pt/) | [EN](/openstate/en/)
 
 ---
 
@@ -10,7 +10,7 @@ OpenState is a **structured, evidence-based system** for documenting real-world 
 
 Each issue works like a **bug report**: clear description, steps to reproduce, evidence, and impact.
 
-[Read the documentation in English →](/openstate/en/index.md)
+[Read the documentation in English →](/openstate/en/)
 
 ---
 
@@ -18,7 +18,7 @@ OpenState é um **sistema estruturado e baseado em evidências** para documentar
 
 Cada issue funciona como um **bug report**: descrição clara, passos para reproduzir, evidência e impacto.
 
-[Ler a documentação em Português →](/openstate/pt/index.md)
+[Ler a documentação em Português →](/openstate/pt/)
 
 ---
 

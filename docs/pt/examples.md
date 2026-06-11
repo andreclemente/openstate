@@ -1,6 +1,6 @@
 # Exemplos
 
-[PT](/openstate/pt/examples.md) | [EN](/openstate/en/examples.md)
+[PT](/openstate/pt/examples) | [EN](/openstate/en/examples)
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | |
 |:---|:---|
-| [Home](/openstate/pt/index.md) | Visão geral do projeto |
-| [Como Funciona](/openstate/pt/how-it-works.md) | Modelo, ciclo de vida, evidência |
-| [Exemplos](/openstate/pt/examples.md) | Issues reais como referência |
-| [Contribuir](/openstate/pt/contribute.md) | Guia de submissão |
+| [Home](/openstate/pt/) | Visão geral do projeto |
+| [Como Funciona](/openstate/pt/how-it-works) | Modelo, ciclo de vida, evidência |
+| [Exemplos](/openstate/pt/examples) | Issues reais como referência |
+| [Contribuir](/openstate/pt/contribute) | Guia de submissão |
 
 ---
 
