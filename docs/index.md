@@ -29,7 +29,7 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
 <!-- HERO -->
 <div class="os-hero">
   <div class="os-hero-inner">
-    <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
+    <img src="/assets/logo-wordmark-dark.webp" alt="OpenState" class="os-hero-logo">
     <h1 class="os-hero-title">Compreender como os serviços públicos funcionam na realidade.</h1>
     <p class="os-hero-sub">OpenState documenta o que acontece nos serviços públicos — com evidência, estrutura e sem opinião — para que a sociedade possa ver padrões onde hoje só existem experiências isoladas.</p>
     <div class="os-hero-links">

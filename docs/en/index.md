@@ -29,7 +29,7 @@ description: A structured observability system for public services. Understand h
 <!-- HERO -->
 <div class="os-hero">
   <div class="os-hero-inner">
-    <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
+    <img src="/assets/logo-wordmark-dark.webp" alt="OpenState" class="os-hero-logo">
     <h1 class="os-hero-title">Understand how public services behave in reality.</h1>
     <p class="os-hero-sub">OpenState documents what happens in public services — with evidence, structure, and no opinion — so society can see patterns where today there are only isolated experiences.</p>
     <div class="os-hero-links">
