@@ -18,15 +18,26 @@ Cada problema é documentado como uma **issue estruturada**, comparável a um bu
 ## Ciclo de vida de uma issue
 
 ```
-Rascunho → Confirmado → Analisado → Proposto
+Draft → Confirmed → Analyzed → Proposed
 ```
 
 | Estado | Descrição |
-:-------|:----------|
-| **Rascunho** | Problema descrito, aguarda evidência |
-| **Confirmado** | Evidência anexada, problema verificável |
-| **Analisado** | Causa raiz identificada, impacto documentado |
-| **Proposto** | Solução estruturada submetida |
+|:-------|:----------|
+| **Draft** | Problema descrito, aguarda evidência |
+| **Confirmed** | Evidência anexada, problema verificável |
+| **Analyzed** | Causa raiz identificada, impacto documentado |
+| **Proposed** | Solução estruturada submetida |
+
+### Badges de estado
+
+Usa estes badges para indicar visualmente o estado atual de uma issue em labels, comentários ou referências externas:
+
+| Estado | Badge |
+|:-------|:------|
+| Draft | `![Draft](https://img.shields.io/badge/state-Draft-informational)` |
+| Confirmed | `![Confirmed](https://img.shields.io/badge/state-Confirmed-success)` |
+| Analyzed | `![Analyzed](https://img.shields.io/badge/state-Analyzed-important)` |
+| Proposed | `![Proposed](https://img.shields.io/badge/state-Proposed-critical)` |
 
 ---
 

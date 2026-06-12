@@ -15,6 +15,9 @@ Todas as alterações notáveis no projeto OpenState são documentadas aqui.
 
 ### Adicionado
 
+- **Guia de Evidências** — Novo guia bilingue (EN/PT) que ensina os utilizadores a encontrar, avaliar e apresentar evidências para issues
+- **Badges de estado** — Referências visuais de badges (shields.io) para os estados Draft/Confirmed/Analyzed/Proposed nas páginas Como Funciona
+- **Tarefas Good First Issue** — 3 issues curados para iniciantes ajudarem novos contribuidores a começar
 - **Meta tags Open Graph e Twitter Cards** — Partilha em redes sociais mostra agora uma pré-visualização rica com título, descrição e imagem
 - **Suporte para modo escuro** — Alternar entre tema claro e escuro usando o seletor de tema
 - **Timestamps de última atualização** — Cada página de documentação mostra quando foi modificada pela última vez

@@ -118,10 +118,10 @@ Usa estas labels para categorizar:
 ## Processo
 
 ```
-1. Rascunho      → Descreves o problema
-2. Confirmado    → Anexas evidência verificável
-3. Analisado      → Comunidade identifica causa raiz
-4. Proposto       → Solução estruturada é submetida
+1. Draft        → Descreves o problema
+2. Confirmed    → Anexas evidência verificável
+3. Analyzed     → Comunidade identifica causa raiz
+4. Proposed     → Solução estruturada é submetida
 ```
 
 ---

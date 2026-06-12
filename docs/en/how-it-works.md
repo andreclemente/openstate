@@ -28,6 +28,17 @@ Draft → Confirmed → Analyzed → Proposed
 | **Analyzed** | Root cause identified, impact documented |
 | **Proposed** | Structured solution submitted |
 
+### State badges
+
+Use these badges to visually indicate an issue's current lifecycle state in labels, comments, or external references:
+
+| State | Badge |
+|:------|:------|
+| Draft | `![Draft](https://img.shields.io/badge/state-Draft-informational)` |
+| Confirmed | `![Confirmed](https://img.shields.io/badge/state-Confirmed-success)` |
+| Analyzed | `![Analyzed](https://img.shields.io/badge/state-Analyzed-important)` |
+| Proposed | `![Proposed](https://img.shields.io/badge/state-Proposed-critical)` |
+
 ---
 
 ## The role of evidence

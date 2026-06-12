@@ -15,6 +15,9 @@ All notable changes to the OpenState project are documented here.
 
 ### Added
 
+- **Evidence Guide** — New bilingual (EN/PT) guide teaching users how to find, evaluate, and present evidence for issues
+- **Issue state badges** — Visual badge references (shields.io) for Draft/Confirmed/Analyzed/Proposed states on How It Works pages
+- **Good First Issue starter tasks** — 3 curated beginner-friendly issues to help new contributors get started (#7, #8, #9)
 - **Open Graph & Twitter Card meta tags** — Social sharing now shows a rich preview with title, description, and image
 - **Dark mode support** — Toggle between light and dark themes using the theme picker
 - **Last updated timestamps** — Each documentation page now shows when it was last modified
