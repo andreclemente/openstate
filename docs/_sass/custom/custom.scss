@@ -68,7 +68,7 @@ html {
 
 // === HERO ===
 .os-hero {
-  padding: 140px 24px 100px;
+  padding: 84px 24px 100px;
   text-align: center;
   background: linear-gradient(180deg, #0f172a 0%, #0f1b2e 50%, #1e293b 100%);
   border-bottom: 1px solid var(--os-border);
@@ -630,7 +630,7 @@ body:has(.os-doc-content) .main-content {
 
 // === RESPONSIVE ===
 @media (max-width: 768px) {
-  .os-hero { padding: 100px 20px 80px; }
+  .os-hero { padding: 64px 20px 80px; }
   .os-hero-sub { font-size: 16px; }
   .os-hero-logo { max-width: 200px; }
 

@@ -8,18 +8,29 @@ search_exclude: true
 
 <div class="os-page os-hide-chrome">
 
+<div class="os-doc-header">
+  <a href="/en/" class="os-doc-header-logo">
+    <img src="/assets/logo-dark.webp" alt="OpenState">
+  </a>
+  <div class="os-doc-header-nav">
+    <a href="/en/how-it-works">How it works</a>
+    <a href="/en/examples">Examples</a>
+    <a href="/en/contribute">Contribute</a>
+    <div class="os-doc-lang-toggle">
+      <a href="/">PT</a>
+      <span class="sep">/</span>
+      <a href="/en/" class="active">EN</a>
+    </div>
+  </div>
+</div>
+
 <div class="os-hero">
   <div class="os-hero-inner">
     <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
     <p class="os-hero-sub">A structured observability system for public services. Understand how public systems behave in reality — through structured observations, evidence, and patterns.</p>
     <div class="os-hero-links">
       <a href="#what" class="os-btn os-btn-primary">What it does</a>
-      <a href="/en/contribute" class="os-btn os-btn-outline">Submit an observation</a>
-    </div>
-    <div class="os-lang-toggle">
-      <a href="/en/" class="os-lang-active">EN</a>
-      <span class="os-lang-sep">/</span>
-      <a href="/">PT</a>
+      <a href="https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml" class="os-btn os-btn-outline" target="_blank">Submit an observation</a>
     </div>
   </div>
 </div>

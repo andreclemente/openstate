@@ -8,18 +8,32 @@ search_exclude: true
 
 <div class="os-page os-hide-chrome">
 
+{% assign page_path = page.url | remove: ".html" | split: "/" %}
+{% assign lang = page_path[1] %}
+
+<div class="os-doc-header">
+  <a href="/" class="os-doc-header-logo">
+    <img src="/assets/logo-dark.webp" alt="OpenState">
+  </a>
+  <div class="os-doc-header-nav">
+    <a href="/pt/how-it-works">Como funciona</a>
+    <a href="/pt/examples">Exemplos</a>
+    <a href="/pt/contribute">Contribuir</a>
+    <div class="os-doc-lang-toggle">
+      <a href="/" class="active">PT</a>
+      <span class="sep">/</span>
+      <a href="/en/">EN</a>
+    </div>
+  </div>
+</div>
+
 <div class="os-hero">
   <div class="os-hero-inner">
     <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
     <p class="os-hero-sub">Um sistema de observabilidade estruturado para serviços públicos. Compreender como os sistemas públicos funcionam na realidade — através de observações estruturadas, evidência e padrões.</p>
     <div class="os-hero-links">
       <a href="#what" class="os-btn os-btn-primary">O que faz</a>
-      <a href="/pt/contribute" class="os-btn os-btn-outline">Submeter observação</a>
-    </div>
-    <div class="os-lang-toggle">
-      <a href="/en/">EN</a>
-      <span class="os-lang-sep">/</span>
-      <a href="/" class="os-lang-active">PT</a>
+      <a href="https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml" class="os-btn os-btn-outline" target="_blank">Submeter observação</a>
     </div>
   </div>
 </div>
