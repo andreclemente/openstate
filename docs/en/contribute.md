@@ -18,7 +18,7 @@ Anyone. No technical background needed. If you have observed a public service pr
 
 The fastest way to document a problem:
 
-### [🐛 Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [👁️ Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 1. Click the button above
 2. Fill in the fields (you can write in **PT or EN**)

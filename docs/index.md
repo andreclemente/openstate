@@ -29,4 +29,4 @@ OpenState muda isso.
 
 ---
 
-**[🐛 Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)**
+**[👁️ Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)**

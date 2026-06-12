@@ -18,7 +18,7 @@ Qualquer pessoa. Não precisas de conhecimentos técnicos. Se observaste um prob
 
 A forma mais rápida de documentar um problema:
 
-### [🐛 Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [👁️ Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 1. Clica no botão acima
 2. Preenche os campos (podes escrever em **PT ou EN**)

@@ -148,4 +148,4 @@ Tens uma solução para um destes problemas? Submete uma proposta estruturada:
 
 Encontraste um problema que ainda não está documentado? Reporta-o:
 
-### [🐛 Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [👁️ Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
