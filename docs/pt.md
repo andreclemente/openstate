@@ -48,11 +48,10 @@ has_children: true
 
 <div class="os-hero">
   <div class="os-hero-inner">
-    <div class="os-badge">OPENSTATE</div>
-    <h1 class="os-hero-title">Um sistema de observabilidade estruturado para serviços públicos.</h1>
-    <p class="os-hero-sub">Compreender como os sistemas públicos funcionam na realidade — através de observações estruturadas, evidência e padrões.</p>
+    <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
+    <p class="os-hero-sub">Um sistema de observabilidade estruturado para serviços públicos. Compreender como os sistemas públicos funcionam na realidade — através de observações estruturadas, evidência e padrões.</p>
     <div class="os-hero-links">
-      <a href="/#what" class="os-btn os-btn-primary">O que faz</a>
+      <a href="#what" class="os-btn os-btn-primary">O que faz</a>
       <a href="/pt/contribute" class="os-btn os-btn-outline">Submeter observação</a>
     </div>
     <div class="os-lang-toggle">

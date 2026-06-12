@@ -48,9 +48,8 @@ search_exclude: true
 
 <div class="os-hero">
   <div class="os-hero-inner">
-    <div class="os-badge">OPENSTATE</div>
-    <h1 class="os-hero-title">A structured observability system for public services.</h1>
-    <p class="os-hero-sub">Understand how public systems behave in reality — through structured observations, evidence, and patterns.</p>
+    <img src="/assets/logo-wordmark.webp" alt="OpenState" class="os-hero-logo">
+    <p class="os-hero-sub">A structured observability system for public services. Understand how public systems behave in reality — through structured observations, evidence, and patterns.</p>
     <div class="os-hero-links">
       <a href="#what" class="os-btn os-btn-primary">What it does</a>
       <a href="en/contribute" class="os-btn os-btn-outline">Submit an observation</a>

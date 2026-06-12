@@ -26,24 +26,21 @@
 }
 
 .os-badge {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: #38bdf8;
-  border: 1px solid #38bdf8;
-  padding: 4px 14px;
-  border-radius: 4px;
-  margin-bottom: 32px;
-  text-transform: uppercase;
+  display: none;
+}
+
+.os-hero-logo {
+  display: block;
+  max-width: 320px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  margin: 0 auto 32px;
+  object-fit: contain;
 }
 
 .os-hero-title {
-  font-size: 40px !important;
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
-  margin: 0 0 20px !important;
-  letter-spacing: -0.02em;
+  display: none;
 }
 
 .os-hero-sub {
@@ -265,6 +262,7 @@
   .os-hero { padding: 80px 20px 60px; }
   .os-hero-title { font-size: 28px !important; }
   .os-hero-sub { font-size: 16px; }
+  .os-hero-logo { max-width: 220px; }
   .os-section { padding: 60px 20px; }
   .os-cards { grid-template-columns: 1fr; }
   .os-cards-not { grid-template-columns: 1fr 1fr; }
