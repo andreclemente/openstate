@@ -6,40 +6,103 @@ layout: default
 {% assign lang = page_path[1] %}
 {% if lang == "en" %}
   {% assign lang_other = "pt" %}
-  {% assign lang_other_label = "PT" %}
-  {% assign lang_current_label = "EN" %}
   {% assign other_url = page.url | remove: "/en/" | prepend: "/" %}
   {% assign home_url = "/en/" %}
+  {% assign nav_how = "/en/how-it-works" %}
+  {% assign nav_observations = "/en/observations" %}
+  {% assign nav_contribute = "/en/contribute" %}
+  {% assign nav_about = "/en/about" %}
+  {% assign label_how = "How it works" %}
+  {% assign label_observations = "Observations" %}
+  {% assign label_contribute = "Contribute" %}
+  {% assign label_about = "About" %}
 {% else %}
   {% assign lang_other = "en" %}
-  {% assign lang_other_label = "EN" %}
-  {% assign lang_current_label = "PT" %}
   {% assign other_url = page.url | remove: "/pt/" | prepend: "/en/" %}
   {% assign home_url = "/" %}
+  {% assign nav_how = "/pt/how-it-works" %}
+  {% assign nav_observations = "/pt/observations" %}
+  {% assign nav_contribute = "/pt/contribute" %}
+  {% assign nav_about = "/pt/about" %}
+  {% assign label_how = "Como funciona" %}
+  {% assign label_observations = "Observações" %}
+  {% assign label_contribute = "Contribuir" %}
+  {% assign label_about = "Sobre" %}
 {% endif %}
+
+{% assign current_url = page.url | remove: ".html" | remove: "/" %}
 
 <div class="os-doc-header">
   <a href="{{ home_url }}" class="os-doc-header-logo">
     <img src="/assets/logo-dark.webp" alt="OpenState">
   </a>
   <div class="os-doc-header-nav">
-    {% if lang == "en" %}
-      <a href="/en/how-it-works">How it works</a>
-      <a href="/en/examples">Examples</a>
-      <a href="/en/contribute">Contribute</a>
-    {% else %}
-      <a href="/pt/how-it-works">Como funciona</a>
-      <a href="/pt/examples">Exemplos</a>
-      <a href="/pt/contribute">Contribuir</a>
-    {% endif %}
+    <a href="{{ nav_how }}" class="{% if current_url == nav_how or page.url == nav_how %}active{% endif %}">{{ label_how }}</a>
+    <a href="{{ nav_observations }}" class="{% if current_url == nav_observations or page.url == nav_observations %}active{% endif %}">{{ label_observations }}</a>
+    <a href="{{ nav_contribute }}" class="{% if current_url == nav_contribute or page.url == nav_contribute %}active{% endif %}">{{ label_contribute }}</a>
+    <a href="{{ nav_about }}" class="{% if current_url == nav_about or page.url == nav_about %}active{% endif %}">{{ label_about }}</a>
     <div class="os-doc-lang-toggle">
       <a href="{{ page.url | replace: '/en/', '/pt/' }}" class="{% unless lang == 'en' %}active{% endunless %}">PT</a>
       <span class="sep">/</span>
       <a href="{{ page.url | replace: '/pt/', '/en/' }}" class="{% if lang == 'en' %}active{% endif %}">EN</a>
     </div>
+    <button class="os-theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <span class="os-theme-icon os-theme-icon-system" data-theme="system">○</span>
+      <span class="os-theme-icon os-theme-icon-light" data-theme="light">☀</span>
+      <span class="os-theme-icon os-theme-icon-dark" data-theme="dark">☾</span>
+    </button>
   </div>
 </div>
 
 <div class="os-doc-content">
   {{ content }}
 </div>
+
+<div class="os-footer">
+  <div class="os-section-inner">
+    <div class="os-footer-row">
+      <span class="os-footer-text">OpenState</span>
+      <span class="os-footer-sep">·</span>
+      <span class="os-footer-mission">{% if lang == "en" %}Documenting how public services behave in reality.{% else %}Documentar como os serviços públicos funcionam na realidade.{% endif %}</span>
+    </div>
+    <div class="os-footer-row os-footer-secondary">
+      <a href="https://github.com/andreclemente/openstate" target="_blank">GitHub</a>
+      <span class="os-footer-sep">·</span>
+      <a href="https://github.com/andreclemente/openstate/blob/main/LICENSE" target="_blank">MIT</a>
+      <span class="os-footer-sep">·</span>
+      <a href="mailto:contact@openstate.andreclemente.dev">{% if lang == "en" %}Contact{% else %}Contacto{% endif %}</a>
+      <span class="os-footer-sep">·</span>
+      <a href="{{ page.url | replace: '/en/', '/pt/' }}" class="{% unless lang == 'en' %}os-lang-active{% endunless %}">PT</a>
+      <span class="os-footer-sep">/</span>
+      <a href="{{ page.url | replace: '/pt/', '/en/' }}" class="{% if lang == 'en' %}os-lang-active{% endif %}">EN</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+  var icons = toggle.querySelectorAll('.os-theme-icon');
+  var current = localStorage.getItem('os-theme') || 'system';
+  function setTheme(t) {
+    current = t;
+    localStorage.setItem('os-theme', t);
+    document.documentElement.setAttribute('data-theme', t);
+    icons.forEach(function(ic) {
+      ic.style.display = ic.getAttribute('data-theme') === t ? 'inline' : 'none';
+    });
+    if (t === 'system') {
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.body.style.background = prefersDark ? '#0f172a' : '#ffffff';
+    } else {
+      document.body.style.background = t === 'dark' ? '#0f172a' : '#ffffff';
+    }
+  }
+  setTheme(current);
+  toggle.addEventListener('click', function() {
+    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+    setTheme(next);
+  });
+})();
+</script>

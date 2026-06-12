@@ -7,79 +7,94 @@ layout: page
 
 # How It Works
 
-OpenState treats public services as observable systems. Each problem is documented as a **structured observation** — a factual description of what happens in reality.
+OpenState documents real problems in public services. Each problem goes through a cycle — from the moment it is observed to becoming useful knowledge.
 
 ---
 
-## What is an observation
+## The observation lifecycle
 
-An observation describes:
+### 1. Observe
 
-- **What happens** — a factual sequence of events
-- **Who is affected** — citizens, businesses, institutions
-- **What evidence supports it** — news, data, reports, legislation, real cases
-- **What system is involved** — healthcare, education, transport, justice, public finance, digital services
-- **What the impact is** — time lost, cost, complexity, reliability
+Everything starts with a real problem. Something that happened, not an assumption.
 
-An observation does **not** propose solutions. Observation and solution are strictly separate.
+**Example:** A patient waits 8 months for a specialist appointment. This is not an isolated case — thousands go through the same.
 
----
+### 2. Evidence
 
-## The role of evidence
+An observation without a source is an opinion. With evidence, it becomes a documented fact.
 
-> Without evidence, there is no observation. Evidence turns an opinion into a documented fact.
+**Example:** Health Regulatory Authority report shows average wait times by specialty. News articles confirm waiting lists reached all-time highs. SIGIC data corroborates the numbers.
 
-Accepted evidence types:
+### 3. Context
 
-| Type | Examples |
-|:-----|:---------|
-| **News** | Newspaper articles, reports |
-| **Official data** | Government reports, public statistics |
-| **Legislation** | Laws, regulations, decrees |
-| **Real cases** | Factual descriptions of concrete situations |
-| **Studies** | Academic research, organisation reports |
+The problem does not exist in a vacuum. What system is involved? Who is affected? What is the impact?
 
----
+**Example:** The problem is in the public health system — specialized hospital care. It affects patients who need specialist consultations. The impact is excessive waiting times, worsening conditions, resorting to private care.
 
-## Three layers
+### 4. Relate
 
-OpenState strictly separates **three layers**:
+Isolated problems become patterns when connected to other similar problems.
 
-### 1. Observations
-What is happening. Factual, reproducible description with evidence.
+**Example:** Waiting times for consultations are linked to the shortage of GPs (who refer to specialists) and the triage system (which should filter urgencies).
 
-### 2. Analysis
-Why it is happening. Root cause, contributing factors, impact.
+### 5. Pattern
 
-### 3. Solutions
-What to do. Structured proposals with impact estimates and feasibility evidence.
+When enough observations connect, a pattern becomes visible. It stops being "a problem" and becomes "a system pattern."
 
-> **An observation without a solution is valid. A solution without an observation is not.**
+**Example:** It is not one hospital failing — it is a pattern of insufficient capacity vs. demand across the entire health system.
+
+### 6. Knowledge
+
+The pattern documented with evidence becomes public knowledge. Anyone can consult it, verify it, use it as a basis for decisions.
+
+**Example:** A policymaker, journalist, or researcher can consult the documented pattern and understand the problem based on facts, not opinions.
 
 ---
 
-## Observation lifecycle
+## What makes a useful observation
 
-| State | Description |
-|:------|:------------|
-| **Draft** | Observation described, awaiting evidence |
-| **Confirmed** | Evidence attached, observation verifiable |
-| **Analyzed** | Root cause identified, impact documented |
-| **Proposed** | Structured solution submitted |
+### Includes
+- Factual description of what happens
+- Who is affected
+- What system is involved
+- What the impact is (time, cost, complexity)
+- Verifiable sources (news, reports, data, legislation)
 
----
-
-## Rules
-
-### Accepted
-- Observable, reproducible problems in public services
-- Concrete evidence (news, data, reports, legislation, real cases)
-- Factual, neutral descriptions
-- Structured proposals submitted separately from observations
-
-### Rejected
+### Avoids
 - Opinions without evidence
 - Personal data of third parties
 - Political or ideological language
-- Duplicates — search first to see if the observation already exists
-- Solutions without observations — describe the problem first
+- Solution proposals (these are separate)
+
+---
+
+## Verification statuses
+
+| Status | What it means |
+|:-------|:--------------|
+| **Draft** | Problem described, awaiting evidence |
+| **Confirmed** | Evidence attached, verifiable by anyone |
+| **Analyzed** | Root cause identified, impact documented |
+| **Proposed** | Structured solution submitted separately |
+
+---
+
+## Full example
+
+**Observation:** Excessive waiting times for specialist appointments in the public health system
+
+**What happens:**
+1. Patient is referred by GP
+2. Waits on waiting list with no date estimate
+3. After 8+ months, appointment still not scheduled
+4. Patient's condition worsens or they resort to private care
+
+**Evidence:** ERS Report 2024 · Público article · SIGIC data
+
+**Possible root cause:** Insufficient hospital capacity vs. demand; absence of uniform clinical priority criteria
+
+**Relations:** GP shortage (#12), Triage system (#34)
+
+---
+
+Want to contribute? [Submit an observation →](/en/contribute){:.os-btn .os-btn-primary}

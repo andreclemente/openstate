@@ -16,8 +16,9 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
   </a>
   <div class="os-doc-header-nav">
     <a href="/pt/how-it-works">Como funciona</a>
-    <a href="/pt/examples">Exemplos</a>
+    <a href="/pt/observations">Observações</a>
     <a href="/pt/contribute">Contribuir</a>
+    <a href="/pt/about">Sobre</a>
     <div class="os-doc-lang-toggle">
       <a href="/" class="active">PT</a>
       <span class="sep">/</span>
@@ -31,27 +32,29 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
   <div class="os-hero-inner">
     <img src="/assets/logo-wordmark-dark.webp" alt="OpenState" class="os-hero-logo">
     <h1 class="os-hero-title">Compreender como os serviços públicos funcionam na realidade.</h1>
-    <p class="os-hero-sub">OpenState documenta o que acontece nos serviços públicos — com evidência, estrutura e sem opinião — para que a sociedade possa ver padrões onde hoje só existem experiências isoladas.</p>
+    <p class="os-hero-sub">OpenState documenta o que acontece nos serviços públicos — com evidência, estrutura e sem opinião — para que padrões invisíveis se tornem conhecimento público.</p>
     <div class="os-hero-links">
-      <a href="#why" class="os-btn os-btn-primary">Porque existe</a>
-      <a href="/pt/examples" class="os-btn os-btn-outline">Ver exemplos</a>
+      <a href="/pt/observations" class="os-btn os-btn-primary">Explorar observações</a>
+      <a href="/pt/contribute" class="os-btn os-btn-outline">Contribuir</a>
     </div>
   </div>
 </div>
 
-<!-- SECTION 1: WHY IT EXISTS -->
+<!-- SECTION 2: WHY IT EXISTS — emotional center -->
 <div class="os-section" id="why">
   <div class="os-section-inner">
     <h2 class="os-section-label">Porque existe</h2>
-    <p class="os-section-intro">Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam complexidade desnecessária, processos repetidos ou obstáculos que poderiam ser evitados. Estas situações são discutidas, esquecidas e repetidas — porque não existe uma estrutura que as ligue.</p>
+    <p class="os-section-intro">Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam complexidade desnecessária, processos repetidos ou obstáculos que poderiam ser evitados.</p>
+    <p class="os-section-intro">Estas situações são discutidas, esquecidas e repetidas. Artigos de notícias desaparecem. Discussões nas redes sociais desaparecem. Experiências pessoais desaparecem. O conhecimento perde-se.</p>
+    <p class="os-section-intro os-section-intro-strong">OpenState existe para que essas observações se tornem conhecimento público estruturado.</p>
     <div class="os-cards">
       <div class="os-card">
-        <h3>Experiências isoladas</h3>
+        <h3>O mesmo problema, repetido</h3>
         <p>Quando alguém espera 8 meses por uma consulta, é um problema pessoal. Quando milhares esperam o mesmo mas ninguém liga os casos, torna-se um padrão invisível.</p>
       </div>
       <div class="os-card">
-        <h3>Informação fragmentada</h3>
-        <p>Os problemas da saúde, da educação e dos transportes raramente são documentados em conjunto. Cada sector vive no seu próprio silo — e os padrões entre sectores ficam por descobrir.</p>
+        <h3>Informação que se perde</h3>
+        <p>Notícias sobre problemas nos serviços públicos desaparecem em dias. Discussões online desaparecem em horas. Nada fica. Nada se acumula.</p>
       </div>
       <div class="os-card">
         <h3>Sem memória coletiva</h3>
@@ -61,167 +64,47 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
   </div>
 </div>
 
-<!-- SECTION 2: THE RESPONSE -->
-<div class="os-section" id="what">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">O que o OpenState faz</h2>
-    <p class="os-section-intro">OpenState transforma experiências dispersas em conhecimento estruturado. Não propõe soluções. Não toma partidos. Documenta o que acontece, com evidência, para que os padrões se tornem visíveis.</p>
-    <div class="os-cards">
-      <div class="os-card os-card-accent">
-        <div class="os-card-num">01</div>
-        <h3>Observa</h3>
-        <p>Regista o que acontece num serviço público — de forma factual, reproduzível, com evidência verificável.</p>
-      </div>
-      <div class="os-card os-card-accent">
-        <div class="os-card-num">02</div>
-        <h3>Documenta</h3>
-        <p>Estrutura cada observação com contexto, impacto e fonte — para que qualquer pessoa possa verificar e compreender.</p>
-      </div>
-      <div class="os-card os-card-accent">
-        <div class="os-card-num">03</div>
-        <h3>Conecta</h3>
-        <p>Liga observações relacionadas — para que problemas isolados revelem padrões sistémicos ao longo do tempo.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 3: WHAT IT IS NOT -->
-<div class="os-section os-section-not" id="not">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">O que não é</h2>
-    <div class="os-cards os-cards-not">
-      <div class="os-card os-card-dim">
-        <span class="os-card-x">✕</span>
-        <h3>Plataforma de queixas</h3>
-        <p>Sem desabafos. Sem denúncias anónimas. Apenas observações factuais com evidência.</p>
-      </div>
-      <div class="os-card os-card-dim">
-        <span class="os-card-x">✕</span>
-        <h3>Iniciativa política</h3>
-        <p>Sem ideologia. Sem partidos. OpenState é neutro por natureza — não propõe reformas nem toma posições.</p>
-      </div>
-      <div class="os-card os-card-dim">
-        <span class="os-card-x">✕</span>
-        <h3>Fórum de discussão</h3>
-        <p>Sem debates. Sem comentários abertos. Estrutura e evidência acima de opinião.</p>
-      </div>
-      <div class="os-card os-card-dim">
-        <span class="os-card-x">✕</span>
-        <h3>Ferramenta de reporte</h3>
-        <p>Não é para reportar problemas individuais. É para documentar padrões sistémicos com base em evidência.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 4: WHY IT MATTERS -->
-<div class="os-section" id="matters">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">Porque é que isto importa</h2>
-    <div class="os-matter-grid">
-      <div class="os-matter-block">
-        <p class="os-matter-text">Uma experiência isolada é um dado.</p>
-        <p class="os-matter-arrow">↓</p>
-        <p class="os-matter-text">Observações estruturadas são evidência.</p>
-        <p class="os-matter-arrow">↓</p>
-        <p class="os-matter-text">Evidência ligada revela padrões.</p>
-        <p class="os-matter-arrow">↓</p>
-        <p class="os-matter-text os-matter-strong">Padrões visíveis permitem compreender os sistemas públicos como eles realmente funcionam.</p>
-      </div>
-    </div>
-    <p class="os-section-intro">Não prometemos resolver nada. Prometemos documentar o que acontece — para que quem decide, quem investiga e quem vive os serviços públicos tenha uma base factual de trabalho.</p>
-  </div>
-</div>
-
-<!-- SECTION 5: HOW IT WORKS -->
+<!-- SECTION 3: FROM ISOLATED EXPERIENCES TO SHARED KNOWLEDGE -->
 <div class="os-section os-section-how" id="how">
   <div class="os-section-inner">
-    <h2 class="os-section-label">Como funciona</h2>
-    <div class="os-steps">
-      <div class="os-step">
-        <div class="os-step-num">1</div>
-        <div class="os-step-content">
-          <h3>Observar</h3>
-          <p>Identificas um problema real num serviço público — algo que aconteceu, não uma suposição.</p>
-        </div>
+    <h2 class="os-section-label">De experiências isoladas a conhecimento partilhado</h2>
+    <div class="os-chain">
+      <div class="os-chain-step">
+        <div class="os-chain-num">1</div>
+        <p>Observação individual</p>
       </div>
-      <div class="os-step-connector"></div>
-      <div class="os-step">
-        <div class="os-step-num">2</div>
-        <div class="os-step-content">
-          <h3>Documentar</h3>
-          <p>Descreves o que aconteceu, quem foi afetado, que sistema está envolvido e qual é o impacto.</p>
-        </div>
+      <div class="os-chain-arrow">↓</div>
+      <div class="os-chain-step">
+        <div class="os-chain-num">2</div>
+        <p>Documentada com evidência</p>
       </div>
-      <div class="os-step-connector"></div>
-      <div class="os-step">
-        <div class="os-step-num">3</div>
-        <div class="os-step-content">
-          <h3>Evidenciar</h3>
-          <p>Anexas fontes verificáveis — notícias, relatórios, dados públicos, legislação ou casos documentados.</p>
-        </div>
+      <div class="os-chain-arrow">↓</div>
+      <div class="os-chain-step">
+        <div class="os-chain-num">3</div>
+        <p>Conectada a observações semelhantes</p>
       </div>
-      <div class="os-step-connector"></div>
-      <div class="os-step">
-        <div class="os-step-num">4</div>
-        <div class="os-step-content">
-          <h3>Conectar</h3>
-          <p>Observações relacionadas são ligadas entre si — revelando padrões que não seriam visíveis isoladamente.</p>
-        </div>
+      <div class="os-chain-arrow">↓</div>
+      <div class="os-chain-step">
+        <div class="os-chain-num">4</div>
+        <p>Padrões emergem</p>
+      </div>
+      <div class="os-chain-arrow">↓</div>
+      <div class="os-chain-step os-chain-step-final">
+        <div class="os-chain-num">5</div>
+        <p>Conhecimento acumula-se</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 6: REAL EXAMPLES -->
-<div class="os-section" id="examples">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">Exemplos reais</h2>
-    <p class="os-section-intro">Isto é o que o OpenState documenta. Observações estruturadas, com evidência, sobre problemas que afetam milhões de pessoas.</p>
-    <div class="os-examples">
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-health">Saúde</div>
-        <h3>8 meses por uma consulta</h3>
-        <p>Utentes esperam em média 8 meses para primeira consulta de especialidade no SNS. 15% desistem antes da consulta. A condição agrava-se ou recorrem ao privado.</p>
-        <div class="os-example-evidence">
-          <span class="os-example-evidence-label">Evidência:</span>
-          <span>Relatório ERS 2024 · Notícia Público · Dados SIGIC</span>
-        </div>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-education">Educação</div>
-        <h3>12 dias sem aula por ano</h3>
-        <p>Quando um professor falta, a turma fica sem aula. Média de 12 dias/ano por turma sem aula no ensino básico público. 60% das escolas reportam falta de professores.</p>
-        <div class="os-example-evidence">
-          <span class="os-example-evidence-label">Evidência:</span>
-          <span>Relatório CNE 2023 · Notícia DN · Dados DGEEC</span>
-        </div>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-digital">Serviços Digitais</div>
-        <h3>3 portais, 3 moradas</h3>
-        <p>Cidadão atualiza a morada na Segurança Social. Nas Finanças, a morada antiga continua. No SNS, uma morada diferente. A mesma informação, três vezes, três sistemas.</p>
-        <div class="os-example-evidence">
-          <span class="os-example-evidence-label">Evidência:</span>
-          <span>Relatório AMA 2023 · Notícia Expresso · Inquérito eGov</span>
-        </div>
-      </div>
-    </div>
-    <div class="os-cta-row">
-      <a href="/pt/examples" class="os-btn os-btn-outline">Ver todos os exemplos →</a>
-    </div>
-  </div>
-</div>
-
-<!-- SECTION 7: PRINCIPLES -->
+<!-- SECTION 4: PRINCIPLES -->
 <div class="os-section os-section-principles" id="principles">
   <div class="os-section-inner">
     <h2 class="os-section-label">Princípios</h2>
     <div class="os-cards">
       <div class="os-card os-card-principle">
         <h3>Neutralidade</h3>
-        <p>Sem ideologia. Sem partidos. Sem agendas. O foco é o que acontece, não o que devia acontecer.</p>
+        <p>Sem ideologia, sem partidos, sem agendas. O foco é o que acontece.</p>
       </div>
       <div class="os-card os-card-principle">
         <h3>Evidência</h3>
@@ -229,61 +112,115 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
       </div>
       <div class="os-card os-card-principle">
         <h3>Transparência</h3>
-        <p>Toda a documentação é aberta. Qualquer pessoa pode verificar, questionar e contribuir.</p>
+        <p>Toda a documentação é aberta. Qualquer pessoa pode verificar e contribuir.</p>
       </div>
       <div class="os-card os-card-principle">
         <h3>Estrutura</h3>
-        <p>Formato consistente, linguagem factual, organização clara. Estrutura acima de opinião.</p>
+        <p>Formato consistente, linguagem factual, organização clara.</p>
       </div>
       <div class="os-card os-card-principle">
         <h3>Conhecimento aberto</h3>
-        <p>O que é documentado pertence a todos. Sem paywalls, sem restrições, sem gatekeeping.</p>
+        <p>O que é documentado pertence a todos. Sem restrições, sem gatekeeping.</p>
       </div>
       <div class="os-card os-card-principle">
         <h3>Longo prazo</h3>
-        <p>OpenState é um projeto de décadas, não de meses. O valor cresce com o tempo e a acumulação.</p>
+        <p>OpenState é um projeto de décadas. O valor cresce com o tempo.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SECTION 8: CONTRIBUTE -->
+<!-- SECTION 5: REAL OBSERVATIONS -->
+<div class="os-section" id="observations">
+  <div class="os-section-inner">
+    <h2 class="os-section-label">Observações reais</h2>
+    <p class="os-section-intro">Isto é o que o OpenState documenta. Problemas reais, com evidência, que afectam milhões de pessoas.</p>
+    <div class="os-examples">
+      <div class="os-example-card">
+        <div class="os-example-tag os-example-tag-health">Saúde</div>
+        <h3>8 meses por uma consulta</h3>
+        <p>Utentes esperam em média 8 meses para primeira consulta de especialidade. 15% desistem antes da consulta.</p>
+        <div class="os-example-evidence">
+          <span class="os-example-evidence-label">Evidência:</span>
+          <span>Relatório ERS · Notícia Público · Dados SIGIC</span>
+        </div>
+      </div>
+      <div class="os-example-card">
+        <div class="os-example-tag os-example-tag-education">Educação</div>
+        <h3>12 dias sem aula por ano</h3>
+        <p>Quando um professor falta, a turma fica sem aula. Média de 12 dias/ano por turma no ensino básico público.</p>
+        <div class="os-example-evidence">
+          <span class="os-example-evidence-label">Evidência:</span>
+          <span>Relatório CNE · Notícia DN · Dados DGEEC</span>
+        </div>
+      </div>
+      <div class="os-example-card">
+        <div class="os-example-tag os-example-tag-digital">Serviços Digitais</div>
+        <h3>3 portais, 3 moradas</h3>
+        <p>Cidadão actualiza a morada na Segurança Social. Nas Finanças, a antiga continua. No SNS, uma diferente.</p>
+        <div class="os-example-evidence">
+          <span class="os-example-evidence-label">Evidência:</span>
+          <span>Relatório AMA · Notícia Expresso · Inquérito eGov</span>
+        </div>
+      </div>
+    </div>
+    <div class="os-cta-row">
+      <a href="/pt/observations" class="os-btn os-btn-outline">Ver todas as observações →</a>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 6: WHY STRUCTURE MATTERS -->
+<div class="os-section os-section-why" id="matters">
+  <div class="os-section-inner">
+    <h2 class="os-section-label">Porque é que a estrutura importa</h2>
+    <p class="os-section-intro">Experiências isoladas raramente produzem aprendizagem. Uma queixa num balcão não muda um sistema. Uma notícia que desaparece não deixa rasto.</p>
+    <p class="os-section-intro">Observações estruturadas permitem que a sociedade identifique padrões recorrentes. O problema deixa de ser "um caso" e passa a ser "um padrão do sistema" — documentado, verificável, público.</p>
+    <p class="os-section-intro os-section-intro-strong">Não prometemos resolver nada. Prometemos documentar o que acontece — para que quem decide, investiga ou vive os serviços públicos tenha uma base factual de trabalho.</p>
+  </div>
+</div>
+
+<!-- SECTION 7: CONTRIBUTE -->
 <div class="os-section os-section-cta" id="contribute">
   <div class="os-section-inner">
     <h2 class="os-section-label">Contribuir</h2>
-    <p class="os-cta-text">Qualquer pessoa pode contribuir para o OpenState. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público, podes documentá-lo.</p>
-    <div class="os-cards">
-      <div class="os-card">
-        <h3>Formato estruturado</h3>
-        <p>Cada observação segue um formato: o que acontece, quem é afetado, evidência, sistema envolvido e impacto.</p>
+    <p class="os-cta-text">Qualquer pessoa pode contribuir. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público, podes documentá-lo.</p>
+    <div class="os-steps">
+      <div class="os-step">
+        <div class="os-step-num">1</div>
+        <div class="os-step-content">
+          <h3>Observar</h3>
+          <p>Identificas um problema real — algo que aconteceu, não uma suposição.</p>
+        </div>
       </div>
-      <div class="os-card">
-        <h3>Evidência obrigatória</h3>
-        <p>Notícias, relatórios oficiais, dados públicos, legislação ou casos reais documentados. Sem evidência, não há observação.</p>
+      <div class="os-step-connector"></div>
+      <div class="os-step">
+        <div class="os-step-num">2</div>
+        <div class="os-step-content">
+          <h3>Documentar</h3>
+          <p>Descreves o que aconteceu, quem foi afectado, que sistema está envolvido.</p>
+        </div>
       </div>
-      <div class="os-card">
-        <h3>Clareza e neutralidade</h3>
-        <p>Linguagem factual. Sem enquadramento político. Sem dados pessoais. Observações e soluções são estritamente separadas.</p>
+      <div class="os-step-connector"></div>
+      <div class="os-step">
+        <div class="os-step-num">3</div>
+        <div class="os-step-content">
+          <h3>Evidenciar</h3>
+          <p>Anexas fontes verificáveis — notícias, relatórios, dados públicos, legislação.</p>
+        </div>
+      </div>
+      <div class="os-step-connector"></div>
+      <div class="os-step">
+        <div class="os-step-num">4</div>
+        <div class="os-step-content">
+          <h3>Publicar</h3>
+          <p>A observação torna-se parte do conhecimento público do OpenState.</p>
+        </div>
       </div>
     </div>
     <div class="os-cta-row">
       <a href="https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml" class="os-btn os-btn-primary" target="_blank">Submeter observação →</a>
       <a href="/pt/contribute" class="os-text-link">Ler o guia completo</a>
-    </div>
-  </div>
-</div>
-
-<!-- FOOTER -->
-<div class="os-footer">
-  <div class="os-section-inner">
-    <div class="os-footer-row">
-      <span class="os-footer-text">OpenState</span>
-      <span class="os-footer-sep">·</span>
-      <a href="/" class="os-lang-active">PT</a>
-      <span class="os-footer-sep">·</span>
-      <a href="/en/">EN</a>
-      <span class="os-footer-sep">·</span>
-      <a href="https://github.com/andreclemente/openstate">GitHub</a>
     </div>
   </div>
 </div>
