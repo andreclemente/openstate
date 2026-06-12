@@ -23,39 +23,30 @@ html {
   scroll-behavior: smooth;
 }
 
-// --- Landing page: hide just-the-docs chrome ---
-.os-hide-chrome .side-bar,
-.os-hide-chrome .main-header,
-.os-hide-chrome #search-input,
-.os-hide-chrome .site-footer,
-.os-hide-chrome .footer,
-.os-hide-chrome nav.breadcrumb-nav,
-.os-hide-chrome #site-nav,
-.os-hide-chrome .site-nav,
-.os-hide-chrome .search {
+// --- Landing page: hide just-the-docs chrome via body:has() ---
+body:has(.os-page) .side-bar,
+body:has(.os-page) .main-header,
+body:has(.os-page) #search-input,
+body:has(.os-page) .site-footer,
+body:has(.os-page) .footer,
+body:has(.os-page) nav.breadcrumb-nav,
+body:has(.os-page) #site-nav,
+body:has(.os-page) .site-nav,
+body:has(.os-page) .search {
   display: none !important;
 }
 
-.os-hide-chrome .main-content {
+body:has(.os-page) .main-content,
+body:has(.os-page) .main-content-wrap {
   max-width: 100% !important;
   margin: 0 !important;
   padding: 0 !important;
   background: var(--os-bg) !important;
 }
 
-.os-hide-chrome .main-content-wrap {
+body:has(.os-page) .main {
+  margin-left: 0 !important;
   max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--os-bg) !important;
-}
-
-.os-hide-chrome a {
-  color: var(--os-accent);
-  text-decoration: none;
-}
-.os-hide-chrome a:hover {
-  text-decoration: underline;
 }
 
 // --- Landing page wrapper ---
