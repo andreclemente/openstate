@@ -1,32 +1,32 @@
 # OpenState
 
-An open observability system for public services.
+A structured observability system for public services.
 
 ---
 
 ## Purpose
 
-OpenState is a structured knowledge system for documenting real-world problems in public services.
+OpenState documents how public services behave in reality.
 
-The goal is not political discussion. The goal is to treat public systems like complex systems that can be observed, documented, and understood.
+Not to debate solutions. Not to push agendas. To observe, document, and create structured evidence about what happens — so patterns become visible and understanding replaces assumption.
+
+## What OpenState produces
+
+**Structured observations** — each one describes a real problem in a public service, with evidence, impact, and system context.
+
+**Pattern visibility** — over time, observations connect. Isolated problems reveal systemic issues.
+
+**Evidence-based understanding** — decisions grounded in documented reality, not opinion.
 
 ---
 
 ## Core Principles
 
-- Focus only on observable, reproducible problems
-- Every observation must be supported by evidence (news, data, reports, legislation, or real cases)
-- Observations and solutions are separated
-- No ideological or partisan discussion
-- Clarity and structure are more than opinion
-
----
-
-## How it works
-
-People submit **structured observations** of public service problems. Each observation includes a description, evidence, system context, and impact.
-
-The **GitHub repository** stores all structured data. The documentation site is the reading layer.
+- Observable, reproducible problems only
+- Evidence required for every observation
+- Observations separated from solutions
+- No ideological or partisan framing
+- Structure over opinion
 
 ---
 
@@ -37,7 +37,7 @@ The **GitHub repository** stores all structured data. The documentation site is 
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit observations and proposals.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for submission format and process.
 
 ## License
 

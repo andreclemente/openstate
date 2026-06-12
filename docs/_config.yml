@@ -1,9 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
 
 title: OpenState
-description: An open observability system for public services
+description: A structured observability system for public services
 url: https://openstate.andreclemente.dev
-show_downloads: false
 
 color_scheme: dark
 
@@ -14,18 +13,10 @@ search_exclude:
   - 404.md
 
 aux_links:
-  "GitHub": "https://github.com/andreclemente/openstate"
-  "🇵🇹 PT": "/pt/"
   "🇬🇧 EN": "/en/"
-  "Examples": "/en/examples"
+  "🇵🇹 PT": "/pt/"
 
 nav_sort: case_insensitive
-
-gh_edit_link: true
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/andreclemente/openstate"
-gh_edit_branch: "main"
-gh_edit_source: docs
 
 callouts:
   highlight:

@@ -6,4 +6,6 @@ has_children: true
 
 # English Documentation
 
-Welcome to the OpenState documentation.
+OpenState is a structured observability system for public services.
+
+This documentation explains how observations work and how to contribute.

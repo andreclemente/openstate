@@ -133,19 +133,3 @@ Observações reais escritas no formato estruturado do OpenState.
 
     ## Observações relacionadas
     #67 (autenticação única), #89 (interoperabilidade)
-
----
-
-## Submeter uma proposta
-
-Tens uma solução para um destes problemas? Submete uma proposta estruturada:
-
-### [💡 Submeter Proposta de Solução](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
-
----
-
-## Reportar um problema
-
-Encontraste um problema que ainda não está documentado? Reporta-o:
-
-### [👁️ Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)

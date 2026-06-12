@@ -133,19 +133,3 @@ Real-world observations written in the OpenState structured format.
 
     ## Related observations
     #67 (single sign-on), #89 (interoperability)
-
----
-
-## Submit a proposal
-
-Have a solution for one of these problems? Submit a structured proposal:
-
-### [💡 Submit a Solution Proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
-
----
-
-## Report a problem
-
-Found a problem that's not documented yet? Report it:
-
-### [👁️ Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)

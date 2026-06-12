@@ -1,31 +1,31 @@
 # Contributing to OpenState
 
-Thank you for your interest in contributing! OpenState is a community-driven project to document and understand public services.
+OpenState uses GitHub as its structured observation store.
 
-## Quick Start
+## Quick start
 
 1. **Observed a problem?** → [Submit an observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 2. **Have a solution?** → [Submit a proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
-3. **Want to discuss the project?** → [Open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml)
+3. **Questions about the project?** → [Open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml)
 
 ## Rules
 
-### What is accepted
+### Accepted
 
-- **Observable, reproducible** problems in public services
-- **Concrete** evidence (news, data, reports, legislation)
-- **Factual**, neutral descriptions — no opinions
-- **Structured** proposals (separate from the observation)
+- Observable, reproducible problems in public services
+- Concrete evidence (news, data, reports, legislation, real cases)
+- Factual, neutral descriptions — no opinions
+- Structured proposals (separate from the observation)
 
-### What is rejected
+### Rejected
 
-- **Opinions** without evidence
-- **Personal data** of third parties
-- **Political** or ideological language
-- **Duplicates** — search if the problem already exists first
-- **Solutions without observations** — describe the problem first
+- Opinions without evidence
+- Personal data of third parties
+- Political or ideological language
+- Duplicates — search first
+- Solutions without observations — describe the problem first
 
-## Observation Lifecycle
+## Observation lifecycle
 
 ```
 Draft → Confirmed → Analyzed → Proposed
@@ -50,8 +50,8 @@ Draft → Confirmed → Analyzed → Proposed
 
 ## Writing in Portuguese or English
 
-You can write in either language. Observations written in Portuguese are automatically translated to English by a bot. The translation appears as a comment. The original text remains as the authoritative version.
+Write in either language. Portuguese observations are automatically translated to English. The original text remains authoritative.
 
 ## Contact
 
-For questions about the project itself, [open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml).
+For questions about the project, [open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml).

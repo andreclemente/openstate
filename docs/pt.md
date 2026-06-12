@@ -6,4 +6,6 @@ has_children: true
 
 # Documentação em Português
 
-Bem-vindo à documentação do OpenState.
+OpenState é um sistema de observabilidade estruturado para serviços públicos.
+
+Esta documentação explica como funcionam as observações e como contribuir.

@@ -5,28 +5,30 @@ nav_order: 0
 
 # OpenState
 
-**An open observability system for public services.**
+**A structured observability system for public services.**
 
 ---
 
-OpenState exists to **understand how public systems behave in reality**.
+Public services are complex. That complexity produces problems — fragmented processes, duplicated efforts, invisible bottlenecks. Most of these problems are isolated, undocumented, and never connected to each other.
 
-Public services are complex. That complexity produces friction, inefficiency, and problems that affect millions of people. Most of these problems are isolated, undocumented, and never connected to each other.
-
-OpenState changes that.
-
-[Read the documentation in English →](en/)
+OpenState exists to change that.
 
 ---
 
-OpenState existe para **compreender como os sistemas públicos funcionam na realidade**.
+OpenState produces **structured observations** of public systems. Each observation describes what happens, who is affected, and what evidence supports it. No opinions. No ideology. Just documented reality.
 
-Os serviços públicos são complexos. Essa complexidade produz fricção, ineficiência e problemas que afetam milhões de pessoas. A maioria destes problemas está isolada, sem documentação e nunca é conectada a outros.
-
-OpenState muda isso.
-
-[Ler a documentação em Português →](pt/)
+Over time, observations reveal **patterns** — recurring problems across systems, common root causes, systemic gaps. This creates an evidence-based understanding of how public services actually behave.
 
 ---
 
-**[👁️ Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)**
+## Documentation
+
+- [How it works](en/how-it-works) — the observation model, evidence, structure
+- [Examples](en/examples) — real observations in structured format
+- [Contribute](en/contribute) — submit observations
+
+## Documentação
+
+- [Como funciona](pt/how-it-works) — o modelo de observação, evidência, estrutura
+- [Exemplos](pt/examples) — observações reais em formato estruturado
+- [Contribuir](pt/contribute) — submeter observações

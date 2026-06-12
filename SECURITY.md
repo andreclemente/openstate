@@ -8,11 +8,11 @@
 
 ## Reporting a Vulnerability
 
-OpenState is a documentation and issue-tracking project. It does not run services or handle user data.
+OpenState is a structured documentation project. It does not run services or handle user data.
 
-If you find a security concern in the repository (e.g., exposed credentials, vulnerable dependencies), please:
+If you find a security concern in the repository (e.g., exposed credentials, vulnerable dependencies):
 
-1. **Do not** open a public issue.
+1. **Do not** open a public observation.
 2. Contact the maintainer directly via GitHub: [@andreclemente](https://github.com/andreclemente)
 3. Allow reasonable time for a response before any public disclosure.
 
