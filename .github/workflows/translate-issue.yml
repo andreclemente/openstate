@@ -11,125 +11,21 @@ jobs:
   translate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Detect language and translate
-        id: translate
-        uses: actions/github-script@v7
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Translate
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-        with:
-          script: |
-            const issue = context.payload.issue;
-            const body = issue.body || '';
-            const title = issue.title || '';
-            const fullText = title + ' ' + body;
-
-            // Skip if already has translated label
-            const existingLabels = issue.labels.map(l => l.name);
-            if (existingLabels.includes('translated')) {
-              console.log('Already translated. Skipping.');
-              return;
-            }
-
-            // Simple heuristic: check for common Portuguese words
-            const ptWords = ['o', 'a', 'os', 'as', 'um', 'uma', 'de', 'do', 'da', 'dos', 'das', 'em', 'no', 'na', 'nos', 'nas', 'por', 'para', 'com', 'sem', 'que', 'se', 'é', 'foi', 'está', 'tem', 'são', 'mais', 'muito', 'como', 'mas', 'ou', 'quando', 'onde', 'porque', 'também', 'já', 'ainda', 'depois', 'antes', 'entre', 'sobre', 'até', 'desde', 'durante', 'apenas', 'mesmo', 'outro', 'outra', 'cada', 'todo', 'toda', 'não', 'sim', 'aqui', 'agora', 'hoje', 'sempre', 'nunca', 'bem', 'mal', 'melhor', 'pior', 'maior', 'menor', 'grande', 'pequeno', 'novo', 'velho', 'bom', 'mau', 'primeiro', 'último', 'geral', 'possível', 'diferente', 'importante', 'necessário', 'capaz', 'difícil', 'fácil', 'simples', 'complexo', 'claro', 'certo', 'errado', 'real', 'público', 'privado', 'interno', 'externo', 'local', 'nacional', 'moderno', 'antigo', 'atual', 'passado', 'futuro', 'presente', 'disponível', 'acessível', 'gratuito', 'pago', 'obrigatório', 'opcional', 'natural', 'humano', 'digital', 'físico', 'temporal', 'permanente', 'definitivo', 'parcial', 'total', 'completo', 'positivo', 'negativo', 'neutro', 'objetivo', 'concreto', 'prático', 'profissional', 'pessoal', 'social', 'económico', 'cultural', 'ambiental', 'tecnológico', 'científico', 'médico', 'jurídico', 'administrativo', 'comercial', 'industrial', 'educativo', 'hospitalar', 'escolar', 'judicial', 'governamental', 'estatal', 'municipal', 'familiar', 'individual', 'coletivo', 'financeiro', 'transporte', 'comunicação', 'programação', 'desenvolvimento', 'produção', 'distribuição', 'consumo', 'venda', 'compra', 'sistema', 'plataforma', 'portal', 'site', 'aplicação', 'software', 'dados', 'servidor', 'cliente', 'utilizador', 'administrador', 'gestor', 'responsável', 'técnico', 'especialista', 'professor', 'aluno', 'estudante', 'participante', 'membro', 'colaborador', 'parceiro', 'fornecedor', 'consumidor', 'utente', 'cidadão', 'habitante', 'residente', 'visitante', 'turista', 'empregado', 'trabalhador', 'empresário', 'investidor', 'proprietário', 'comprador', 'vendedor', 'juiz', 'advogado', 'agente', 'funcionário', 'autoridade', 'governo', 'ministro', 'deputado', 'presidente', 'relatório', 'documento', 'registo', 'base', 'rede', 'imagem', 'vídeo', 'notícia', 'jornal', 'revista', 'rádio', 'televisão', 'imprensa', 'media', 'segurança', 'proteção', 'defesa', 'vigilância', 'controlo', 'regulação', 'fiscalização', 'inspeção', 'auditoria', 'avaliação', 'análise', 'investigação', 'pesquisa', 'estudo', 'programa', 'plano', 'projeto', 'proposta', 'orçamento', 'receita', 'despesa', 'imposto', 'taxa', 'contribuição', 'subsídio', 'apoio', 'ajuda', 'serviço', 'atendimento', 'consulta', 'exame', 'tratamento', 'operação', 'internação', 'alta', 'urgência', 'emergência', 'triagem', 'espera', 'lista', 'marcação', 'agendamento', 'hora', 'dia', 'semana', 'mês', 'ano', 'tempo', 'período', 'prazo', 'data', 'momento', 'ocasião', 'situação', 'caso', 'exemplo', 'tipo', 'forma', 'modo', 'maneira', 'parte', 'ponto', 'lado', 'aspecto', 'questão', 'problema', 'assunto', 'tema', 'área', 'setor', 'domínio', 'campo', 'nível', 'grau', 'medida', 'dimensão', 'extensão', 'valor', 'preço', 'custo', 'quantidade', 'número', 'percentagem', 'taxa', 'média', 'total', 'mínimo', 'máximo', 'aproximadamente', 'cerca', 'quase', 'mesmo', 'próprio', 'tal', 'qual', 'qualquer', 'algum', 'nenhum', 'todo', 'cada', 'outro', 'mesmo', 'diferente', 'semelhante', 'igual', 'distinto', 'específico', 'geral', 'particular', 'comum', 'raro', 'frequente', 'normal', 'típico', 'característico', 'essencial', 'fundamental', 'básico', 'principal', 'secundário', 'adicional', 'complementar', 'relacionado', 'associado', 'ligado', 'conectado', 'integrado', 'único', 'múltiplo', 'diverso', 'variado', 'amplo', 'reduzido', 'limitado', 'ilimitado', 'aberto', 'fechado', 'ativo', 'inativo', 'visível', 'invisível', 'público', 'privado', 'gratuito', 'pago', 'obrigatório', 'voluntário', 'facultativo', 'automático', 'manual', 'direto', 'indireto', 'imediato', 'posterior', 'anterior', 'seguinte', 'anterior', 'atual', 'antigo', 'recente', 'futuro', 'passado', 'presente', 'definitivo', 'provisório', 'temporário', 'permanente', 'parcial', 'total', 'completo', 'incompleto', 'absoluto', 'relativo', 'positivo', 'negativo', 'neutro', 'favorável', 'desfavorável', 'bom', 'mau', 'ótimo', 'péssimo', 'excelente', 'terrível', 'maravilhoso', 'horrível', 'incrível', 'impressionante', 'significativo', 'relevante', 'irrelevante', 'útil', 'inútil', 'eficaz', 'ineficaz', 'eficiente', 'ineficiente', 'rápido', 'lento', 'curto', 'longo', 'alto', 'baixo', 'forte', 'fraco', 'leve', 'pesado', 'frio', 'quente', 'seco', 'molhado', 'limpo', 'sujo', 'claro', 'escuro', 'brilhante', 'opaco', 'transparente', 'sólido', 'líquido', 'gasoso', 'natural', 'artificial', 'orgânico', 'inorgânico', 'biológico', 'químico', 'físico', 'mental', 'emocional', 'psicológico', 'espiritual', 'material', 'imaterial', 'tangível', 'intangível', 'concreto', 'abstrato', 'teórico', 'prático', 'académico', 'científico', 'tecnológico', 'industrial', 'comercial', 'financeiro', 'económico', 'político', 'social', 'cultural', 'artístico', 'desportivo', 'recreativo', 'turístico', 'ambiental', 'ecológico', 'sustentável', 'renovável', 'não-renovável', 'nacional', 'internacional', 'global', 'regional', 'local', 'urbano', 'rural', 'metropolitano', 'periférico', 'central', 'marginal', 'tradicional', 'moderno', 'contemporâneo', 'futurista', 'clássico', 'vanguardista', 'conservador', 'progressista', 'liberal', 'democrático', 'autoritário', 'centralizado', 'descentralizado', 'federal', 'unitário', 'autónomo', 'independente', 'dependente', 'subordinado', 'superior', 'inferior', 'anterior', 'posterior', 'superior', 'inferior', 'interno', 'externo', 'norte', 'sul', 'este', 'oeste', 'centro', 'periferia', 'origem', 'destino', 'início', 'fim', 'começo', 'final', 'princípio', 'conclusão', 'resultado', 'consequência', 'efeito', 'causa', 'motivo', 'razão', 'fundamento', 'base', 'origem', 'fonte', 'recurso', 'meio', 'instrumento', 'ferramenta', 'método', 'técnica', 'procedimento', 'processo', 'etapa', 'fase', 'passo', 'estágio', 'nível', 'grau', 'escala', 'dimensão', 'tamanho', 'formato', 'estrutura', 'organização', 'ordem', 'desordem', 'sistema', 'mecanismo', 'dispositivo', 'equipamento', 'material', 'instrumento', 'objeto', 'artigo', 'produto', 'mercadoria', 'bem', 'serviço', 'oferta', 'procura', 'mercado', 'economia', 'finanças', 'contabilidade', 'gestão', 'administração', 'direção', 'liderança', 'coordenação', 'supervisão', 'controlo', 'regulação', 'legislação', 'regulamento', 'norma', 'lei', 'decreto', 'portaria', 'resolução', 'deliberação', 'decisão', 'parecer', 'opinião', 'juízo', 'avaliação', 'apreciação', 'análise', 'exame', 'verificação', 'inspeção', 'fiscalização', 'auditoria', 'inquérito', 'investigação', 'pesquisa', 'estudo', 'relatório', 'documento', 'registo', 'arquivo', 'base', 'dados', 'informação', 'conhecimento', 'sabedoria', 'experiência', 'competência', 'habilidade', 'capacidade', 'aptidão', 'talento', 'qualidade', 'defeito', 'erro', 'falha', 'problema', 'dificuldade', 'obstáculo', 'barreira', 'limite', 'restrição', 'condição', 'requisito', 'critério', 'parâmetro', 'indicador', 'índice', 'taxa', 'razão', 'proporção', 'percentagem', 'fração', 'parte', 'porção', 'segmento', 'secção', 'divisão', 'categoria', 'classe', 'grupo', 'conjunto', 'série', 'sequência', 'cadeia', 'rede', 'malha', 'teia', 'estrutura', 'armação', 'esqueleto', 'base', 'fundamento', 'alicerce', 'pilar', 'coluna', 'viga', 'parede', 'teto', 'chão', 'porta', 'janela', 'escada', 'elevador', 'corredor', 'sala', 'escritório', 'gabinete', 'departamento', 'divisão', 'secção', 'unidade', 'serviço', 'organismo', 'instituição', 'entidade', 'organização', 'empresa', 'firma', 'companhia', 'sociedade', 'associação', 'fundação', 'cooperativa', 'sindicato', 'confederação', 'federação', 'união', 'aliança', 'parceria', 'acordo', 'contrato', 'convénio', 'protocolo', 'compromisso', 'obrigação', 'dever', 'direito', 'privilégimo', 'benefício', 'vantagem', 'desvantagem', 'inconveniente', 'problema', 'dificuldade', 'obstáculo', 'impedimento', 'bloqueio', 'interrupção', 'suspensão', 'cancelamento', 'adiamento', 'prorrogação', 'renovação', 'extinção', 'criação', 'estabelecimento', 'fundação', 'constituição', 'formação', 'desenvolvimento', 'crescimento', 'expansão', 'redução', 'diminuição', 'aumento', 'melhoria', 'piora', 'degradação', 'deterioração', 'destruição', 'reconstrução', 'restauração', 'renovação', 'modernização', 'reforma', 'transformação', 'mudança', 'alteração', 'modificação', 'adaptação', 'ajuste', 'correção', 'revisão', 'atualização', 'publicação', 'edição', 'impressão', 'distribuição', 'difusão', 'divulgação', 'comunicação', 'informação', 'notícia', 'reportagem', 'artigo', 'texto', 'documento', 'obra', 'trabalho', 'estudo', 'pesquisa', 'investigação', 'experiência', 'ensaio', 'teste', 'prova', 'exame', 'avaliação', 'classificação', 'ranking', 'posição', 'lugar', 'posto', 'nível', 'categoria', 'tipo', 'espécie', 'género', 'família', 'ordem', 'classe', 'filo', 'reino', 'domínio', 'universo', 'mundo', 'planeta', 'terra', 'país', 'nação', 'estado', 'região', 'província', 'distrito', 'concelho', 'freguesia', 'localidade', 'vila', 'cidade', 'capital', 'metrópole', 'aldeia', 'povoação', 'zona', 'área', 'território', 'espaço', 'lugar', 'ponto', 'local', 'sítio', 'posição', 'localização', 'situação', 'circunstância', 'contexto', 'ambiente', 'meio', 'entorno', 'vizinhança', 'proximidade', 'distância', 'percurso', 'trajeto', 'caminho', 'rota', 'itinerário', 'via', 'estrada', 'rua', 'avenida', 'praça', 'largo', 'beco', 'travessa', 'calçada', 'passeio', 'jardim', 'parque', 'quinta', 'campo', 'montanha', 'vale', 'rio', 'lago', 'mar', 'oceano', 'costa', 'praia', 'ilha', 'península', 'continente', 'hemisfério', 'latitude', 'longitude', 'altitude', 'profundidade', 'largura', 'comprimento', 'altura', 'espessura', 'diâmetro', 'raio', 'perímetro', 'área', 'volume', 'massa', 'peso', 'densidade', 'pressão', 'temperatura', 'humidade', 'vento', 'chuva', 'neve', 'gelo', 'sol', 'lua', 'estrela', 'planeta', 'galáxia', 'universo', 'espaço', 'tempo', 'duração', 'momento', 'instante', 'segundo', 'minuto', 'hora', 'dia', 'semana', 'mês', 'ano', 'década', 'século', 'milénio', 'era', 'época', 'período', 'fase', 'etapa', 'ciclo', 'processo', 'evolução', 'desenvolvimento', 'progresso', 'avanço', 'recuo', 'regresso', 'retorno', 'volta', 'chegada', 'partida', 'ida', 'vida', 'morte', 'nascimento', 'origem', 'fim', 'princípio', 'meio', 'fim', 'início', 'conclusão', 'resultado', 'consequência', 'efeito', 'impacto', 'influência', 'repercussão', 'sequência', 'continuação', 'prosseguimento', 'seguimento', 'acompanhamento', 'monitorização', 'vigilância', 'observação', 'inspeção', 'controlo', 'verificação', 'confirmação', 'validação', 'aprovação', 'rejeição', 'aceitação', 'recusa', 'autorização', 'proibição', 'permissão', 'restrição', 'limitação', 'condicionamento', 'determinação', 'definição', 'delimitação', 'demarcação', 'estabelecimento', 'fixação', 'determinação', 'decisão', 'resolução', 'solução', 'resposta', 'réplica', 'contra-resposta', 'argumento', 'justificação', 'explicação', 'fundamentação', 'demonstração', 'prova', 'evidência', 'indício', 'sinal', 'marca', 'vestígio', 'rastro', 'pista', 'pista', 'dica', 'sugestão', 'recomendação', 'conselho', 'orientação', 'instrução', 'direção', 'indicação', 'referência', 'menção', 'citação', 'citação', 'nota', 'observação', 'comentário', 'opinião', 'juízo', 'avaliação', 'apreciação', 'crítica', 'elogio', 'reprovação', 'censura', 'aprovação', 'rejeição', 'aceitação', 'admissão', 'inclusão', 'exclusão', 'seleção', 'escolha', 'opção', 'alternativa', 'possibilidade', 'oportunidade', 'ocasião', 'momento', 'instante', 'altura', 'época', 'tempo', 'período', 'fase', 'etapa', 'passo', 'estágio', 'nível', 'grau', 'escala', 'patamar', 'degrau', 'escada', 'subida', 'descida', 'ascensão', 'queda', 'queda', 'declínio', 'decadência', 'degradação', 'deterioração', 'destruição', 'ruína', 'colapso', 'falência', 'insucesso', 'fracasso', 'sucesso', 'êxito', 'vitória', 'derrota', 'perda', 'ganho', 'benefício', 'prejuízo', 'dano', 'prejuízo', 'lucro', 'rendimento', 'receita', 'despesa', 'custo', 'preço', 'valor', 'montante', 'quantia', 'soma', 'total', 'parcial', 'completo', 'incompleto', 'absoluto', 'relativo', 'aproximado', 'exato', 'preciso', 'rigoroso', 'detalhado', 'pormenorizado', 'minucioso', 'exaustivo', 'completo', 'abrangente', 'amplo', 'vasto', 'extenso', 'longo', 'curto', 'breve', 'rápido', 'lento', 'gradual', 'progressivo', 'contínuo', 'descontínuo', 'intermitente', 'periódico', 'regular', 'irregular', 'constante', 'variável', 'fixo', 'móvel', 'estático', 'dinâmico', 'estável', 'instável', 'permanente', 'temporário', 'provisório', 'definitivo', 'transitório', 'efémero', 'duradouro', 'eterno', 'infinito', 'limitado', 'ilimitado', 'finito', 'infinito', 'possível', 'impossível', 'provável', 'improvável', 'certo', 'incerto', 'seguro', 'inseguro', 'confiável', 'não-confiável', 'fiável', 'infiável', 'válido', 'inválido', 'legítimo', 'ilegítimo', 'legal', 'ilegal', 'lícito', 'ilícito', 'justo', 'injusto', 'equitativo', 'inequitativo', 'igual', 'desigual', 'equilibrado', 'desequilibrado', 'simétrico', 'assimétrico', 'proporcional', 'desproporcional', 'adequado', 'inadequado', 'apropriado', 'inapropriado', 'conveniente', 'inconveniente', 'oportuno', 'inoportuno', 'pertinente', 'impertinente', 'relevante', 'irrelevante', 'significativo', 'insignificante', 'importante', 'secundário', 'principal', 'acessório', 'essencial', 'supérfluo', 'necessário', 'desnecessário', 'indispensável', 'dispensável', 'obrigatório', 'facultativo', 'opcional', 'voluntário', 'involuntário', 'consciente', 'inconsciente', 'intencional', 'não-intencional', 'deliberado', 'acidental', 'intencional', 'acidental', 'natural', 'artificial', 'espontâneo', 'forçado', 'voluntário', 'compulsório', 'obrigatório', 'livre', 'gratuito', 'pago', 'oneroso', 'dispendioso', 'económico', 'barato', 'caro', 'acessível', 'inacessível', 'disponível', 'indisponível', 'obtenível', 'atingível', 'alcançável', 'inatingível', 'realizatingível', 'exequível', 'inexequível', 'viável', 'inviável', 'praticável', 'impraticável', 'funcional', 'disfuncional', 'operacional', 'inoperacional', 'ativo', 'inativo', 'ligado', 'desligado', 'aberto', 'fechado', 'público', 'privado', 'interno', 'externo', 'nacional', 'internacional', 'local', 'global', 'geral', 'específico', 'particular', 'universal', 'individual', 'coletivo', 'comum', 'pessoal', 'próprio', 'alheio', 'estranho', 'familiar', 'desconhecido', 'conhecido', 'reconhecido', 'identificado', 'classificado', 'categorizado', 'organizado', 'estruturado', 'sistematizado', 'metodológico', 'metódico', 'sistemático', 'organizado', 'ordenado', 'arrumado', 'limpo', 'arrumado', 'desordenado', 'caótico', 'confuso', 'claro', 'óbvio', 'evidente', 'manifesto', 'patente', 'notório', 'público', 'conhecido', 'famoso', 'célebre', 'renomado', 'prestigiado', 'respeitado', 'valorizado', 'apreciado', 'reconhecido', 'admitido', 'aceito', 'aprovado', 'validado', 'confirmado', 'verificado', 'comprovado', 'demonstrado', 'provado', 'atestado', 'certificado', 'garantido', 'assegurado', 'protegido', 'defendido', 'salvaguardado', 'preservado', 'conservado', 'mantido', 'sustentado', 'suportado', 'tolerado', 'suportado', 'aguentado', 'resistido', 'enfrentado', 'confrontado', 'combatido', 'lutado', 'batalhado', 'guerreado', 'competido', 'concorrido', 'rivalizado', 'comparado', 'contrastado', 'diferenciado', 'distinto', 'distinguido', 'destacado', 'saliente', 'notável', 'significativo', 'relevante', 'importante', 'fundamental', 'essencial', 'primordial', 'básico', 'elementar', 'primário', 'secundário', 'terciário', 'quaternário', 'quinário', 'senário', 'septenário', 'octonário', 'nonário', 'denário'];
-
-            const words = fullText.toLowerCase().split(/\s+/).filter(w => w.length > 1);
-            const ptCount = words.filter(w => ptWords.includes(w)).length;
-            const ptRatio = words.length > 0 ? ptCount / words.length : 0;
-
-            // Lower threshold: 2% Portuguese words triggers translation
-            const needsTranslation = ptRatio > 0.02;
-
-            if (!needsTranslation) {
-              console.log(`Issue appears to be in English (ptRatio: ${ptRatio.toFixed(3)}). Skipping translation.`);
-              return;
-            }
-
-            console.log(`Detected Portuguese content (ptRatio: ${ptRatio.toFixed(3)}). Translating...`);
-
-            const translatePrompt = [
-              'Translate the following GitHub issue from Portuguese to English.',
-              'Keep the exact same structure, formatting, and markdown.',
-              'Only translate the text content, not code, URLs, or proper nouns.',
-              '',
-              'Title: ' + title,
-              '',
-              'Body:',
-              body,
-              '',
-              'Provide the translation in this exact format:',
-              '---TITLE---',
-              '[translated title]',
-              '---BODY---',
-              '[translated body]'
-            ].join('\n');
-
-            const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'Bearer ' + process.env.OPENROUTER_API_KEY,
-                'HTTP-Referer': 'https://github.com/andreclemente/openstate',
-                'X-Title': 'OpenState Auto-Translate'
-              },
-              body: JSON.stringify({
-                model: 'google/gemini-2.0-flash-001',
-                messages: [
-                  { role: 'system', content: 'You are a professional translator. Translate Portuguese to English accurately while preserving markdown structure, formatting, and technical terms.' },
-                  { role: 'user', content: translatePrompt }
-                ],
-                temperature: 0.3,
-                max_tokens: 4000
-              })
-            });
-
-            if (!response.ok) {
-              const errText = await response.text();
-              console.error('Translation API error:', response.status, errText);
-              return;
-            }
-
-            const data = await response.json();
-            const translation = data.choices[0]?.message?.content;
-
-            if (!translation) {
-              console.error('Empty translation response');
-              return;
-            }
-
-            const titleMatch = translation.match(/---TITLE---\n([\s\S]*?)\n---BODY---/);
-            const bodyMatch = translation.match(/---BODY---\n([\s\S]*)/);
-
-            if (!titleMatch || !bodyMatch) {
-              console.error('Failed to parse translation response');
-              return;
-            }
-
-            const translatedTitle = titleMatch[1].trim();
-            const translatedBody = bodyMatch[1].trim();
-
-            const commentLines = [
-              '## 🇬🇧 English Translation',
-              '',
-              '> This issue was written in Portuguese. Below is an automatic translation for English-speaking readers.',
-              '',
-              '### ' + translatedTitle,
-              '',
-              translatedBody,
-              '',
-              '---',
-              '',
-              '*This translation was auto-generated. The original issue above is the authoritative version.*'
-            ];
-
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: issue.number,
-              body: commentLines.join('\n')
-            });
-
-            console.log('Translation posted successfully.');
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/translate.js
