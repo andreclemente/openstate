@@ -4,44 +4,9 @@ nav_exclude: true
 search_exclude: true
 ---
 
-<style>
-  :root {
-    --os-bg: #0f172a;
-    --os-card: #1e293b;
-    --os-border: #334155;
-    --os-text: #f1f5f9;
-    --os-muted: #94a3b8;
-    --os-dim: #64748b;
-    --os-accent: #38bdf8;
-  }
+{% include landing-styles.html %}
 
-  body, html { background: var(--os-bg) !important; }
-
-  .side-bar, .main-header, #search-input { display: none !important; }
-
-  .main-content {
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: var(--os-bg) !important;
-  }
-
-  .main-content-wrap {
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: var(--os-bg) !important;
-  }
-
-  .site-footer, .footer, nav.breadcrumb-nav, #site-nav, .site-nav, .search {
-    display: none !important;
-  }
-
-  .main-content a { color: var(--os-accent); text-decoration: none; }
-  .main-content a:hover { text-decoration: underline; }
-</style>
-
-<div class="os-page">
+<div class="os-page os-hide-chrome">
 
 <div class="os-hero">
   <div class="os-hero-inner">
