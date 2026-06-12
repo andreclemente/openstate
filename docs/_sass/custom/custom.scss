@@ -603,6 +603,11 @@ body:has(.os-doc-content) .main-header {
   display: none !important;
 }
 
+body:has(.os-doc-content) .main {
+  margin-left: 0 !important;
+  max-width: 100% !important;
+}
+
 body:has(.os-doc-content) .main-content {
   max-width: 100% !important;
   width: 100% !important;
