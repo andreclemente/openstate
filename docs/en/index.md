@@ -175,14 +175,12 @@ description: A structured observability system for public services. Understand h
     });
   }
   setTheme(current);
-  document.getElementById('theme-toggle').addEventListener('click', function() {
-    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    setTheme(next);
-  });
-  var mb = document.getElementById('theme-toggle-mobile');
-  if (mb) mb.addEventListener('click', function() {
-    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    setTheme(next);
+  var toggles = document.querySelectorAll('.os-theme-toggle');
+  toggles.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+      setTheme(next);
+    });
   });
   var navBtn = document.getElementById('nav-toggle');
   var navMobile = document.getElementById('nav-mobile');

@@ -801,7 +801,26 @@ html { scroll-behavior: smooth; }
 .os-404 h1 { font-size: 48px; margin-bottom: 16px; }
 .os-404 p { color: var(--os-muted); font-size: 17px; max-width: 480px; margin: 0 auto 28px; }
 
+// === LIGHT THEME: invert dark logos ===
+// Dark logo variants are light-colored (white text) — invert them for light backgrounds
+.os-doc-header-logo img,
+.os-hero-logo {
+  transition: filter 0.3s ease;
+}
+
+[data-theme="light"] .os-doc-header-logo img[src*="logo-dark"],
+[data-theme="light"] .os-doc-header-logo img[src*="logo-wordmark-dark"],
+[data-theme="light"] img.os-hero-logo[src*="logo-wordmark-dark"] {
+  filter: brightness(0) saturate(0) invert(0) brightness(0.2);
+}
+
+// === LIGHT THEME: invert favlink if needed ===
+[data-theme="light"] link[rel="icon"][type="image/webp"] {
+  /* favicon handled separately if needed */
+}
+
 // === RESPONSIVE ===
+
 @media (max-width: 768px) {
   .os-hero { padding: 56px 20px 72px; }
   .os-hero-title { font-size: 26px; }

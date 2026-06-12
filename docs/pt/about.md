@@ -61,4 +61,4 @@ O conhecimento que o OpenState produz pertence a todos. Sem restrições, sem pa
 
 ## Licença
 
-Todo o conteúdo do OpenState é publicado sob licença MIT. O código é aberto. Os dados são abertos. O conhecimento é público.
+Todo o conteúdo do OpenState é publicado sob licença CC BY 4.0. O código é aberto. Os dados são abertos. O conhecimento é público.

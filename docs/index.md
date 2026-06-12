@@ -174,16 +174,17 @@ description: Um sistema de observabilidade estruturado para serviços públicos.
       ic.style.display = ic.getAttribute('data-theme') === t ? 'inline' : 'none';
     });
   }
+  // Applytheme
   setTheme(current);
-  document.getElementById('theme-toggle').addEventListener('click', function() {
-    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    setTheme(next);
+  // Toggle buttons
+  var toggles = document.querySelectorAll('.os-theme-toggle');
+  toggles.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+      setTheme(next);
+    });
   });
-  var mb = document.getElementById('theme-toggle-mobile');
-  if (mb) mb.addEventListener('click', function() {
-    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    setTheme(next);
-  });
+  // Mobile nav
   var navBtn = document.getElementById('nav-toggle');
   var navMobile = document.getElementById('nav-mobile');
   if (navBtn && navMobile) {

@@ -61,4 +61,4 @@ The knowledge OpenState produces belongs to everyone. No restrictions, no paywal
 
 ## License
 
-All OpenState content is published under the MIT license. The code is open. The data is open. The knowledge is public.
+All OpenState content is published under the CC BY 4.0 license. The code is open. The data is open. The knowledge is public.

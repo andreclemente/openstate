@@ -108,17 +108,13 @@ layout: default
     });
   }
   setTheme(current);
-  document.getElementById('theme-toggle').addEventListener('click', function() {
-    var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    setTheme(next);
-  });
-  var mobileToggle = document.getElementById('theme-toggle-mobile');
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', function() {
+  var toggles = document.querySelectorAll('.os-theme-toggle');
+  toggles.forEach(function(btn) {
+    btn.addEventListener('click', function() {
       var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
       setTheme(next);
     });
-  }
+  });
 
   // Mobile nav
   var navBtn = document.getElementById('nav-toggle');
