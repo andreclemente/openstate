@@ -1,20 +1,15 @@
 remote_theme: just-the-docs/just-the-docs
 
 title: OpenState
-description: A structured observability system for public services
+description: Um sistema de observabilidade estruturado para serviços públicos
 url: https://openstate.andreclemente.dev
 
 color_scheme: dark
 
-search_enabled: true
-search.button: true
-
-search_exclude:
-  - 404.md
+search_enabled: false
 
 aux_links:
-  "🇬🇧 EN": "/en/"
-  "🇵🇹 PT": "/pt/"
+  "EN": "/en/"
 
 nav_sort: case_insensitive
 
@@ -24,9 +19,6 @@ callouts:
   important:
     title: Important
     color: blue
-  new:
-    title: New
-    color: green
   note:
     title: Note
     color: purple

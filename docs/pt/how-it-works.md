@@ -2,6 +2,8 @@
 title: Como Funciona
 nav_order: 2
 parent: Português
+
+layout: page
 ---
 
 # Como Funciona

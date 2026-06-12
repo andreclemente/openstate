@@ -2,6 +2,8 @@
 title: Contribuir
 nav_order: 4
 parent: Português
+
+layout: page
 ---
 
 # Contribuir
