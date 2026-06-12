@@ -5,8 +5,6 @@ layout: default
 {% assign page_path = page.url | remove: ".html" | split: "/" %}
 {% assign lang = page_path[1] %}
 {% if lang == "en" %}
-  {% assign lang_other = "pt" %}
-  {% assign other_url = page.url | remove: "/en/" | prepend: "/" %}
   {% assign home_url = "/en/" %}
   {% assign nav_how = "/en/how-it-works" %}
   {% assign nav_observations = "/en/observations" %}
@@ -16,9 +14,9 @@ layout: default
   {% assign label_observations = "Observations" %}
   {% assign label_contribute = "Contribute" %}
   {% assign label_about = "About" %}
+  {% assign label_contact = "Contact" %}
+  {% assign mission = "Documenting how public services behave in reality." %}
 {% else %}
-  {% assign lang_other = "en" %}
-  {% assign other_url = page.url | remove: "/pt/" | prepend: "/en/" %}
   {% assign home_url = "/" %}
   {% assign nav_how = "/pt/how-it-works" %}
   {% assign nav_observations = "/pt/observations" %}
@@ -28,6 +26,8 @@ layout: default
   {% assign label_observations = "Observações" %}
   {% assign label_contribute = "Contribuir" %}
   {% assign label_about = "Sobre" %}
+  {% assign label_contact = "Contacto" %}
+  {% assign mission = "Documentar como os serviços públicos funcionam na realidade." %}
 {% endif %}
 
 {% assign current_url = page.url | remove: ".html" | remove: "/" %}
@@ -47,9 +47,29 @@ layout: default
       <a href="{{ page.url | replace: '/pt/', '/en/' }}" class="{% if lang == 'en' %}active{% endif %}">EN</a>
     </div>
     <button class="os-theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-      <span class="os-theme-icon os-theme-icon-system" data-theme="system">○</span>
-      <span class="os-theme-icon os-theme-icon-light" data-theme="light">☀</span>
-      <span class="os-theme-icon os-theme-icon-dark" data-theme="dark">☾</span>
+      <span class="os-theme-icon" data-theme="system">○</span>
+      <span class="os-theme-icon" data-theme="light">☀</span>
+      <span class="os-theme-icon" data-theme="dark">☾</span>
+    </button>
+  </div>
+  <button class="os-nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
+</div>
+
+<div class="os-nav-mobile" id="nav-mobile">
+  <a href="{{ nav_how }}" class="{% if current_url == nav_how or page.url == nav_how %}active{% endif %}">{{ label_how }}</a>
+  <a href="{{ nav_observations }}" class="{% if current_url == nav_observations or page.url == nav_observations %}active{% endif %}">{{ label_observations }}</a>
+  <a href="{{ nav_contribute }}" class="{% if current_url == nav_contribute or page.url == nav_contribute %}active{% endif %}">{{ label_contribute }}</a>
+  <a href="{{ nav_about }}" class="{% if current_url == nav_about or page.url == nav_about %}active{% endif %}">{{ label_about }}</a>
+  <div class="os-nav-mobile-footer">
+    <div class="os-doc-lang-toggle">
+      <a href="{{ page.url | replace: '/en/', '/pt/' }}" class="{% unless lang == 'en' %}active{% endunless %}">PT</a>
+      <span class="sep">/</span>
+      <a href="{{ page.url | replace: '/pt/', '/en/' }}" class="{% if lang == 'en' %}active{% endif %}">EN</a>
+    </div>
+    <button class="os-theme-toggle" id="theme-toggle-mobile" aria-label="Toggle theme">
+      <span class="os-theme-icon" data-theme="system">○</span>
+      <span class="os-theme-icon" data-theme="light">☀</span>
+      <span class="os-theme-icon" data-theme="dark">☾</span>
     </button>
   </div>
 </div>
@@ -63,46 +83,55 @@ layout: default
     <div class="os-footer-row">
       <span class="os-footer-text">OpenState</span>
       <span class="os-footer-sep">·</span>
-      <span class="os-footer-mission">{% if lang == "en" %}Documenting how public services behave in reality.{% else %}Documentar como os serviços públicos funcionam na realidade.{% endif %}</span>
+      <span class="os-footer-mission">{{ mission }}</span>
     </div>
     <div class="os-footer-row os-footer-secondary">
       <a href="https://github.com/andreclemente/openstate" target="_blank">GitHub</a>
       <span class="os-footer-sep">·</span>
-      <a href="https://github.com/andreclemente/openstate/blob/main/LICENSE" target="_blank">MIT</a>
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
       <span class="os-footer-sep">·</span>
-      <a href="mailto:contact@openstate.andreclemente.dev">{% if lang == "en" %}Contact{% else %}Contacto{% endif %}</a>
-      <span class="os-footer-sep">·</span>
-      <a href="{{ page.url | replace: '/en/', '/pt/' }}" class="{% unless lang == 'en' %}os-lang-active{% endunless %}">PT</a>
-      <span class="os-footer-sep">/</span>
-      <a href="{{ page.url | replace: '/pt/', '/en/' }}" class="{% if lang == 'en' %}os-lang-active{% endif %}">EN</a>
+      <a href="mailto:contact@openstate.andreclemente.dev">{{ label_contact }}</a>
     </div>
   </div>
 </div>
 
 <script>
 (function() {
-  var toggle = document.getElementById('theme-toggle');
-  if (!toggle) return;
-  var icons = toggle.querySelectorAll('.os-theme-icon');
+  // Theme toggle
   var current = localStorage.getItem('os-theme') || 'system';
   function setTheme(t) {
     current = t;
     localStorage.setItem('os-theme', t);
     document.documentElement.setAttribute('data-theme', t);
-    icons.forEach(function(ic) {
+    document.querySelectorAll('.os-theme-icon').forEach(function(ic) {
       ic.style.display = ic.getAttribute('data-theme') === t ? 'inline' : 'none';
     });
-    if (t === 'system') {
-      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.body.style.background = prefersDark ? '#0f172a' : '#ffffff';
-    } else {
-      document.body.style.background = t === 'dark' ? '#0f172a' : '#ffffff';
-    }
   }
   setTheme(current);
-  toggle.addEventListener('click', function() {
+  document.getElementById('theme-toggle').addEventListener('click', function() {
     var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
     setTheme(next);
   });
+  var mobileToggle = document.getElementById('theme-toggle-mobile');
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', function() {
+      var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+      setTheme(next);
+    });
+  }
+
+  // Mobile nav
+  var navBtn = document.getElementById('nav-toggle');
+  var navMobile = document.getElementById('nav-mobile');
+  if (navBtn && navMobile) {
+    navBtn.addEventListener('click', function() {
+      navMobile.classList.toggle('open');
+    });
+    navMobile.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        navMobile.classList.remove('open');
+      });
+    });
+  }
 })();
 </script>
