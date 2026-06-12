@@ -18,10 +18,10 @@ It is not a discussion forum. It is not a political manifesto. It is a structure
 
 ### Principles
 
-- **Each problem is an issue** — like a bug report
-- **Evidence is mandatory** — no data, no issue
-- **Problems and solutions are separated** — describe first, propose later
-- **Focus is analysis, not debate** — structure over opinion
+- **Each problem is an issue** — like a bug report.
+- **Evidence is mandatory** — no data, no issue.
+- **Problems and solutions are separated** — describe first, propose later.
+- **Focus is analysis, not debate** — structure over opinion.
 
 ### How it works
 
@@ -69,7 +69,7 @@ This site is the **reading layer** — a human interface over the data.
 
 Got a problem to report? Use the structured form:
 
-### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+[🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 Write in **Portuguese or English**. Auto-translation included.
 

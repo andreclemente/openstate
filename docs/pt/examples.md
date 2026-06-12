@@ -8,11 +8,13 @@ parent: Português
 
 Exemplos de issues reais, escritas no formato estruturado do OpenState.
 
+> **Nota:** As labels do GitHub são em inglês. Os exemplos abaixo mostram as labels reais do repositório.
+
 ---
 
 ## Saúde
 
-**Labels:** `saúde` · `eficiência` · `alto` · `confirmado`
+**Labels:** `healthcare` `efficiency` `high` `confirmed`
 
 **Problema:** Tempo excessivo de espera para consultas de especialidade no SNS
 
@@ -54,7 +56,7 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
 
 ## Educação
 
-**Labels:** `educação` · `eficiência` · `médio` · `confirmado`
+**Labels:** `education` `efficiency` `medium` `confirmed`
 
 **Problema:** Falta de professores substitutos interrompe aulas no ensino básico
 
@@ -96,7 +98,7 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
 
 ## Serviços Digitais
 
-**Labels:** `serviços-digitais` · `fiabilidade` · `médio` · `analisado`
+**Labels:** `digital-services` `reliability` `medium` `analyzed`
 
 **Problema:** Portal do cidadão apresenta inconsistência de dados entre serviços
 

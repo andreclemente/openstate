@@ -12,7 +12,7 @@ Real-world issues written in the OpenState structured format.
 
 ## Healthcare
 
-**Labels:** `healthcare` · `efficiency` · `high` · `confirmed`
+**Labels:** `healthcare` `efficiency` `high` `confirmed`
 
 **Problem:** Excessive waiting time for specialist appointments in the public health system
 
@@ -54,7 +54,7 @@ Real-world issues written in the OpenState structured format.
 
 ## Education
 
-**Labels:** `education` · `efficiency` · `medium` · `confirmed`
+**Labels:** `education` `efficiency` `medium` `confirmed`
 
 **Problem:** Lack of substitute teachers interrupts classes in public primary schools
 
@@ -96,7 +96,7 @@ Real-world issues written in the OpenState structured format.
 
 ## Digital Services
 
-**Labels:** `digital-services` · `reliability` · `medium` · `analyzed`
+**Labels:** `digital-services` `reliability` `medium` `analyzed`
 
 **Problem:** Citizen portal shows data inconsistency across services
 

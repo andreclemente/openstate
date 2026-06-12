@@ -9,6 +9,9 @@ color_scheme: light
 search_enabled: true
 search.button: true
 
+search_exclude:
+  - 404.md
+
 aux_links:
   "GitHub": "https://github.com/andreclemente/openstate"
   "🇵🇹 PT": "/pt/"
