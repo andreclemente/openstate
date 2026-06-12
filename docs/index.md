@@ -2,6 +2,7 @@
 title: OpenState
 nav_exclude: true
 search_exclude: true
+layout: default
 ---
 
 <div class="os-page">

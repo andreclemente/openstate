@@ -1,3 +1,4 @@
 title: OpenState
 description: Um sistema de observabilidade estruturado para serviços públicos
 url: https://openstate.andreclemente.dev
+theme: jekyll-theme-primer

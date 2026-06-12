@@ -368,9 +368,9 @@ html { scroll-behavior: smooth; }
 
 // --- Doc content ---
 .os-doc-content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 56px 32px 100px;
+  max-width: 100%;
+  padding: 0 32px;
+  box-sizing: border-box;
   min-height: 60vh;
 }
 
