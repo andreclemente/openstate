@@ -512,6 +512,12 @@ html { scroll-behavior: smooth; }
   padding: 16px 32px;
   background: #0f172a;
   border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.9);
 }
 
 .os-doc-header-logo {
