@@ -2,48 +2,36 @@
 title: Como Funciona
 nav_order: 2
 parent: Português
-last_modified_at: 2026-06-11
 ---
 
 # Como Funciona
 
 ## O modelo
 
-OpenState trata serviços públicos como **sistemas complexos** que podem ser analisados e melhorados — tal como fazemos com software.
+OpenState trata serviços públicos como **sistemas complexos** que podem ser observados e analisados.
 
-Cada problema é documentado como uma **issue estruturada**, comparável a um bug report.
+Cada problema é documentado como uma **observação estruturada** — uma descrição clara e baseada em evidências do que acontece na realidade.
 
 ---
 
-## Ciclo de vida de uma issue
+## Ciclo de vida de uma observação
 
 ```
-Draft → Confirmed → Analyzed → Proposed
+Rascunho → Confirmado → Analisado → Proposto
 ```
 
 | Estado | Descrição |
 |:-------|:----------|
-| **Draft** | Problema descrito, aguarda evidência |
-| **Confirmed** | Evidência anexada, problema verificável |
-| **Analyzed** | Causa raiz identificada, impacto documentado |
-| **Proposed** | Solução estruturada submetida |
-
-### Badges de estado
-
-Usa estes badges para indicar visualmente o estado atual de uma issue em labels, comentários ou referências externas:
-
-| Estado | Badge |
-|:-------|:------|
-| Draft | `![Draft](https://img.shields.io/badge/state-Draft-informational)` |
-| Confirmed | `![Confirmed](https://img.shields.io/badge/state-Confirmed-success)` |
-| Analyzed | `![Analyzed](https://img.shields.io/badge/state-Analyzed-important)` |
-| Proposed | `![Proposed](https://img.shields.io/badge/state-Proposed-critical)` |
+| **Rascunho** | Observação descrita, aguarda evidência |
+| **Confirmado** | Evidência anexada, observação verificável |
+| **Analisado** | Causa raiz identificada, impacto documentado |
+| **Proposto** | Solução estruturada submetida |
 
 ---
 
 ## O papel da evidência
 
-> Sem evidência, não há issue. A evidência transforma uma opinião em problema documentado.
+> Sem evidência, não há observação. A evidência transforma uma opinião em facto documentado.
 
 ### Tipos de evidência aceites
 
@@ -61,22 +49,22 @@ Usa estes badges para indicar visualmente o estado atual de uma issue em labels,
 
 O sistema separa estritamente **três camadas**:
 
-### 1. Problemas (Issues)
+### 1. Observações
 O que está a acontecer. Descrição factual, reproduzível, com evidência.
 
-### 2. Análise (Discussion)
+### 2. Análise
 Porquê está a acontecer. Causa raiz, fatores contribuintes, impacto.
 
-### 3. Soluções (Proposals)
+### 3. Soluções
 O que fazer. Propostas estruturadas, acionáveis, com estimativa de impacto.
 
-> **Uma issue sem solução é válida. Uma solução sem issue não é.**
+> **Uma observação sem solução é válida. Uma solução sem observação não é.**
 
 ---
 
 ## Porquê estrutura importa mais que debate
 
-OpenState não é um fórum. Não é para discutir ideias — é para **documentar problemas**.
+OpenState não é um fórum. Não é para discutir ideias — é para **documentar a realidade**.
 
 - Sem dados pessoais de terceiros
 - Sem linguagem política ou ideológica
@@ -85,9 +73,9 @@ OpenState não é um fórum. Não é para discutir ideias — é para **document
 
 ---
 
-## Labels
+## Categorias
 
-As issues são organizadas por labels:
+As observações são organizadas por:
 
 **Setor:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 

@@ -1,78 +1,44 @@
 # OpenState
 
-A structured, evidence-based tracker of real-world issues in public services, treated as reproducible system problems.
+An open observability system for public services.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
-OpenState is an open repository for documenting and analyzing inefficiencies, failures, and structural issues in public administration systems.
+OpenState is a structured knowledge system for documenting real-world problems in public services.
 
-The goal is not political discussion.
-
-The goal is to treat public systems like complex software systems:
-- identify bugs
-- document reproducible problems
-- attach evidence
-- propose structured improvements
+The goal is not political discussion. The goal is to treat public systems like complex systems that can be observed, documented, and understood.
 
 ---
 
-## 🧠 Core Principles
+## Core Principles
 
 - Focus only on observable, reproducible problems
-- Every issue must be supported by evidence (news, data, reports, legislation, or real cases)
-- Problems are separated from solutions
+- Every observation must be supported by evidence (news, data, reports, legislation, or real cases)
+- Observations and solutions are separated
 - No ideological or partisan discussion
-- Clarity and structure are more important than opinion
-- Treat public services as systems that can be analyzed and improved
+- Clarity and structure are more than opinion
 
 ---
 
-## 🐛 What is an "Issue"?
+## How it works
 
-An issue represents a real-world problem in a public system.
+People submit **structured observations** of public service problems. Each observation includes a description, evidence, system context, and impact.
 
-Examples:
-- A process requiring redundant data submission
-- A system failure in critical infrastructure
-- A duplicated administrative requirement across institutions
-- A digital service that is inconsistent or unreliable
-
-Each issue should be structured like a bug report.
+The **GitHub repository** stores all structured data. The documentation site is the reading layer.
 
 ---
 
-## 🧾 Issue Template
+## Documentation
 
-```markdown
-## Problem
-Clear description of the issue.
+- [English documentation](https://openstate.andreclemente.dev/en/)
+- [Documentação em Português](https://openstate.andreclemente.dev/pt/)
 
-## Steps to reproduce
-1.
-2.
-3.
+## Contributing
 
-## Who is affected
-Citizens / businesses / institutions
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to submit observations and proposals.
 
-## Impact
-- Time lost
-- Cost
-- Complexity / friction
-- System reliability
+## License
 
-## System involved
-(e.g. healthcare, taxation, justice, digital services)
-
-## Evidence
-- News articles
-- Official reports
-- Data sources
-- Legal references
-
-## Possible root cause (optional)
-
-## Related issues
-#123, #456
+[MIT](LICENSE)

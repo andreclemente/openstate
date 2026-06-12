@@ -20,8 +20,8 @@ body:
   - type: input
     id: problema_relacionado
     attributes:
-      label: "Problema relacionado / Related problem"
-      description: "Número da issue do problema que esta proposta resolve"
+      label: "Observação relacionada / Related observation"
+      description: "Número da observação do problema que esta proposta resolve"
       placeholder: "Ex: #12"
     validations:
       required: true

@@ -2,48 +2,47 @@
 title: Contribuir
 nav_order: 4
 parent: Português
-last_modified_at: 2026-06-11
 ---
 
 # Contribuir
 
 ## Quem pode contribuir
 
-Qualquer pessoa. Não precisas de conhecimentos técnicos. Se tens um problema para reportar ou uma ideia para propor, podes contribuir.
+Qualquer pessoa. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público ou tens uma ideia para uma solução, podes contribuir.
 
 ---
 
-## Como submeter uma issue
+## Como submeter uma observação
 
 ### Opção 1: Formulário estruturado (recomendado)
 
-A forma mais rápida de reportar um problema:
+A forma mais rápida de documentar um problema:
 
-### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 1. Clica no botão acima
 2. Preenche os campos (podes escrever em **PT ou EN**)
 3. Submete
 
-A issue é criada automaticamente com a estrutura correta. Se escreveres em português, uma **tradução para inglês** será adicionada automaticamente como comentário.
+A observação é criada automaticamente com a estrutura correta. Se escreveres em português, uma **tradução para inglês** será adicionada automaticamente como comentário.
 
 ### Opção 2: Manual
 
-1. Vai ao [repositório no GitHub](https://github.com/andreclemente/openstate/issues)
+1. Vai ao [projeto no GitHub](https://github.com/andreclemente/openstate/issues)
 2. Clica em **"New Issue"**
 3. Seleciona o template **"Reportar Problema / Report Problem"**
 4. Preenche e submete
 
 ---
 
-## Template de issue
+## Formato de observação
 
 Copia e preenche:
 
-    ## Problema
-    [Descrição curta e clara do problema]
+    ## Observação
+    [Descrição curta e clara do que acontece]
 
-    ## Passos para reproduzir
+    ## O que acontece
     1.
     2.
     3.
@@ -62,7 +61,7 @@ Copia e preenche:
 
     ## Causa raiz possível (opcional)
 
-    ## Issues relacionadas
+    ## Observações relacionadas
     #123, #456
 
 ---
@@ -71,10 +70,10 @@ Copia e preenche:
 
 ### O que é aceite
 
-- Problemas **observáveis e reprodutíveis**
+- Problemas **observáveis e reprodutíveis** em serviços públicos
 - Evidência **concreta** (notícias, dados, relatórios)
 - Descrições **factuais** e neutras
-- Propostas **estruturadas** (separadas da issue)
+- Propostas **estruturadas** (separadas da observação)
 
 ### O que é rejeitado
 
@@ -82,13 +81,13 @@ Copia e preenche:
 - **Dados pessoais** de terceiros
 - **Linguagem política** ou ideológica
 - **Duplicações** — procura se o problema já existe primeiro
-- **Soluções sem problema** — descreve o problema primeiro
+- **Soluções sem observação** — descreve o problema primeiro
 
 ---
 
 ## Formato de propostas de solução
 
-Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de solução** como comentário ou issue separada com a label `proposta`:
+Quando uma observação está no estado `Analisado`, pode ser criada uma **proposta de solução** como comentário ou entrada separada com a label `proposal`:
 
     ## Proposta
     [Descrição da solução]
@@ -101,9 +100,9 @@ Quando uma issue está no estado `Analisado`, pode ser criada uma **proposta de 
 
 ---
 
-## Labels
+## Categorias
 
-Usa estas labels para categorizar:
+Usa estas categorias para organizar observações:
 
 **Setor:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
@@ -118,20 +117,20 @@ Usa estas labels para categorizar:
 ## Processo
 
 ```
-1. Draft        → Descreves o problema
-2. Confirmed    → Anexas evidência verificável
-3. Analyzed     → Comunidade identifica causa raiz
-4. Proposed     → Solução estruturada é submetida
+1. Rascunho      → Descreves o que observaste
+2. Confirmado    → Anexas evidência verificável
+3. Analisado      → Comunidade identifica causa raiz
+4. Proposto       → Solução estruturada é submetida
 ```
 
 ---
 
 ## Tradução automática
 
-Issues escritas em português são automaticamente traduzidas para inglês por um bot. A tradução aparece como **comentário** na issue. O texto original em português mantém-se como versão de referência.
+Observações escritas em português são automaticamente traduzidas para inglês por um bot. A tradução aparece como **comentário** na entrada. O texto original em português mantém-se como versão de referência.
 
 ---
 
 ## Contacto
 
-Para questões sobre o projeto em si, abre uma issue com a label `meta`.
+Para questões sobre o projeto em si, abre uma discussão com a label `meta`.

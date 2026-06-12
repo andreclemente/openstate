@@ -2,44 +2,68 @@
 title: Home
 nav_order: 1
 parent: English
-last_modified_at: 2026-06-12
 ---
 
 # OpenState
 
-**Public Systems Bug Tracker**
+**An open observability system for public services.**
 
 ---
 
 ## What it is
 
-OpenState is a **public systems bug tracker**.
+OpenState is a structured knowledge system for documenting real-world public service problems.
 
-It is not a discussion forum. It is not a political manifesto. It is a structured knowledge system for documenting public service failures the same way we document software bugs.
+It is not a discussion forum. It is not a political manifesto. It is a neutral, evidence-based system for observing and documenting how public systems actually behave.
+
+### Core idea
+
+Public systems produce observable outcomes. Those outcomes can be documented, analyzed, and connected. Patterns emerge when enough observations are collected.
 
 ### Principles
 
-- **Each problem is an issue** — like a bug report.
-- **Evidence is mandatory** — no data, no issue.
-- **Problems and solutions are separated** — describe first, propose later.
-- **Focus is analysis, not debate** — structure over opinion.
-
-### How it works
-
-The **GitHub repository** is the source of truth. All issues, structured data, labels, and proposals live there.
-
-This site is the **reading layer** — a human interface over the data.
+- **Every observation needs evidence** — no evidence, no entry
+- **Observations and solutions are separate** — describe first, propose later
+- **Focus is analysis, not debate** — structure over opinion
+- **Neutral language** — no political or ideological framing
 
 ---
 
-## Example issue
+## Why it exists
 
-> **Problem:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
+Public systems are complex. That complexity produces friction and inefficiency. Most problems are:
 
-    ## Problem
+- **Isolated** — each person experiences them alone
+- **Undocumented** — no structured record exists
+- **Disconnected** — similar problems across different systems are never linked
+
+OpenState connects them through structure. By collecting observations in a consistent format, patterns become visible. And once patterns are visible, they can be understood and addressed.
+
+---
+
+## How it works
+
+People submit **structured observations** of real-world public service problems.
+
+Each observation includes:
+
+- A clear description of what happens
+- Evidence supporting the observation
+- The system context
+- The impact on people
+
+Observations are organized by sector, type, and urgency. Over time, the collection becomes a structured knowledge base of how public systems actually perform.
+
+---
+
+## Example observation
+
+> **Situation:** A patient waited 4 hours at a public hospital because the triage system didn't distinguish between urgent and non-urgent cases.
+
+    ## Observation
     Hospital triage without effective prioritization criteria
 
-    ## Steps to reproduce
+    ## What happens
     1. Patient arrives at emergency department
     2. Registers at reception
     3. Waits for call with no visible priority criteria
@@ -66,16 +90,23 @@ This site is the **reading layer** — a human interface over the data.
 
 ---
 
-## Report a problem
+## Submit an observation
 
-Got a problem to report? Use the structured form:
+Found a problem in a public service? Document it:
 
-[🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 Write in **Portuguese or English**. Auto-translation included.
 
 ---
 
+## Contribute
+
+Want to help build this knowledge base? See the [contribution guide](contribute).
+
+---
+
 ## Repository
 
+The structured data and observations are stored on GitHub:
 [github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)

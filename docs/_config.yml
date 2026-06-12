@@ -1,7 +1,7 @@
 remote_theme: just-the-docs/just-the-docs
 
 title: OpenState
-description: Public Systems Bug Tracker
+description: An open observability system for public services
 url: https://openstate.andreclemente.dev
 show_downloads: false
 

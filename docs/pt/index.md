@@ -2,44 +2,68 @@
 title: Início
 nav_order: 1
 parent: Português
-last_modified_at: 2026-06-11
 ---
 
 # OpenState
 
-**Bug Tracker de Sistemas Públicos**
+**Um sistema aberto de observabilidade para serviços públicos.**
 
 ---
 
 ## O que é
 
-OpenState é um **bug tracker de sistemas públicos**.
+OpenState é um sistema de conhecimento estruturado para documentar problemas reais em serviços públicos.
 
-Não é um fórum de discussão. Não é um manifesto político. É um sistema de conhecimento estruturado para documentar falhas em serviços públicos da mesma forma que documentamos bugs em software.
+Não é um fórum de discussão. Não é um manifesto político. É um sistema neutral e baseado em evidências para observar e documentar como os sistemas públicos funcionam na realidade.
+
+### Ideia central
+
+Os sistemas públicos produzem resultados observáveis. Esses resultados podem ser documentados, analisados e conectados. Padrões emergem quando enough observações são coletadas.
 
 ### Princípios
 
-- **Cada problema é uma issue** — como um bug report
-- **Evidência é obrigatória** — sem dados, não há issue
-- **Problemas e soluções são separados** — primeiro descreve-se, depois propõe-se
+- **Toda observação precisa de evidência** — sem evidência, não há registo
+- **Observações e soluções são separadas** — primeiro descreve-se, depois propõe-se
 - **O foco é análise, não debate** — estrutura acima de opinião
-
-### Como funciona
-
-O **repositório do GitHub** é a fonte de verdade. Todas as issues, dados estruturados, labels e propostas vivem lá.
-
-Este site é a **camada de leitura** — uma interface humana por cima dos dados.
+- **Linguagem neutral** — sem enquadramento político ou ideológico
 
 ---
 
-## Exemplo de issue
+## Porquê existe
 
-> **Problema:** Utente esperou 4 horas num hospital público porque o sistema de triagem não distinguia entre casos urgentes e não-urgentes.
+Os sistemas públicos são complexos. Essa complexidade produz fricção e ineficiência. A maioria dos problemas está:
 
-    ## Problema
+- **Isolada** — cada pessoa experimenta-os sozinha
+- **Sem documentação** — não existe registo estruturado
+- **Desconectada** — problemas semelhantes em diferentes sistemas nunca são ligados
+
+OpenState conecta-os através de estrutura. Ao coletar observações num formato consistente, padrões tornam-se visíveis. E uma vez visíveis, podem ser compreendidos e abordados.
+
+---
+
+## Como funciona
+
+As pessoas submetem **observações estruturadas** de problemas reais em serviços públicos.
+
+Cada observação inclui:
+
+- Uma descrição clara do que acontece
+- Evidências que suportam a observação
+- O contexto do sistema
+- O impacto nas pessoas
+
+As observações são organizadas por setor, tipo e urgência. Com o tempo, a coleção torna-se uma base de conhecimento estruturada sobre como os sistemas públicos realmente funcionam.
+
+---
+
+## Exemplo de observação
+
+> **Situação:** Utente esperou 4 horas num hospital público porque o sistema de triagem não distinguia entre casos urgentes e não-urgentes.
+
+    ## Observação
     Triagem hospitalar sem critérios de priorização eficazes
 
-    ## Passos para reproduzir
+    ## O que acontece
     1. Utente chega ao serviço de urgência
     2. Regista-se na receção
     3. Aguarda chamada sem critério de prioridade visível
@@ -66,16 +90,23 @@ Este site é a **camada de leitura** — uma interface humana por cima dos dados
 
 ---
 
-## Reportar um problema
+## Submeter uma observação
 
-Tens um problema para reportar? Usa o formulário estruturado:
+Encontraste um problema num serviço público? Documenta-o:
 
-### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 Escreve em **Português ou Inglês**. Tradução automática incluída.
 
 ---
 
+## Contribuir
+
+Queres ajudar a construir esta base de conhecimento? Vê o [guia de contribuição](contribute).
+
+---
+
 ## Repositório
 
+Os dados estruturados e observações estão armazenados no GitHub:
 [github.com/andreclemente/openstate](https://github.com/andreclemente/openstate)

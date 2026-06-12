@@ -1,6 +1,6 @@
-name: "🐛 Reportar Problema / Report Problem"
-description: "Reporta um problema num sistema público / Report a public system problem"
-title: "[Problema] "
+name: "🐛 Submeter Observação / Submit Observation"
+description: "Documenta um problema num sistema público / Document a public system problem"
+title: "[Observação] "
 labels: ["draft"]
 body:
   - type: markdown
@@ -19,18 +19,18 @@ body:
         - Sem linguagem política ou ideológica / No political or ideological language
 
   - type: input
-    id: problema
+    id: observacao
     attributes:
-      label: "Problema / Problem"
-      description: "Descrição curta e clara do problema / Short, clear problem description"
+      label: "Observação / Observation"
+      description: "Descrição curta e clara do que acontece / Short, clear description of what happens"
       placeholder: "Ex: Tempo excessivo de espera para consultas de especialidade"
     validations:
       required: true
 
   - type: textarea
-    id: passos
+    id: oque_acontece
     attributes:
-      label: "Passos para reproduzir / Steps to reproduce"
+      label: "O que acontece / What happens"
       description: "Como é que o problema se manifesta? / How does the problem manifest?"
       placeholder: |
         1. Utente é encaminhado para...
@@ -116,8 +116,8 @@ body:
   - type: input
     id: relacionadas
     attributes:
-      label: "Issues relacionadas / Related issues (optional)"
-      description: "Números de issues relacionadas separados por vírgula"
+      label: "Observações relacionadas / Related observations (optional)"
+      description: "Números de observações relacionadas separados por vírgula"
       placeholder: "12, 34"
     validations:
       required: false

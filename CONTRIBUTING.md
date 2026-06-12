@@ -1,10 +1,10 @@
 # Contributing to OpenState
 
-Thank you for your interest in contributing! OpenState is a community-driven project to document and improve public services.
+Thank you for your interest in contributing! OpenState is a community-driven project to document and understand public services.
 
 ## Quick Start
 
-1. **Found a problem?** → [Report it](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+1. **Observed a problem?** → [Submit an observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 2. **Have a solution?** → [Submit a proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
 3. **Want to discuss the project?** → [Open a meta discussion](https://github.com/andreclemente/openstate/issues/new?template=meta.yml)
 
@@ -15,7 +15,7 @@ Thank you for your interest in contributing! OpenState is a community-driven pro
 - **Observable, reproducible** problems in public services
 - **Concrete** evidence (news, data, reports, legislation)
 - **Factual**, neutral descriptions — no opinions
-- **Structured** proposals (separate from the issue)
+- **Structured** proposals (separate from the observation)
 
 ### What is rejected
 
@@ -23,9 +23,9 @@ Thank you for your interest in contributing! OpenState is a community-driven pro
 - **Personal data** of third parties
 - **Political** or ideological language
 - **Duplicates** — search if the problem already exists first
-- **Solutions without problems** — describe the problem first
+- **Solutions without observations** — describe the problem first
 
-## Issue Lifecycle
+## Observation Lifecycle
 
 ```
 Draft → Confirmed → Analyzed → Proposed
@@ -33,12 +33,12 @@ Draft → Confirmed → Analyzed → Proposed
 
 | State | Meaning |
 |:------|:--------|
-| **Draft** | Problem described, awaiting evidence |
-| **Confirmed** | Evidence attached, problem verifiable |
+| **Draft** | Observation described, awaiting evidence |
+| **Confirmed** | Evidence attached, observation verifiable |
 | **Analyzed** | Root cause identified, impact documented |
 | **Proposed** | Structured solution submitted |
 
-## Labels
+## Categories
 
 **Sector:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
@@ -50,7 +50,7 @@ Draft → Confirmed → Analyzed → Proposed
 
 ## Writing in Portuguese or English
 
-You can write in either language. Issues written in Portuguese are automatically translated to English by a bot. The translation appears as a comment. The original text remains as the authoritative version.
+You can write in either language. Observations written in Portuguese are automatically translated to English by a bot. The translation appears as a comment. The original text remains as the authoritative version.
 
 ## Contact
 

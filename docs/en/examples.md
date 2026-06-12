@@ -2,27 +2,26 @@
 title: Examples
 nav_order: 3
 parent: English
-last_modified_at: 2026-06-12
 ---
 
 # Examples
 
-Real-world issues written in the OpenState structured format.
+Real-world observations written in the OpenState structured format.
 
 ---
 
 ## Healthcare
 
-**Labels:** `healthcare` `efficiency` `high` `confirmed`
+**Categories:** `healthcare` · `efficiency` · `high` · `confirmed`
 
-**Problem:** Excessive waiting time for specialist appointments in the public health system
+**Situation:** Excessive waiting time for specialist appointments in the public health system
 
 **Summary:** Patients wait an average of 8 months for a first specialist consultation. 15% give up before the appointment.
 
-    ## Problem
+    ## Observation
     Excessive waiting time for specialist appointments in the public health system
 
-    ## Steps to reproduce
+    ## What happens
     1. Patient is referred by GP to specialist consultation
     2. Waits on waiting list with no date estimate
     3. After 8+ months, appointment still not scheduled
@@ -48,23 +47,23 @@ Real-world issues written in the OpenState structured format.
     Insufficient hospital capacity vs. demand;
     absence of uniform clinical priority criteria
 
-    ## Related issues
+    ## Related observations
     #12 (GP shortage), #34 (triage system)
 
 ---
 
 ## Education
 
-**Labels:** `education` `efficiency` `medium` `confirmed`
+**Categories:** `education` · `efficiency` · `medium` · `confirmed`
 
-**Problem:** Lack of substitute teachers interrupts classes in public primary schools
+**Situation:** Lack of substitute teachers interrupts classes in public primary schools
 
 **Summary:** When a teacher is absent, the class has no lesson. Average of 12 days/year per class without lessons.
 
-    ## Problem
+    ## Observation
     Lack of substitute teachers interrupts classes in public primary schools
 
-    ## Steps to reproduce
+    ## What happens
     1. Teacher is absent due to illness or other reason
     2. School has no substitute available
     3. Class is left without a lesson or distributed across other classes
@@ -90,23 +89,23 @@ Real-world issues written in the OpenState structured format.
     Insufficient pool of substitute teachers;
     hiring process too slow (>48h)
 
-    ## Related issues
+    ## Related observations
     #45 (teacher working conditions)
 
 ---
 
 ## Digital Services
 
-**Labels:** `digital-services` `reliability` `medium` `analyzed`
+**Categories:** `digital-services` · `reliability` · `medium` · `analyzed`
 
-**Problem:** Citizen portal shows data inconsistency across services
+**Situation:** Citizen portal shows data inconsistency across services
 
 **Summary:** Citizens must update their address on 3 separate portals because the systems don't communicate.
 
-    ## Problem
+    ## Observation
     Citizen portal shows data inconsistency across services
 
-    ## Steps to reproduce
+    ## What happens
     1. Citizen updates address on Social Security portal
     2. Accesses Tax Authority portal — old address still shows
     3. Accesses Health Service portal — different address again
@@ -132,7 +131,7 @@ Real-world issues written in the OpenState structured format.
     No centralized citizen database;
     systems developed by different entities without integration
 
-    ## Related issues
+    ## Related observations
     #67 (single sign-on), #89 (interoperability)
 
 ---
@@ -149,5 +148,4 @@ Have a solution for one of these problems? Submit a structured proposal:
 
 Found a problem that's not documented yet? Report it:
 
-### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
-
+### [🐛 Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)

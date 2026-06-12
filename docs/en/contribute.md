@@ -2,48 +2,47 @@
 title: Contribute
 nav_order: 4
 parent: English
-last_modified_at: 2026-06-11
 ---
 
 # Contribute
 
 ## Who can contribute
 
-Anyone. No technical background needed. If you have a problem to report or an idea to propose, you can contribute.
+Anyone. No technical background needed. If you have observed a public service problem or have an idea for a solution, you can contribute.
 
 ---
 
-## How to submit an issue
+## How to submit an observation
 
 ### Option 1: Structured form (recommended)
 
-The fastest way to report a problem:
+The fastest way to document a problem:
 
-### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+### [🐛 Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 
 1. Click the button above
 2. Fill in the fields (you can write in **PT or EN**)
 3. Submit
 
-The issue is created automatically with the correct structure. If you write in Portuguese, an **English translation** will be automatically added as a comment.
+The observation is created automatically with the correct structure. If you write in Portuguese, an **English translation** will be automatically added as a comment.
 
 ### Option 2: Manual
 
-1. Go to the [repository on GitHub](https://github.com/andreclemente/openstate/issues)
+1. Go to the [project on GitHub](https://github.com/andreclemente/openstate/issues)
 2. Click **"New Issue"**
 3. Select the **"Reportar Problema / Report Problem"** template
 4. Fill in and submit
 
 ---
 
-## Issue template
+## Observation format
 
 Copy and fill in:
 
-    ## Problem
-    [Short, clear problem description]
+    ## Observation
+    [Short, clear description of what happens]
 
-    ## Steps to reproduce
+    ## What happens
     1.
     2.
     3.
@@ -62,7 +61,7 @@ Copy and fill in:
 
     ## Possible root cause (optional)
 
-    ## Related issues
+    ## Related observations
     #123, #456
 
 ---
@@ -71,10 +70,10 @@ Copy and fill in:
 
 ### What is accepted
 
-- **Observable, reproducible** problems
+- **Observable, reproducible** problems in public services
 - **Concrete** evidence (news, data, reports)
 - **Factual**, neutral descriptions
-- **Structured** proposals (separate from the issue)
+- **Structured** proposals (separate from the observation)
 
 ### What is rejected
 
@@ -82,13 +81,13 @@ Copy and fill in:
 - **Personal data** of third parties
 - **Political** or ideological language
 - **Duplicates** — search if the problem already exists first
-- **Solutions without problems** — describe the problem first
+- **Solutions without observations** — describe the problem first
 
 ---
 
 ## Solution proposal format
 
-When an issue reaches `Analyzed` state, a **solution proposal** can be created as a comment or separate issue with the `proposal` label:
+When an observation reaches `Analyzed` state, a **solution proposal** can be created as a comment or separate entry with the `proposal` label:
 
     ## Proposal
     [Solution description]
@@ -101,9 +100,9 @@ When an issue reaches `Analyzed` state, a **solution proposal** can be created a
 
 ---
 
-## Labels
+## Categories
 
-Use these labels to categorize:
+Use these to categorize observations:
 
 **Sector:** `healthcare` · `education` · `transport` · `justice` · `public-finance` · `digital-services`
 
@@ -118,7 +117,7 @@ Use these labels to categorize:
 ## Process
 
 ```
-1. Draft        → You describe the problem
+1. Draft        → You describe what you observed
 2. Confirmed    → You attach verifiable evidence
 3. Analyzed     → Community identifies root cause
 4. Proposed     → Structured solution is submitted
@@ -128,10 +127,10 @@ Use these labels to categorize:
 
 ## Automatic translation
 
-Issues written in Portuguese are automatically translated to English by a bot. The translation appears as a **comment** on the issue. The original Portuguese text remains as the authoritative version.
+Observations written in Portuguese are automatically translated to English by a bot. The translation appears as a **comment** on the entry. The original Portuguese text remains as the authoritative version.
 
 ---
 
 ## Contact
 
-For questions about the project itself, open an issue with the `meta` label.
+For questions about the project itself, open a discussion with the `meta` label.

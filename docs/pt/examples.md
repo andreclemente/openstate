@@ -2,29 +2,26 @@
 title: Exemplos
 nav_order: 3
 parent: Português
-last_modified_at: 2026-06-12
 ---
 
 # Exemplos
 
-Exemplos de issues reais, escritas no formato estruturado do OpenState.
-
-> **Nota:** As labels do GitHub são em inglês. Os exemplos abaixo mostram as labels reais do repositório.
+Observações reais escritas no formato estruturado do OpenState.
 
 ---
 
 ## Saúde
 
-**Labels:** `healthcare` `efficiency` `high` `confirmed`
+**Categorias:** `healthcare` · `efficiency` · `high` · `confirmed`
 
-**Problema:** Tempo excessivo de espera para consultas de especialidade no SNS
+**Situação:** Tempo excessivo de espera para consultas de especialidade no SNS
 
 **Resumo:** Utentes esperam em média 8 meses para primeira consulta de especialidade. 15% desistem antes da consulta.
 
-    ## Problema
+    ## Observação
     Tempo excessivo de espera para consultas de especialidade no SNS
 
-    ## Passos para reproduzir
+    ## O que acontece
     1. Utente é encaminhado pelo médico de família para consulta de especialidade
     2. Aguarda na lista de espera sem previsão de data
     3. Após 8+ meses, consulta ainda não foi agendada
@@ -50,23 +47,23 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
     Capacidade insuficiente de resposta hospitalar vs. procura;
     ausência de critérios de prioridade clínicos uniformes
 
-    ## Issues relacionadas
+    ## Observações relacionadas
     #12 (falta de médicos de família), #34 (SNS24 triagem)
 
 ---
 
 ## Educação
 
-**Labels:** `education` `efficiency` `medium` `confirmed`
+**Categorias:** `education` · `efficiency` · `medium` · `confirmed`
 
-**Problema:** Falta de professores substitutos interrompe aulas no ensino básico
+**Situação:** Falta de professores substitutos interrompe aulas no ensino básico
 
 **Resumo:** Quando um professor falta, a turma fica sem aula. Média de 12 dias/ano por turma sem aula.
 
-    ## Problema
+    ## Observação
     Falta de professores substitutos interrompe aulas no ensino básico
 
-    ## Passos para reproduzir
+    ## O que acontece
     1. Professor falta por doença ou outra razão
     2. Escola não tem substituto disponível
     3. Turma fica sem aula ou é distribuída por outras turmas
@@ -92,23 +89,23 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
     Bolsa de substituição com número insuficiente de professores;
     processo de contratação demasiado lento (>48h)
 
-    ## Issues relacionadas
+    ## Observações relacionadas
     #45 (condições de trabalho docente)
 
 ---
 
 ## Serviços Digitais
 
-**Labels:** `digital-services` `reliability` `medium` `analyzed`
+**Categorias:** `digital-services` · `reliability` · `medium` · `analyzed`
 
-**Problema:** Portal do cidadão apresenta inconsistência de dados entre serviços
+**Situação:** Portal do cidadão apresenta inconsistência de dados entre serviços
 
 **Resumo:** Cidadão tem de atualizar morada em 3 portais separados porque os sistemas não comunicam entre si.
 
-    ## Problema
+    ## Observação
     Portal do cidadão apresenta inconsistência de dados entre serviços
 
-    ## Passos para reproduzir
+    ## O que acontece
     1. Cidadão atualiza morada no portal da Segurança Social
     2. Acede ao portal das Finanças — morada antiga ainda aparece
     3. Acede ao portal do SNS — morada diferente novamente
@@ -134,7 +131,7 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
     Ausência de base de dados centralizada de cidadão;
     sistemas desenvolvidos por diferentes entidades sem integração
 
-    ## Issues relacionadas
+    ## Observações relacionadas
     #67 (autenticação única), #89 (interoperabilidade)
 
 ---
@@ -151,5 +148,4 @@ Tens uma solução para um destes problemas? Submete uma proposta estruturada:
 
 Encontraste um problema que ainda não está documentado? Reporta-o:
 
-### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
-
+### [🐛 Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
