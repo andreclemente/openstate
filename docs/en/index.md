@@ -163,6 +163,23 @@ description: A structured observability system for public services. Understand h
 
 </div>
 
+<div class="os-footer">
+  <div class="os-section-inner">
+    <div class="os-footer-row">
+      <span class="os-footer-text">OpenState</span>
+      <span class="os-footer-sep">·</span>
+      <span class="os-footer-mission">Documenting how public services behave in reality.</span>
+    </div>
+    <div class="os-footer-row os-footer-secondary">
+      <a href="https://github.com/andreclemente/openstate" target="_blank">GitHub</a>
+      <span class="os-footer-sep">·</span>
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+      <span class="os-footer-sep">·</span>
+      <a href="mailto:contact@openstate.andreclemente.dev">Contact</a>
+    </div>
+  </div>
+</div>
+
 <script>
 (function() {
   var current = localStorage.getItem('os-theme') || 'system';
