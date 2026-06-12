@@ -2,7 +2,6 @@
 title: Exemplos
 nav_order: 3
 parent: Português
-
 layout: page
 ---
 

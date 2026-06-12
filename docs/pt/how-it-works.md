@@ -2,17 +2,12 @@
 title: Como Funciona
 nav_order: 2
 parent: Português
-
 layout: page
 ---
 
 # Como Funciona
 
-## O modelo
-
-OpenState trata serviços públicos como sistemas observáveis.
-
-Cada problema é documentado como uma **observação estruturada** — uma descrição clara e baseada em evidências do que acontece na realidade. Não é uma opinião. Não é uma queixa. É um registo factual.
+OpenState trata serviços públicos como sistemas observáveis. Cada problema é documentado como uma **observação estruturada** — uma descrição factual do que acontece na realidade.
 
 ---
 
@@ -26,7 +21,7 @@ Uma observação descreve:
 - **Que sistema está envolvido** — saúde, educação, transportes, justiça, finanças públicas, serviços digitais
 - **Qual é o impacto** — tempo perdido, custo, complexidade, fiabilidade
 
-Uma observação **não** propõe soluções. Observação e solução são separadas.
+Uma observação **não** propõe soluções. Observação e solução são estritamente separadas.
 
 ---
 
@@ -46,7 +41,7 @@ Tipos de evidência aceites:
 
 ---
 
-## Separação de responsabilidades
+## Três camadas
 
 OpenState separa estritamente **três camadas**:
 
@@ -63,22 +58,7 @@ O que fazer. Propostas estruturadas com estimativa de impacto e evidência de vi
 
 ---
 
-## Porquê estrutura importa mais que debate
-
-OpenState não é um fórum. É para **documentar a realidade**.
-
-- Sem dados pessoais de terceiros
-- Sem linguagem política ou ideológica
-- Sem opiniões — apenas observações factuais
-- Sem duplicação — cada problema documentado uma vez
-
----
-
 ## Ciclo de vida de uma observação
-
-```
-Rascunho → Confirmado → Analisado → Proposto
-```
 
 | Estado | Descrição |
 |:-------|:----------|
@@ -86,3 +66,20 @@ Rascunho → Confirmado → Analisado → Proposto
 | **Confirmado** | Evidência anexada, observação verificável |
 | **Analisado** | Causa raiz identificada, impacto documentado |
 | **Proposto** | Solução estruturada submetida |
+
+---
+
+## Regras
+
+### Aceite
+- Problemas observáveis e reprodutíveis em serviços públicos
+- Evidência concreta (notícias, dados, relatórios, legislação, casos reais)
+- Descrições factuais e neutras
+- Propostas estruturadas submetidas separadamente da observação
+
+### Rejeitado
+- Opiniões sem evidência
+- Dados pessoais de terceiros
+- Linguagem política ou ideológica
+- Duplicações — procura primeiro se a observação já existe
+- Soluções sem observação — descreve o problema primeiro

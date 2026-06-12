@@ -2,27 +2,20 @@
 title: Contribuir
 nav_order: 4
 parent: Português
-
 layout: page
 ---
 
 # Contribuir
 
-Esta secção cobre o processo técnico para submeter observações.
+Qualquer pessoa pode contribuir para o OpenState. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público, podes documentá-lo.
 
 ---
 
-## Quem pode contribuir
+## Submeter uma observação
 
-Qualquer pessoa. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público, podes submetê-lo.
+Todas as observações são submetidas através de um formulário estruturado no GitHub:
 
----
-
-## Formato de submissão
-
-Todas as observações são submetidas através de um formulário estruturado:
-
-### [👁️ Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+[Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml){:.os-btn .os-btn-primary}
 
 O formulário cria uma entrada estruturada automaticamente. Escreve em **Português ou Inglês**. Submissões em português são traduzidas automaticamente para inglês.
 
@@ -60,14 +53,12 @@ O formulário cria uma entrada estruturada automaticamente. Escreve em **Portugu
 ## Regras
 
 ### Aceite
-
 - Problemas observáveis e reprodutíveis em serviços públicos
 - Evidência concreta (notícias, dados, relatórios, legislação, casos reais)
 - Descrições factuais e neutras
 - Propostas estruturadas submetidas separadamente da observação
 
 ### Rejeitado
-
 - Opiniões sem evidência
 - Dados pessoais de terceiros
 - Linguagem política ou ideológica
@@ -105,12 +96,12 @@ Quando uma observação atinge o estado `Analisado`, pode ser submetida uma **pr
 
 ## Processo
 
-```
-1. Rascunho      → Descreves o que observaste
-2. Confirmado    → Anexas evidência verificável
-3. Analisado     → Identificas causa raiz
-4. Proposto      → Submetes solução estruturada
-```
+| Passo | Descrição |
+|:------|:----------|
+| 1. Rascunho | Descreves o que observaste |
+| 2. Confirmado | Anexas evidência verificável |
+| 3. Analisado | Identificas causa raiz |
+| 4. Proposto | Submetes solução estruturada |
 
 ---
 
@@ -122,4 +113,4 @@ Observações em português são traduzidas automaticamente para inglês. A trad
 
 ## Contacto
 
-Para questões sobre o projeto, abre uma discussão com a label `meta`.
+Para questões sobre o projeto, abre uma discussão com a label `meta` no GitHub.

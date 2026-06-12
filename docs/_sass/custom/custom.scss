@@ -74,12 +74,23 @@ html { scroll-behavior: smooth; }
   object-fit: contain;
 }
 
+.os-hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--os-text);
+  margin: 0 0 20px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .os-hero-sub {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--os-muted);
   margin: 0 auto 44px;
-  max-width: 600px;
+  max-width: 580px;
   font-weight: 400;
 }
 
@@ -150,6 +161,14 @@ html { scroll-behavior: smooth; }
   text-transform: uppercase;
   color: var(--os-dim);
   margin: 0 0 20px;
+}
+
+.os-section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--os-muted);
+  margin: 0 0 48px;
+  max-width: 600px;
 }
 
 // === CARDS ===
@@ -235,7 +254,7 @@ html { scroll-behavior: smooth; }
 }
 
 .os-cta-text {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--os-muted);
   margin: -12px 0 40px;
@@ -289,6 +308,197 @@ html { scroll-behavior: smooth; }
 }
 .os-footer-row a:hover {
   color: var(--os-muted);
+}
+
+// ==========================================
+// === WHY IT MATTERS ===
+// ==========================================
+
+.os-matter-grid {
+  margin-bottom: 48px;
+}
+
+.os-matter-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 48px 0;
+}
+
+.os-matter-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--os-muted);
+  margin: 0;
+  text-align: center;
+}
+
+.os-matter-text.os-matter-strong {
+  color: var(--os-text);
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 600px;
+}
+
+.os-matter-arrow {
+  font-size: 20px;
+  color: var(--os-accent);
+  margin: 0;
+  opacity: 0.5;
+}
+
+// ==========================================
+// === HOW IT WORKS (STEPS) ===
+// ==========================================
+
+.os-section-how {
+  background: #0f172a;
+}
+
+.os-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.os-step {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.os-step-num {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--os-card);
+  border: 1px solid var(--os-accent);
+  color: var(--os-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.os-step-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: var(--os-text);
+  line-height: 1.4;
+}
+
+.os-step-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--os-muted);
+  margin: 0;
+}
+
+.os-step-connector {
+  width: 1px;
+  height: 32px;
+  background: var(--os-border);
+  margin-left: 19px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+// ==========================================
+// === REAL EXAMPLES ===
+// ==========================================
+
+.os-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.os-example-card {
+  background: var(--os-card);
+  border: 1px solid var(--os-border);
+  border-radius: var(--os-radius);
+  padding: 32px;
+  transition: border-color var(--os-transition), background var(--os-transition);
+}
+.os-example-card:hover {
+  border-color: var(--os-border-hover);
+  background: #1f3142;
+}
+
+.os-example-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.os-example-tag-health {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+}
+
+.os-example-tag-education {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fde68a;
+}
+
+.os-example-tag-digital {
+  background: rgba(56, 189, 248, 0.15);
+  color: #7dd3fc;
+}
+
+.os-example-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--os-text);
+  line-height: 1.3;
+}
+
+.os-example-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--os-muted);
+  margin: 0 0 20px;
+}
+
+.os-example-evidence {
+  font-size: 12px;
+  color: var(--os-dim);
+  padding-top: 16px;
+  border-top: 1px solid #1e293b;
+}
+
+.os-example-evidence-label {
+  font-weight: 600;
+  color: var(--os-muted);
+  margin-right: 6px;
+}
+
+// ==========================================
+// === PRINCIPLES ===
+// ==========================================
+
+.os-section-principles {
+  background: #0f172a;
+}
+
+.os-card-principle {
+  background: transparent;
+  border: 1px solid #1e293b;
+}
+.os-card-principle:hover {
+  border-color: var(--os-border);
+  background: rgba(255,255,255,0.02);
 }
 
 // ==========================================
@@ -368,8 +578,9 @@ html { scroll-behavior: smooth; }
 
 // --- Doc content ---
 .os-doc-content {
-  max-width: 100%;
-  padding: 0 32px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 48px 32px 72px;
   box-sizing: border-box;
   min-height: 60vh;
 }
@@ -540,7 +751,8 @@ html { scroll-behavior: smooth; }
 // === RESPONSIVE ===
 @media (max-width: 768px) {
   .os-hero { padding: 64px 20px 80px; }
-  .os-hero-sub { font-size: 16px; }
+  .os-hero-sub { font-size: 15px; }
+  .os-hero-title { font-size: 28px; }
   .os-hero-logo { max-width: 200px; }
 
   .os-section { padding: 72px 20px; }
@@ -555,6 +767,15 @@ html { scroll-behavior: smooth; }
   .os-doc-content h1 { font-size: 28px; }
   .os-doc-content h2 { font-size: 20px; }
   .os-doc-content p { font-size: 15px; }
+
+  .os-examples { grid-template-columns: 1fr; }
+  .os-example-card { padding: 24px; }
+
+  .os-matter-text { font-size: 16px; }
+  .os-matter-text.os-matter-strong { font-size: 18px; }
+
+  .os-step { gap: 16px; }
+  .os-step-num { width: 36px; height: 36px; font-size: 13px; }
 }
 
 @media (max-width: 480px) {

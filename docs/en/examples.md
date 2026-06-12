@@ -2,7 +2,6 @@
 title: Examples
 nav_order: 3
 parent: English
-
 layout: page
 ---
 

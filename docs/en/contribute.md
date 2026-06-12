@@ -2,27 +2,20 @@
 title: Contribute
 nav_order: 4
 parent: English
-
 layout: page
 ---
 
 # Contribute
 
-This section covers the technical process for submitting observations.
+Anyone can contribute to OpenState. No technical background needed. If you have observed a public service problem, you can document it.
 
 ---
 
-## Who can contribute
+## Submit an observation
 
-Anyone. No technical background needed. If you have observed a public service problem, you can submit it.
+All observations are submitted through a structured form on GitHub:
 
----
-
-## Submission format
-
-All observations are submitted through a structured form:
-
-### [👁️ Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
+[Submit an Observation](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml){:.os-btn .os-btn-primary}
 
 The form creates a structured entry automatically. Write in **Portuguese or English**. Portuguese submissions are automatically translated to English.
 
@@ -60,14 +53,12 @@ The form creates a structured entry automatically. Write in **Portuguese or Engl
 ## Rules
 
 ### Accepted
-
 - Observable, reproducible problems in public services
 - Concrete evidence (news, data, reports, legislation, real cases)
 - Factual, neutral descriptions
 - Structured proposals submitted separately from observations
 
 ### Rejected
-
 - Opinions without evidence
 - Personal data of third parties
 - Political or ideological language
@@ -105,12 +96,12 @@ When an observation reaches `Analyzed` state, a **solution proposal** can be sub
 
 ## Process
 
-```
-1. Draft        → Describe what you observed
-2. Confirmed    → Attach verifiable evidence
-3. Analyzed     → Identify root cause
-4. Proposed     → Submit structured solution
-```
+| Step | Description |
+|:-----|:------------|
+| 1. Draft | Describe what you observed |
+| 2. Confirmed | Attach verifiable evidence |
+| 3. Analyzed | Identify root cause |
+| 4. Proposed | Submit structured solution |
 
 ---
 
@@ -122,4 +113,4 @@ Portuguese observations are automatically translated to English. The translation
 
 ## Contact
 
-For questions about the project, open a discussion with the `meta` label.
+For questions about the project, open a discussion with the `meta` label on GitHub.

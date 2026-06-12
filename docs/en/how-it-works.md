@@ -2,17 +2,12 @@
 title: How It Works
 nav_order: 2
 parent: English
-
 layout: page
 ---
 
 # How It Works
 
-## The model
-
-OpenState treats public services as observable systems.
-
-Each problem is documented as a **structured observation** — a clear, evidence-based description of what happens in reality. Not an opinion. Not a complaint. A factual record.
+OpenState treats public services as observable systems. Each problem is documented as a **structured observation** — a factual description of what happens in reality.
 
 ---
 
@@ -26,13 +21,13 @@ An observation describes:
 - **What system is involved** — healthcare, education, transport, justice, public finance, digital services
 - **What the impact is** — time lost, cost, complexity, reliability
 
-An observation does **not** propose solutions. Observation and solution are separate.
+An observation does **not** propose solutions. Observation and solution are strictly separate.
 
 ---
 
 ## The role of evidence
 
-> Without evidence, there is not an observation. Evidence turns an opinion into a documented fact.
+> Without evidence, there is no observation. Evidence turns an opinion into a documented fact.
 
 Accepted evidence types:
 
@@ -42,11 +37,11 @@ Accepted evidence types:
 | **Official data** | Government reports, public statistics |
 | **Legislation** | Laws, regulations, decrees |
 | **Real cases** | Factual descriptions of concrete situations |
-| **Studies** | Academic research, organization reports |
+| **Studies** | Academic research, organisation reports |
 
 ---
 
-## Separation of concerns
+## Three layers
 
 OpenState strictly separates **three layers**:
 
@@ -63,22 +58,7 @@ What to do. Structured proposals with impact estimates and feasibility evidence.
 
 ---
 
-## Why structure matters more than debate
-
-OpenState is not a forum. It is for **documenting reality**.
-
-- No personal data of third parties
-- No political or ideological language
-- No opinions — only factual observations
-- No duplication — each problem documented once
-
----
-
 ## Observation lifecycle
-
-```
-Draft → Confirmed → Analyzed → Proposed
-```
 
 | State | Description |
 |:------|:------------|
@@ -86,3 +66,20 @@ Draft → Confirmed → Analyzed → Proposed
 | **Confirmed** | Evidence attached, observation verifiable |
 | **Analyzed** | Root cause identified, impact documented |
 | **Proposed** | Structured solution submitted |
+
+---
+
+## Rules
+
+### Accepted
+- Observable, reproducible problems in public services
+- Concrete evidence (news, data, reports, legislation, real cases)
+- Factual, neutral descriptions
+- Structured proposals submitted separately from observations
+
+### Rejected
+- Opinions without evidence
+- Personal data of third parties
+- Political or ideological language
+- Duplicates — search first to see if the observation already exists
+- Solutions without observations — describe the problem first
