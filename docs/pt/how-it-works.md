@@ -2,6 +2,7 @@
 title: Como Funciona
 nav_order: 2
 parent: Português
+last_modified_at: 2026-06-11
 ---
 
 # Como Funciona

@@ -2,6 +2,7 @@
 title: How It Works
 nav_order: 2
 parent: English
+last_modified_at: 2026-06-11
 ---
 
 # How It Works

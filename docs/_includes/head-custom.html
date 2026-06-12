@@ -1,0 +1,14 @@
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl | default: '' }}{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl | default: '' }}/assets/og-image.png">
+<meta property="og:image:alt" content="OpenState — Public Systems Bug Tracker">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.baseurl | default: '' }}/assets/og-image.png">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl | default: '' }}{{ page.url }}">

@@ -2,6 +2,7 @@
 title: Examples
 nav_order: 3
 parent: English
+last_modified_at: 2026-06-12
 ---
 
 # Examples
@@ -141,4 +142,12 @@ Real-world issues written in the OpenState structured format.
 Have a solution for one of these problems? Submit a structured proposal:
 
 ### [💡 Submit a Solution Proposal](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
+
+---
+
+## Report a problem
+
+Found a problem that's not documented yet? Report it:
+
+### [🐛 Report a Problem](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 

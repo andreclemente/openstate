@@ -2,6 +2,7 @@
 title: Exemplos
 nav_order: 3
 parent: Português
+last_modified_at: 2026-06-12
 ---
 
 # Exemplos
@@ -143,4 +144,12 @@ Exemplos de issues reais, escritas no formato estruturado do OpenState.
 Tens uma solução para um destes problemas? Submete uma proposta estruturada:
 
 ### [💡 Submeter Proposta de Solução](https://github.com/andreclemente/openstate/issues/new?template=proposal.yml)
+
+---
+
+## Reportar um problema
+
+Encontraste um problema que ainda não está documentado? Reporta-o:
+
+### [🐛 Reportar um Problema](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml)
 

@@ -4,7 +4,7 @@ title: OpenState
 description: Public Systems Bug Tracker
 show_downloads: false
 
-color_scheme: light
+color_scheme: dark
 
 search_enabled: true
 search.button: true
@@ -16,6 +16,7 @@ aux_links:
   "GitHub": "https://github.com/andreclemente/openstate"
   "🇵🇹 PT": "/pt/"
   "🇬🇧 EN": "/en/"
+  "Examples": "/en/examples"
 
 nav_sort: case_insensitive
 
