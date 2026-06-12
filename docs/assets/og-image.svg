@@ -1,13 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#1a1a2e"/>
-  <rect x="40" y="40" width="1120" height="550" rx="16" fill="#16213e" stroke="#0f3460" stroke-width="2"/>
-  <text x="600" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="bold" fill="#e94560">OpenState</text>
-  <text x="600" y="260" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#a8b2d1">Public Systems Bug Tracker</text>
-  <line x1="300" y1="310" x2="900" y2="310" stroke="#0f3460" stroke-width="1"/>
-  <text x="600" y="370" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#7f8c8d">Structured • Evidence-based • Reproducible</text>
-  <text x="600" y="420" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#5a6785">🇵🇹 Português  •  🇬🇧 English</text>
-  <circle cx="100" cy="540" r="20" fill="#e94560" opacity="0.3"/>
-  <circle cx="180" cy="560" r="12" fill="#0f3460" opacity="0.5"/>
-  <circle cx="1080" cy="80" r="24" fill="#e94560" opacity="0.2"/>
-  <circle cx="1020" cy="100" r="14" fill="#0f3460" opacity="0.4"/>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <rect x="60" y="60" width="1080" height="510" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="200" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="700" fill="#f8fafc">OpenState</text>
+  <text x="600" y="280" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#94a3b8">A structured observability system for public services</text>
+  <line x1="350" y1="330" x2="850" y2="330" stroke="#334155" stroke-width="1"/>
+  <text x="600" y="390" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#64748b">Structured · Evidence-based · Neutral</text>
 </svg>
