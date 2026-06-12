@@ -1,6 +1,6 @@
 ---
 title: Quick Start
-nav_order: 2
+nav_order: 1
 parent: English
 last_modified_at: 2026-06-12
 ---
