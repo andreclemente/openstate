@@ -4,12 +4,7 @@ nav_exclude: true
 search_exclude: true
 ---
 
-{% include landing-styles.html %}
-
-<div class="os-page os-hide-chrome">
-
-{% assign page_path = page.url | remove: ".html" | split: "/" %}
-{% assign lang = page_path[1] %}
+<div class="os-page">
 
 <div class="os-doc-header">
   <a href="/" class="os-doc-header-logo">

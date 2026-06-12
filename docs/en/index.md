@@ -4,9 +4,7 @@ nav_exclude: true
 search_exclude: true
 ---
 
-{% include landing-styles.html %}
-
-<div class="os-page os-hide-chrome">
+<div class="os-page">
 
 <div class="os-doc-header">
   <a href="/en/" class="os-doc-header-logo">

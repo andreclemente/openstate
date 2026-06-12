@@ -1,6 +1,6 @@
 // === OPENSTATE DESIGN SYSTEM ===
-// Institutional-grade, typography-first, calm aesthetic
-// No shadows. Subtle borders. Generous whitespace.
+// Institutional, typography-first, calm. No shadows.
+// Subtle borders. Generous whitespace.
 
 // --- Design tokens ---
 :root {
@@ -18,44 +18,22 @@
   --os-transition: 0.2s ease;
 }
 
-// --- Base ---
-html {
-  scroll-behavior: smooth;
-}
+// --- Base reset ---
+* { box-sizing: border-box; }
 
-// --- Landing page: hide just-the-docs chrome via body:has() ---
-body:has(.os-page) .side-bar,
-body:has(.os-page) .main-header,
-body:has(.os-page) #search-input,
-body:has(.os-page) .site-footer,
-body:has(.os-page) .footer,
-body:has(.os-page) nav.breadcrumb-nav,
-body:has(.os-page) #site-nav,
-body:has(.os-page) .site-nav,
-body:has(.os-page) .search {
-  display: none !important;
-}
-
-body:has(.os-page) .main-content,
-body:has(.os-page) .main-content-wrap {
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: var(--os-bg) !important;
-}
-
-body:has(.os-page) .main {
-  margin-left: 0 !important;
-  max-width: 100% !important;
-}
-
-// --- Landing page wrapper ---
-.os-page {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  color: var(--os-text);
-  line-height: 1.6;
+body {
+  margin: 0;
   background: var(--os-bg);
+  color: var(--os-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
+
+a { color: var(--os-accent); text-decoration: none; transition: color var(--os-transition); }
+a:hover { color: var(--os-accent-hover); text-decoration: underline; }
+
+html { scroll-behavior: smooth; }
 
 // === HERO ===
 .os-hero {
@@ -94,17 +72,14 @@ body:has(.os-page) .main {
   height: auto;
   margin: 0 auto 36px;
   object-fit: contain;
-  transition: opacity var(--os-transition);
 }
 
 .os-hero-sub {
   font-size: 18px;
   line-height: 1.7;
   color: var(--os-muted);
-  margin: 0 0 44px;
+  margin: 0 auto 44px;
   max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 400;
 }
 
@@ -157,29 +132,6 @@ body:has(.os-page) .main {
   transform: translateY(0);
 }
 
-// --- Hero lang toggle ---
-.os-lang-toggle {
-  font-size: 14px;
-  color: var(--os-dim);
-  letter-spacing: 0.3px;
-}
-.os-lang-toggle a {
-  color: var(--os-muted) !important;
-  font-weight: 500;
-  margin: 0 3px;
-  transition: color var(--os-transition);
-}
-.os-lang-toggle a:hover {
-  color: var(--os-text) !important;
-}
-.os-lang-active {
-  color: var(--os-accent) !important;
-}
-.os-lang-sep {
-  margin: 0 8px;
-  color: var(--os-border);
-}
-
 // === SECTIONS ===
 .os-section {
   padding: 100px 24px;
@@ -192,20 +144,12 @@ body:has(.os-page) .main {
 }
 
 .os-section-label {
-  font-size: 11px !important;
-  font-weight: 700 !important;
+  font-size: 11px;
+  font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--os-dim) !important;
-  margin: 0 0 20px !important;
-}
-
-.os-section-title {
-  font-size: 32px !important;
-  font-weight: 700 !important;
-  color: var(--os-text) !important;
-  margin: 0 0 48px !important;
-  line-height: 1.3 !important;
+  color: var(--os-dim);
+  margin: 0 0 20px;
 }
 
 // === CARDS ===
@@ -228,11 +172,11 @@ body:has(.os-page) .main {
 }
 
 .os-card h3 {
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  margin: 0 0 12px !important;
-  color: var(--os-text) !important;
-  line-height: 1.4 !important;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--os-text);
+  line-height: 1.4;
 }
 
 .os-card p {
@@ -242,7 +186,7 @@ body:has(.os-page) .main {
   margin: 0;
 }
 
-// --- Accent cards (What it produces) ---
+// --- Accent cards ---
 .os-card-accent {
   border-color: #1e3a5f;
 }
@@ -258,7 +202,7 @@ body:has(.os-page) .main {
   letter-spacing: 0.5px;
 }
 
-// --- "What it is not" section ---
+// --- "What it is not" cards ---
 .os-section-not {
   background: #0f172a;
 }
@@ -309,11 +253,10 @@ body:has(.os-page) .main {
 .os-text-link {
   font-size: 14px;
   font-weight: 500;
-  color: var(--os-accent) !important;
-  transition: color var(--os-transition);
+  color: var(--os-accent);
 }
 .os-text-link:hover {
-  color: var(--os-accent-hover) !important;
+  color: var(--os-accent-hover);
 }
 
 // === FOOTER ===
@@ -342,15 +285,14 @@ body:has(.os-page) .main {
 }
 
 .os-footer-row a {
-  color: var(--os-dim) !important;
-  transition: color var(--os-transition);
+  color: var(--os-dim);
 }
 .os-footer-row a:hover {
-  color: var(--os-muted) !important;
+  color: var(--os-muted);
 }
 
 // ==========================================
-// === DOC PAGE LAYOUT (secondary pages) ===
+// === DOC PAGE LAYOUT ===
 // ==========================================
 
 .os-doc-header {
@@ -360,9 +302,6 @@ body:has(.os-page) .main {
   padding: 16px 32px;
   background: #0f172a;
   border-bottom: 1px solid #1e293b;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .os-doc-header-logo {
@@ -370,14 +309,11 @@ body:has(.os-page) .main {
   align-items: center;
   gap: 10px;
   text-decoration: none !important;
-  color: var(--os-text) !important;
+  color: var(--os-text);
   font-weight: 600;
   font-size: 15px;
-  transition: opacity var(--os-transition);
 }
-.os-doc-header-logo:hover {
-  opacity: 0.8;
-}
+.os-doc-header-logo:hover { opacity: 0.8; }
 
 .os-doc-header-logo img {
   height: 28px;
@@ -391,14 +327,13 @@ body:has(.os-page) .main {
 }
 
 .os-doc-header-nav a {
-  color: var(--os-muted) !important;
+  color: var(--os-muted);
   font-size: 14px;
   text-decoration: none !important;
   font-weight: 500;
-  transition: color var(--os-transition);
 }
 .os-doc-header-nav a:hover {
-  color: var(--os-text) !important;
+  color: var(--os-text);
 }
 
 .os-doc-lang-toggle {
@@ -410,30 +345,28 @@ body:has(.os-page) .main {
   border: 1px solid var(--os-border);
   border-radius: 6px;
   background: transparent;
-  transition: border-color var(--os-transition);
 }
 .os-doc-lang-toggle:hover {
   border-color: var(--os-border-hover);
 }
 
 .os-doc-lang-toggle a {
-  color: var(--os-dim) !important;
+  color: var(--os-dim);
   text-decoration: none !important;
   font-weight: 500;
-  transition: color var(--os-transition);
 }
 .os-doc-lang-toggle a:hover {
-  color: var(--os-text) !important;
+  color: var(--os-text);
 }
 .os-doc-lang-toggle a.active {
-  color: var(--os-accent) !important;
+  color: var(--os-accent);
 }
 
 .os-doc-lang-toggle .sep {
   color: var(--os-border);
 }
 
-// --- Doc content area ---
+// --- Doc content ---
 .os-doc-content {
   max-width: 800px;
   margin: 0 auto;
@@ -442,29 +375,27 @@ body:has(.os-page) .main {
 }
 
 .os-doc-content h1 {
-  font-size: 36px !important;
-  font-weight: 700 !important;
-  margin: 0 0 12px !important;
-  color: var(--os-text) !important;
-  line-height: 1.2 !important;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--os-text);
+  line-height: 1.2;
 }
 
 .os-doc-content h2 {
-  font-size: 22px !important;
-  font-weight: 600 !important;
-  margin: 48px 0 16px !important;
-  color: var(--os-text) !important;
-  padding-top: 0 !important;
-  border: none !important;
-  line-height: 1.3 !important;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 48px 0 16px;
+  color: var(--os-text);
+  line-height: 1.3;
 }
 
 .os-doc-content h3 {
-  font-size: 17px !important;
-  font-weight: 600 !important;
-  margin: 32px 0 12px !important;
-  color: #e2e8f0 !important;
-  line-height: 1.4 !important;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: #e2e8f0;
+  line-height: 1.4;
 }
 
 .os-doc-content p {
@@ -493,13 +424,12 @@ body:has(.os-page) .main {
 }
 
 .os-doc-content a {
-  color: var(--os-accent) !important;
+  color: var(--os-accent);
   text-decoration: none;
-  transition: color var(--os-transition);
 }
 .os-doc-content a:hover {
   text-decoration: underline;
-  color: var(--os-accent-hover) !important;
+  color: var(--os-accent-hover);
 }
 
 .os-doc-content hr {
@@ -588,30 +518,6 @@ body:has(.os-page) .main {
   margin: 0;
 }
 
-// === Secondary pages: hide sidebar when os-doc-content/header present ===
-body:has(.os-doc-content) .side-bar,
-body:has(.os-doc-content) .main-header {
-  display: none !important;
-}
-
-body:has(.os-doc-content) .main {
-  margin-left: 0 !important;
-  max-width: 100% !important;
-}
-
-body:has(.os-doc-content) .main-content {
-  max-width: 100% !important;
-  width: 100% !important;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-}
-
-body:has(.os-doc-content) .main-content-wrap {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 // === 404 PAGE ===
 .os-404 {
   text-align: center;
@@ -619,8 +525,8 @@ body:has(.os-doc-content) .main-content-wrap {
 }
 
 .os-404 h1 {
-  font-size: 48px !important;
-  margin-bottom: 16px !important;
+  font-size: 48px;
+  margin-bottom: 16px;
 }
 
 .os-404 p {
@@ -638,19 +544,16 @@ body:has(.os-doc-content) .main-content-wrap {
   .os-hero-logo { max-width: 200px; }
 
   .os-section { padding: 72px 20px; }
-  .os-section-title { font-size: 26px !important; }
-
   .os-cards { grid-template-columns: 1fr; }
   .os-cards-not { grid-template-columns: 1fr 1fr; }
-
   .os-card { padding: 28px; }
 
   .os-doc-header { padding: 12px 16px; }
   .os-doc-header-nav { gap: 14px; }
   .os-doc-header-nav a { font-size: 13px; }
   .os-doc-content { padding: 36px 16px 72px; }
-  .os-doc-content h1 { font-size: 28px !important; }
-  .os-doc-content h2 { font-size: 20px !important; }
+  .os-doc-content h1 { font-size: 28px; }
+  .os-doc-content h2 { font-size: 20px; }
   .os-doc-content p { font-size: 15px; }
 }
 
