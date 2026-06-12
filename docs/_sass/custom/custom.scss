@@ -605,8 +605,15 @@ body:has(.os-doc-content) .main-header {
 
 body:has(.os-doc-content) .main-content {
   max-width: 100% !important;
-  padding-left: 0 !important;
   width: 100% !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+body:has(.os-doc-content) .main-content-wrap {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 // === 404 PAGE ===
