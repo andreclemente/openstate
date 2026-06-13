@@ -1,30 +1,30 @@
 # OpenState
 
-A structured observability system for public services.
+A collective memory about how public services behave.
 
 ---
 
 ## Purpose
 
-OpenState documents how public services behave in reality.
+OpenState preserves knowledge about how public services behave in reality.
 
-Not to debate solutions. Not to push agendas. To observe, document, and create structured evidence about what happens — so patterns become visible and understanding replaces assumption.
+Not to debate solutions. Not to push agendas. To document what happens — so that knowledge doesn't disappear and patterns become visible.
 
 ## What OpenState produces
 
-**Structured observations** — each one describes a real problem in a public service, with evidence, impact, and system context.
+**Documented situations** — each one describes a real experience in a public service, with evidence and context.
 
-**Pattern visibility** — over time, observations connect. Isolated problems reveal systemic issues.
+**Pattern visibility** — over time, similar situations connect. Isolated problems reveal recurring patterns.
 
-**Evidence-based understanding** — decisions grounded in documented reality, not opinion.
+**Collective memory** — decisions grounded in documented reality, not opinion.
 
 ---
 
 ## Core Principles
 
-- Observable, reproducible problems only
-- Evidence required for every observation
-- Observations separated from solutions
+- Observable, reproducible situations only
+- Evidence required for every entry
+- Situations separated from solutions
 - No ideological or partisan framing
 - Structure over opinion
 
@@ -41,4 +41,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for submission format and process.
 
 ## License
 
-[MIT](LICENSE)
+[CC BY 4.0](LICENSE)

@@ -3,7 +3,7 @@ title: OpenState
 nav_exclude: true
 search_exclude: true
 layout: default
-description: Construir uma memória colectiva sobre como os serviços públicos funcionam.
+description: Building a collective memory about how public services behave
 ---
 
 {% include landing-styles.html %}
