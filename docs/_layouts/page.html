@@ -111,7 +111,7 @@ layout: default
   var toggles = document.querySelectorAll('.os-theme-toggle');
   toggles.forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+      var next = current === 'dark' ? 'light' : 'dark';
       setTheme(next);
     });
   });

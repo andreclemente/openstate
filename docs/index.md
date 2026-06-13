@@ -166,7 +166,7 @@ description: Building a collective memory about how public services behave
   setTheme(current);
   document.querySelectorAll('.os-theme-toggle').forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
+      var next = current === 'dark' ? 'light' : 'dark';
       setTheme(next);
     });
   });
