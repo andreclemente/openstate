@@ -13,66 +13,43 @@ OpenState documenta problemas reais em serviços públicos. Cada problema passa 
 
 ## O ciclo de uma observação
 
-### 1. Observar
+### 1. Situação real
 
-Tudo começa com um problema real. Algo que aconteceu, não uma suposição.
+Tudo começa com algo que aconteceu. Não é uma suposição, não é uma opinião. É um facto.
 
-**Exemplo:** Um utente espera 8 meses por uma consulta de especialidade. Não é um caso isolado — milhares passam pelo mesmo.
+**Exemplo:** Um utente é encaminhado pelo médico de família para uma consulta de especialidade. Aguarda 8 meses sem data. A condição agrava-se.
 
-### 2. Evidenciar
+### 2. Documentada com evidência
 
-Uma observação sem fonte é uma opinião. Com evidência, torna-se um facto documentado.
+Uma situação sem fonte é uma história. Com evidência, torna-se um facto documentado.
 
-**Exemplo:** Relatório da ERS mostra tempos médios de espera por especialidade. Notícias confirmam que listas de espera atingiram máximos. Dados do SIGIC corroboram os números.
+**Exemplo:** O Relatório da ERS confirma tempos médios de espera por especialidade. Notícias do Público descrevem listas de espera no máximo. Os dados do SIGIC corroboram os números.
 
-### 3. Contextualizar
-
-O problema não existe no vácuo. Que sistema está envolvido? Quem é afetado? Qual é o impacto?
-
-**Exemplo:** O problema está no SNS — cuidados hospitalares especializados. Afeta utentes que precisam de consulta de especialidade. O impacto é tempo de espera excessivo, agravamento de condições, recurso ao privado.
-
-### 4. Relacionar
+### 3. Conectada a situações semelhantes
 
 Problemas isolados tornam-se padrões quando ligados a outros problemas semelhantes.
 
 **Exemplo:** O tempo de espera para consultas está ligado à falta de médicos de família (que encaminham para especialidade) e à triagem do SNS24 (que devia filtrar urgências).
 
-### 5. Padrão
+### 4. Padrão recorrente
 
-Quando observações suficientes se ligam, um padrão torna-se visível. Deixa de ser "um problema" e passa a ser "um padrão do sistema".
+Quando observações suficientes se ligam, um padrão torna-se visível. Deixa de ser "um hospital que falha" e passa a ser "um padrão do sistema".
 
-**Exemplo:** Não é um hospital que falha — é um padrão de capacidade insuficiente vs. procura em todo o sistema de saúde.
+**Exemplo:** Não é um caso isolado — é um padrão de capacidade insuficiente vs. procura em todo o sistema de saúde.
 
-### 6. Conhecimento
+### 5. Conhecimento público
 
 O padrão documentado com evidência torna-se conhecimento público. Qualquer pessoa pode consultá-lo, verificá-lo, usá-lo como base para decisões.
 
-**Exemplo:** Um decisor político, um jornalista ou um investigador pode consultar o padrão documentado e compreender o problema com base em factos, não em opiniões.
-
----
-
-## O que torna uma observação útil
-
-### Inclui
-- Descrição factual do que acontece
-- Quem é afetado
-- Que sistema está envolvido
-- Qual é o impacto (tempo, custo, complexidade)
-- Fontes verificáveis (notícias, relatórios, dados, legislação)
-
-### Evita
-- Opiniões sem evidência
-- Dados pessoais de terceiros
-- Linguagem política ou ideológica
-- Propostas de solução (estas são separadas)
+**Exemplo:** Um jornalista, um investigador ou um decisor pode consultar o padrão documentado e compreender o problema com base em factos.
 
 ---
 
 ## Estados de verificação
 
-| Estado | O que significa |
-|:-------|:----------------|
-| **Rascunho** | Problema descrito, aguarda evidência |
+| Estado | Significado |
+|:-------|:------------|
+| **Rascunho** | Situação descrita, aguarda evidência |
 | **Confirmado** | Evidência anexada, verificável por qualquer pessoa |
 | **Analisado** | Causa raiz identificada, impacto documentado |
 | **Proposto** | Solução estruturada submetida separadamente |
@@ -97,4 +74,4 @@ O padrão documentado com evidência torna-se conhecimento público. Qualquer pe
 
 ---
 
-Queres contribuir? [Submeter uma observação →](/pt/contribute){:.os-btn .os-btn-primary}
+[Submeter uma observação →](/pt/contribute){:.os-btn .os-btn-primary}

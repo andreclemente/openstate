@@ -7,23 +7,28 @@ layout: page
 
 # Sobre
 
-## Porque existe o OpenState
+OpenState é uma base de conhecimento pública. Existe para preservar conhecimento estruturado sobre como os serviços públicos funcionam na realidade.
 
-Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam problemas que já aconteceram antes — e que vão voltar a acontecer.
+Não existe para recolher queixas.
+Não existe para debater política.
+Não existe para propor reformas.
+Não existe para construir uma comunidade.
 
-Estes problemas não são novos. São repetidos. São previsíveis. E são invisíveis.
+Existe para criar uma memória pública permanente e estruturada.
 
-Quando alguém espera meses por uma consulta, quando um processo exige o mesmo documento três vezes, quando dois serviços públicos não comunicam entre si — estes não são casos isolados. São padrões. Mas não existem estruturas que os documentem, que os liguem, que os tornem visíveis.
+---
 
-OpenState foi criado para resolver isto.
+## Porque existe
 
-## O que resolve
+Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam os mesmos problemas — repetidos, previsíveis, invisíveis.
 
-OpenState não resolve problemas diretamente. Cria algo que hoje não existe: **conhecimento público estruturado sobre como os serviços públicos funcionam na realidade.**
+Quando alguém espera meses por uma consulta, quando um processo exige o mesmo documento três vezes, quando dois serviços não comunicam entre si — estes não são casos isolados. São padrões.
 
-Sem isso, decisões são tomadas sem base factual. Problemas repetem-se sem que ninguém os ligue. Experiências individuais perdem-se.
+Mas não existem estruturas que os documentem. Notícias desaparecem. Discussões desaparecem. Experiências desaparecem.
 
-Com OpenState, cada observação documentada com evidência torna-se parte de um corpo de conhecimento que cresce ao longo do tempo — e que pertence a todos.
+OpenState existe para que essas observações se tornem memória pública estruturada — verificável, permanente, acessível.
+
+---
 
 ## Porquê a neutralidade
 
@@ -33,32 +38,26 @@ OpenState não toma partidos. Não propõe soluções. Não defende agendas. Doc
 
 A neutralidade não é uma opção. É a condição para que o conhecimento seja confiável.
 
+---
+
 ## Porquê a evidência
 
 Uma opinião sem fonte é uma opinião. Uma observação com evidência é um facto documentado.
 
-Cada entrada no OpenState exige fontes verificáveis — notícias, relatórios oficiais, dados públicos, legislação, casos reais. Isto transforma experiências dispersas em conhecimento que pode ser consultado, verificado e construído por qualquer pessoa.
+Cada entrada no OpenState exige fontes verificáveis — notícias, relatórios oficiais, dados públicos, legislação, casos reais. Isto transforma experiências dispersas em conhecimento que pode ser consultado, verificado e construído por qualquer pessoa, em qualquer momento.
+
+---
 
 ## Porquê o longo prazo
 
-Os problemas dos serviços públicos não se resolvem em meses. Compreendem-se ao longo de anos.
+Os problemas dos serviços públicos não se resolvem em meses. Compreendem-se ao longo de anos. Documentam-se ao longo de décadas.
 
-OpenState é um projeto de décadas. O seu valor cresce com cada observação documentada, com cada ligação descoberta, com cada padrão que se torna visível.
+OpenState é um projeto de longo prazo. O seu valor cresce com cada observação documentada, com cada ligação descoberta, com cada padrão que se torna visível.
 
-Não é uma plataforma. É uma infraestrutura de conhecimento público — construída para durar.
+O conhecimento aqui preservado pertence às gerações presentes e futuras.
 
-## Quem pode usar
-
-OpenState é para todos:
-
-- **Cidadãos** que querem compreender os serviços que usam
-- **Jornalistas** que procuram padrões documentados
-- **Investigadores** que estudam sistemas públicos
-- **Funcionários públicos** que trabalham na melhoria de serviços
-- **Decisores** que precisam de base factual para agir
-
-O conhecimento que o OpenState produz pertence a todos. Sem restrições, sem paywalls, sem gatekeeping.
+---
 
 ## Licença
 
-Todo o conteúdo do OpenState é publicado sob licença CC BY 4.0. O código é aberto. Os dados são abertos. O conhecimento é público.
+Todo o conteúdo é publicado sob licença CC BY 4.0. O código é aberto. Os dados são abertos. O conhecimento é público.

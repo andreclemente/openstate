@@ -7,23 +7,28 @@ layout: page
 
 # About
 
-## Why OpenState exists
+OpenState is a public knowledge base. It exists to preserve structured knowledge about how public services behave in reality.
 
-Every day, millions of people interact with public services. Many face problems that have happened before — and will happen again.
+It does not exist to collect complaints.
+It does not exist to discuss politics.
+It does not exist to propose reforms.
+It does not exist to build a community.
 
-These problems are not new. They are repeated. They are predictable. And they are invisible.
+It exists to create a permanent, structured public memory.
 
-When someone waits months for an appointment, when a process requires the same document three times, when two public services don't communicate — these are not isolated cases. They are patterns. But there are no structures to document them, connect them, or make them visible.
+---
 
-OpenState was created to address this.
+## Why it exists
 
-## What it solves
+Every day, millions of people interact with public services. Many face the same problems — repeated, predictable, invisible.
 
-OpenState does not solve problems directly. It creates something that does not exist today: **structured public knowledge about how public services behave in reality.**
+When someone waits months for an appointment, when a process requires the same document three times, when two services don't communicate — these are not isolated cases. They are patterns.
 
-Without this, decisions are made without factual basis. Problems repeat without anyone connecting them. Individual experiences are lost.
+But there are no structures to document them. News articles disappear. Discussions disappear. Experiences disappear.
 
-With OpenState, every observation documented with evidence becomes part of a body of knowledge that grows over time — and that belongs to everyone.
+OpenState exists so those observations become structured public memory — verifiable, permanent, accessible.
+
+---
 
 ## Why neutrality
 
@@ -33,32 +38,26 @@ OpenState does not take sides. It does not propose solutions. It does not advoca
 
 Neutrality is not an option. It is the condition for knowledge to be trustworthy.
 
+---
+
 ## Why evidence
 
 An opinion without a source is an opinion. An observation with evidence is a documented fact.
 
-Every entry in OpenState requires verifiable sources — news, official reports, public data, legislation, real cases. This turns scattered experiences into knowledge that can be consulted, verified, and built upon by anyone.
+Every entry in OpenState requires verifiable sources — news, official reports, public data, legislation, real cases. This turns scattered experiences into knowledge that can be consulted, verified, and built upon by anyone, at any time.
+
+---
 
 ## Why long-term
 
-Public service problems are not solved in months. They are understood over years.
+Public service problems are not solved in months. They are understood over years. They are documented over decades.
 
-OpenState is a decades-long project. Its value grows with every documented observation, every discovered connection, every pattern that becomes visible.
+OpenState is a long-term project. Its value grows with every documented observation, every discovered connection, every pattern that becomes visible.
 
-It is not a platform. It is a public knowledge infrastructure — built to last.
+The knowledge preserved here belongs to present and future generations.
 
-## Who can use it
-
-OpenState is for everyone:
-
-- **Citizens** who want to understand the services they use
-- **Journalists** looking for documented patterns
-- **Researchers** studying public systems
-- **Civil servants** working to improve services
-- **Decision-makers** who need factual basis to act
-
-The knowledge OpenState produces belongs to everyone. No restrictions, no paywalls, no gatekeeping.
+---
 
 ## License
 
-All OpenState content is published under the CC BY 4.0 license. The code is open. The data is open. The knowledge is public.
+All content is published under the CC BY 4.0 license. The code is open. The data is open. The knowledge is public.
