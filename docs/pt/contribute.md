@@ -7,39 +7,24 @@ layout: page
 
 # Contribuir
 
-Qualquer pessoa pode contribuir para o OpenState. Não precisas de conhecimentos técnicos. Se observaste um problema num serviço público, podes documentá-lo.
+Se observaste um problema num serviço público, podes documentá-lo. Leva menos de cinco minutos.
 
 ---
 
-## O processo
+## Como funciona
 
-### 1. Entra
-Faz login com uma conta GitHub. É gratuito e leva menos de um minuto.
+**1.** Faz login com uma conta GitHub (gratuito).
 
-### 2. Cria a observação
-Descreve o que aconteceu. Inclui evidência — notícias, relatórios, dados públicos, legislação ou casos documentados. Escreve em Português ou Inglês.
+**2.** Cria a observação. Descreve o que aconteceu e inclui evidência — notícias, relatórios, dados públicos.
 
-### 3. Submete
-A observação é revista e publicada. Entra na base de conhecimento pública do OpenState.
+**3.** Submete. A observação é revista e publicada.
 
 ---
 
-## Submeter
-
-[Submeter uma Observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml){:.os-btn .os-btn-primary}
-
-O formulário cria uma entrada estruturada automaticamente. Submissões em português são traduzidas automaticamente para inglês.
+[Submeter uma observação](https://github.com/andreclemente/openstate/issues/new?template=reportar-problema.yml){:.os-btn .os-btn-primary}
 
 ---
 
-## Regras
+## Regras simples
 
-**Inclui:** Problemas observáveis e reprodutíveis, evidência concreta, descrições factuais e neutras.
-
-**Evita:** Opiniões sem evidência, dados pessoais de terceiros, linguagem política ou ideológica, dados pessoais.
-
----
-
-## Contacto
-
-Para questões sobre o projeto, abre uma discussão com a label `meta` no GitHub.
+Descreve o que aconteceu. Inclui fontes verificáveis. Sem dados pessoais de terceiros. Sem linguagem política.

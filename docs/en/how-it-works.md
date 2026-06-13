@@ -5,73 +5,45 @@ parent: English
 layout: page
 ---
 
-# How It Works
+# How it works
 
-OpenState documents real problems in public services. Each problem goes through a cycle — from the moment it is observed to becoming useful knowledge.
-
----
-
-## The observation lifecycle
-
-### 1. Real situation
-
-Everything starts with something that happened. Not an assumption, not an opinion. A fact.
-
-**Example:** A patient is referred by their GP to a specialist consultation. They wait 8 months with no date. Their condition worsens.
-
-### 2. Documented with evidence
-
-A situation without a source is a story. With evidence, it becomes a documented fact.
-
-**Example:** The Health Regulatory Authority report confirms average wait times by specialty. News articles describe waiting lists at all-time highs. SIGIC data corroborates the numbers.
-
-### 3. Connected to similar situations
-
-Isolated problems become patterns when linked to other similar problems.
-
-**Example:** Waiting times for consultations are linked to the shortage of GPs (who refer to specialists) and the triage system (which should filter urgencies).
-
-### 4. Recurring pattern
-
-When enough observations connect, a pattern becomes visible. It stops being "one hospital failing" and becomes "a system pattern."
-
-**Example:** It is not an isolated case — it is a pattern of insufficient capacity vs. demand across the entire health system.
-
-### 5. Public knowledge
-
-The pattern documented with evidence becomes public knowledge. Anyone can consult it, verify it, use it as a basis for decisions.
-
-**Example:** A journalist, researcher, or decision-maker can consult the documented pattern and understand the problem based on facts.
+A real situation becomes collective knowledge in four steps.
 
 ---
 
-## Verification statuses
+## 1. Someone documents
+
+Anyone can document a situation they experienced in a public service. Just describe what happened and include evidence — news, reports, public data.
+
+**Example:** A patient waits 8 months for a specialist consultation. They document the situation with data from the Health Regulatory Authority report and news articles.
+
+## 2. Similar situations are connected
+
+When several people document similar situations, those observations are linked together.
+
+**Example:** Waiting times for consultations are linked to the shortage of GPs and the triage system. They are different problems, but part of the same pattern.
+
+## 3. Patterns become visible
+
+With enough connected observations, it stops being "one case" and becomes "a system pattern" — documented, verifiable, public.
+
+**Example:** It is not one hospital failing. It is a pattern of insufficient capacity across the entire health system.
+
+## 4. Knowledge remains
+
+The documented pattern becomes part of collective memory. Anyone can consult it, today or ten years from now.
+
+---
+
+## Statuses
 
 | Status | Meaning |
 |:-------|:--------|
 | **Draft** | Situation described, awaiting evidence |
-| **Confirmed** | Evidence attached, verifiable by anyone |
-| **Analyzed** | Root cause identified, impact documented |
-| **Proposed** | Structured solution submitted separately |
+| **Confirmed** | Evidence attached, verifiable |
+| **Analyzed** | Root cause identified |
+| **Proposed** | Solution submitted separately |
 
 ---
 
-## Full example
-
-**Observation:** Excessive waiting times for specialist appointments in the public health system
-
-**What happens:**
-1. Patient is referred by their GP
-2. Waits on waiting list with no date estimate
-3. After 8+ months, appointment still not scheduled
-4. Patient's condition worsens or they resort to private care
-
-**Evidence:** ERS Report 2024 · Público article · SIGIC data
-
-**Possible root cause:** Insufficient hospital capacity vs. demand; absence of uniform clinical priority criteria
-
-**Relations:** GP shortage (#12), Triage system (#34)
-
----
-
-[Submit an observation →](/en/contribute){:.os-btn .os-btn-primary}
+[Contribute an observation →](/en/contribute){:.os-btn .os-btn-primary}

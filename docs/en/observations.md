@@ -7,7 +7,7 @@ layout: page
 
 # Observations
 
-Each card represents a real situation documented with evidence.
+Real situations documented with evidence. Each one is a piece of collective memory.
 
 ---
 
@@ -18,15 +18,8 @@ Each card represents a real situation documented with evidence.
 <span class="os-obs-area">Healthcare</span>
 <span class="os-obs-status os-obs-status-confirmed">Confirmed</span>
 </div>
-<h3>Excessive waiting times for specialist appointments</h3>
-<p>Patients wait an average of 8 months for a first specialist consultation. 15% give up before the appointment. Conditions worsen or they resort to private care.</p>
-<div class="os-obs-footer">
-<span>🇵🇹 Portugal</span>
-<span>·</span>
-<span>3 sources</span>
-<span>·</span>
-<span>Linked to: #12, #34</span>
-</div>
+<h3>8 months for an appointment</h3>
+<p>Patients wait an average of 8 months for a first specialist consultation. 15% give up. Sources: ERS, Público, SIGIC.</p>
 </div>
 
 <div class="os-obs-card">
@@ -34,15 +27,8 @@ Each card represents a real situation documented with evidence.
 <span class="os-obs-area">Education</span>
 <span class="os-obs-status os-obs-status-confirmed">Confirmed</span>
 </div>
-<h3>Lack of substitute teachers interrupts classes</h3>
-<p>When a teacher is absent, the class has no lesson. An average of 12 days/year per class. 60% of schools report teacher shortages.</p>
-<div class="os-obs-footer">
-<span>🇵🇹 Portugal</span>
-<span>·</span>
-<span>3 sources</span>
-<span>·</span>
-<span>Linked to: #45</span>
-</div>
+<h3>12 days without class per year</h3>
+<p>When a teacher is absent, the class has no lesson. An average of 12 days/year. Sources: CNE, DN, DGEEC.</p>
 </div>
 
 <div class="os-obs-card">
@@ -50,15 +36,8 @@ Each card represents a real situation documented with evidence.
 <span class="os-obs-area">Digital Services</span>
 <span class="os-obs-status os-obs-status-analyzed">Analyzed</span>
 </div>
-<h3>Data inconsistency across public portals</h3>
-<p>Citizen updates their address on one portal. On the other two, the information doesn't change. Same address, three times, three systems.</p>
-<div class="os-obs-footer">
-<span>🇵🇹 Portugal</span>
-<span>·</span>
-<span>3 sources</span>
-<span>·</span>
-<span>Linked to: #67, #89</span>
-</div>
+<h3>3 portals, 3 addresses</h3>
+<p>The same address is requested three times because the systems don't communicate. Sources: AMA, Expresso, eGov.</p>
 </div>
 
 <div class="os-obs-card">
@@ -67,14 +46,7 @@ Each card represents a real situation documented with evidence.
 <span class="os-obs-status os-obs-status-draft">Draft</span>
 </div>
 <h3>Repeated requests for the same document</h3>
-<p>Citizens are frequently required to submit the same document at different counters of the same entity. Without justification.</p>
-<div class="os-obs-footer">
-<span>🇵🇹 Portugal</span>
-<span>·</span>
-<span>2 sources</span>
-<span>·</span>
-<span>Linked to: #23</span>
-</div>
+<p>The same document is requested at different counters of the same entity. Without justification.</p>
 </div>
 
 <div class="os-obs-card">
@@ -82,30 +54,8 @@ Each card represents a real situation documented with evidence.
 <span class="os-obs-area">Emergency</span>
 <span class="os-obs-status os-obs-status-draft">Draft</span>
 </div>
-<h3>Recurring emergency communication failures</h3>
-<p>Public alert systems repeatedly fail. Messages arrive late, don't reach all devices, or are sent in incompatible formats.</p>
-<div class="os-obs-footer">
-<span>🇵🇹 Portugal</span>
-<span>·</span>
-<span>1 source</span>
-<span>·</span>
-<span>—</span>
-</div>
+<h3>Emergency communication failures</h3>
+<p>Alert systems repeatedly fail. Messages arrive late or don't reach everyone.</p>
 </div>
 
 </div>
-
----
-
-## Statuses
-
-| Status | Meaning |
-|:-------|:--------|
-| **Draft** | Situation described, awaiting more evidence |
-| **Confirmed** | Evidence attached, verifiable by anyone |
-| **Analyzed** | Root cause identified, impact documented |
-| **Proposed** | Structured solution submitted |
-
----
-
-[Contribute an observation →](/en/contribute){:.os-btn .os-btn-primary}

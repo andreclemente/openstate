@@ -7,36 +7,29 @@ layout: page
 
 # About
 
-OpenState is a public knowledge base. It exists to preserve structured knowledge about how public services behave in reality.
+OpenState builds a collective memory about how public services behave in reality.
 
-It does not exist to collect complaints.
-It does not exist to discuss politics.
-It does not exist to propose reforms.
-It does not exist to build a community.
+It is not a complaint platform. It is not a political initiative. It is not a software project.
 
-It exists to create a permanent, structured public memory.
+It is a public knowledge infrastructure — built to last.
 
 ---
 
-## Why it exists
+## Why this matters
 
-Every day, millions of people interact with public services. Many face the same problems — repeated, predictable, invisible.
+Societies progress because they accumulate knowledge. But when it comes to public services, that knowledge is lost.
 
-When someone waits months for an appointment, when a process requires the same document three times, when two services don't communicate — these are not isolated cases. They are patterns.
+News disappear. Complaints are filed away. Situations repeat without anyone connecting them.
 
-But there are no structures to document them. News articles disappear. Discussions disappear. Experiences disappear.
-
-OpenState exists so those observations become structured public memory — verifiable, permanent, accessible.
+OpenState exists to prevent that. Every situation documented with evidence becomes part of a permanent memory — verifiable, open, accessible.
 
 ---
 
 ## Why neutrality
 
-Public services affect all of society. Any document about them must be factual, verifiable, and free from political or ideological framing.
+Any document about public services must be factual and verifiable. No ideology, no parties, no agendas.
 
-OpenState does not take sides. It does not propose solutions. It does not advocate agendas. It documents what happens, with evidence, so that each person can form their own understanding.
-
-Neutrality is not an option. It is the condition for knowledge to be trustworthy.
+OpenState documents what happens. It does not take positions. It does not propose solutions.
 
 ---
 
@@ -44,20 +37,18 @@ Neutrality is not an option. It is the condition for knowledge to be trustworthy
 
 An opinion without a source is an opinion. An observation with evidence is a documented fact.
 
-Every entry in OpenState requires verifiable sources — news, official reports, public data, legislation, real cases. This turns scattered experiences into knowledge that can be consulted, verified, and built upon by anyone, at any time.
+Every entry requires verifiable sources — news, reports, public data, legislation, real cases.
 
 ---
 
 ## Why long-term
 
-Public service problems are not solved in months. They are understood over years. They are documented over decades.
+Public service problems are understood over years. They are documented over decades.
 
-OpenState is a long-term project. Its value grows with every documented observation, every discovered connection, every pattern that becomes visible.
-
-The knowledge preserved here belongs to present and future generations.
+OpenState is built to last. The knowledge preserved here belongs to present and future generations.
 
 ---
 
 ## License
 
-All content is published under the CC BY 4.0 license. The code is open. The data is open. The knowledge is public.
+All content is published under the CC BY 4.0 license. Open, without restrictions.
