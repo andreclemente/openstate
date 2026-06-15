@@ -1,29 +1,25 @@
 ---
-layout: default
+layout: page
 permalink: /pt/observation/
 ---
 
-<div class="os-page">
-
-<article class="os-obs-detail" id="obs-detail">
-  <div class="os-section-inner">
-    <div id="obs-loading" class="os-obs-loading">A carregar observação…</div>
-    <div id="obs-error" class="os-obs-error" style="display:none">Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.</div>
-    <div id="obs-content" style="display:none">
-      <div class="os-obs-detail-meta">
-        <span class="os-obs-area" id="obs-area"></span>
-        <span class="os-obs-status" id="obs-status"></span>
-      </div>
-      <h1 id="obs-title"></h1>
-      <div class="os-obs-detail-body" id="obs-body"></div>
-      <div class="os-obs-detail-footer">
-        <a id="obs-github-link" href="#" class="os-btn os-btn-outline" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
-        <a href="/pt/observations" class="os-btn os-btn-link">← Voltar</a>
-      </div>
+<div class="os-obs-detail">
+  <div id="obs-loading" class="os-obs-loading">A carregar observação…</div>
+  <div id="obs-error" class="os-obs-error" style="display:none">
+    Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.
+  </div>
+  <div id="obs-content" style="display:none">
+    <div class="os-obs-detail-meta">
+      <span class="os-obs-area" id="obs-area"></span>
+      <span class="os-obs-status" id="obs-status"></span>
+    </div>
+    <h1 id="obs-title"></h1>
+    <div class="os-obs-detail-body" id="obs-body"></div>
+    <div class="os-obs-detail-footer">
+      <a id="obs-github-link" href="#" class="os-btn os-btn-outline" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      <a href="/pt/observations" class="os-btn os-btn-link">← Voltar</a>
     </div>
   </div>
-</article>
-
 </div>
 
 <script src="/assets/js/github.v3.js"></script>
