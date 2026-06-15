@@ -102,8 +102,8 @@ function normalizeIssue(issue) {
 }
 
 function extractArea(body) {
-  const match = body.match(/Sistema envolvido[^:]*:\s*\*{0,2}([^*\n]+?)\*{0,2}/i);
-  if (match) return match.group(1).split('/')[0].trim();
+  const match = body.match(/##\s*Sistema envolvido[^\n]*\n+\s*([^\n]+)/i);
+  if (match) return match[1].replace(/\*/g, '').split('/')[0].trim();
   return 'Outro';
 }
 
