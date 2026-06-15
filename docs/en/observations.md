@@ -21,18 +21,20 @@ Real situations documented with evidence. Each one is a piece of collective memo
 
 <div class="os-obs-grid" id="obs-grid">
   {% for obs in site.observations reversed %}
-  <div class="os-obs-card" data-area="{{ obs.area | slugify }}">
-    <div class="os-obs-header">
-      <span class="os-obs-area">{{ obs.area }}</span>
-      <span class="os-obs-status os-obs-status-{{ obs.status }}">{{ obs.status | capitalize }}</span>
+  <a href="{{ obs.url }}" class="os-obs-card-link">
+    <div class="os-obs-card" data-area="{{ obs.area | slugify }}">
+      <div class="os-obs-header">
+        <span class="os-obs-area">{{ obs.area }}</span>
+        <span class="os-obs-status os-obs-status-{{ obs.status }}">{{ obs.status | capitalize }}</span>
+      </div>
+      <h3>{{ obs.title }}</h3>
+      <p>{{ obs.content | strip_html | truncatewords: 30 }}</p>
+      <div class="os-obs-footer">
+        <span>{{ obs.date | date: "%d/%m/%Y" }}</span>
+        <span>{{ obs.sources }} sources</span>
+      </div>
     </div>
-    <h3>{{ obs.title }}</h3>
-    <p>{{ obs.content | strip_html | truncatewords: 30 }}</p>
-    <div class="os-obs-footer">
-      <span>{{ obs.date | date: "%d/%m/%Y" }}</span>
-      <span>{{ obs.sources }} sources</span>
-    </div>
-  </div>
+  </a>
   {% endfor %}
 </div>
 

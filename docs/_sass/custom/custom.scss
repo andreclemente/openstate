@@ -437,6 +437,16 @@ html { scroll-behavior: smooth; }
   line-height: 1.3;
 }
 
+.os-example-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.os-example-card-link:hover .os-example-card {
+  border-color: var(--os-border-hover);
+  background: var(--os-card-hover);
+}
+
 .os-example-card p {
   font-size: 14px;
   line-height: 1.7;
@@ -475,6 +485,16 @@ html { scroll-behavior: smooth; }
   padding: 24px;
 }
 .os-obs-card:hover {
+  border-color: var(--os-border-hover);
+  background: var(--os-card-hover);
+}
+
+.os-obs-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.os-obs-card-link:hover .os-obs-card {
   border-color: var(--os-border-hover);
   background: var(--os-card-hover);
 }
@@ -567,6 +587,63 @@ html { scroll-behavior: smooth; }
   background: var(--os-accent-bg);
   border-color: var(--os-accent);
   color: var(--os-accent);
+}
+
+// ==========================================
+// === OBSERVATION DETAIL PAGE
+// ==========================================
+
+.os-obs-detail {
+  padding: 60px 0;
+}
+
+.os-obs-detail-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.os-obs-detail h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--os-text);
+  line-height: 1.3;
+  margin-bottom: 32px;
+}
+
+.os-obs-detail-body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--os-text);
+}
+
+.os-obs-detail-body p {
+  margin-bottom: 16px;
+  color: var(--os-muted);
+}
+
+.os-obs-detail-body h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 32px 0 12px;
+  color: var(--os-text);
+}
+
+.os-obs-detail-body ul {
+  margin-bottom: 16px;
+  padding-left: 20px;
+  color: var(--os-muted);
+}
+
+.os-obs-detail-body li {
+  margin-bottom: 8px;
+}
+
+.os-obs-detail-footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--os-border);
 }
 
 // ==========================================

@@ -112,11 +112,13 @@ description: Building a collective memory about how public services behave
     <h2 class="os-section-label">Observações</h2>
     <div class="os-examples">
       {% for obs in site.observations reversed limit:3 %}
+      <a href="{{ obs.url }}" class="os-example-card-link">
       <div class="os-example-card">
         <div class="os-example-tag os-example-tag-{{ obs.area | slugify }}">{{ obs.area }}</div>
         <h3>{{ obs.title }}</h3>
         <p>{{ obs.content | strip_html | truncatewords: 20 }}</p>
       </div>
+      </a>
       {% endfor %}
     </div>
     <div class="os-cta-row">

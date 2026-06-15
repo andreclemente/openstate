@@ -5,5 +5,6 @@ theme: jekyll-theme-primer
 
 collections:
   observations:
-    output: false
+    output: true
     sort_by: date
+    permalink: /observations/:slug/
