@@ -647,6 +647,24 @@ html { scroll-behavior: smooth; }
 }
 
 // ==========================================
+// === LOADING & ERROR STATES
+// ==========================================
+
+.os-obs-loading {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--os-dim);
+  font-size: 14px;
+}
+
+.os-obs-error {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--os-danger);
+  font-size: 14px;
+}
+
+// ==========================================
 // === THEME TOGGLE
 // ==========================================
 

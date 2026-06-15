@@ -2,9 +2,3 @@ title: OpenState
 description: Building a collective memory about how public services behave
 url: https://openstate.andreclemente.dev
 theme: jekyll-theme-primer
-
-collections:
-  observations:
-    output: true
-    sort_by: date
-    permalink: /observations/:slug/

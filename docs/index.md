@@ -110,22 +110,36 @@ description: Building a collective memory about how public services behave
 <div class="os-section" id="observations">
   <div class="os-section-inner">
     <h2 class="os-section-label">Observações</h2>
-    <div class="os-examples">
-      {% for obs in site.observations reversed limit:3 %}
-      <a href="{{ obs.url }}" class="os-example-card-link">
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-{{ obs.area | slugify }}">{{ obs.area }}</div>
-        <h3>{{ obs.title }}</h3>
-        <p>{{ obs.content | strip_html | truncatewords: 20 }}</p>
-      </div>
-      </a>
-      {% endfor %}
-    </div>
+    <div id="obs-landing-loading" class="os-obs-loading">A carregar…</div>
+    <div class="os-examples" id="obs-landing-grid" style="display:none"></div>
     <div class="os-cta-row">
       <a href="/pt/observations" class="os-btn os-btn-outline">Ver todas →</a>
     </div>
   </div>
 </div>
+
+<script type="module">
+import { getObservations } from '/assets/js/github.js';
+try {
+  const all = await getObservations();
+  const latest = all.slice(0, 3);
+  if (latest.length > 0) {
+    const grid = document.getElementById('obs-landing-grid');
+    for (const obs of latest) {
+      const summary = obs.sections.what_happens || obs.body.substring(0, 200);
+      grid.innerHTML += `<a href="/pt/observations/${obs.number}" class="os-example-card-link">
+        <div class="os-example-card">
+          <div class="os-example-tag">${obs.area}</div>
+          <h3>${obs.title}</h3>
+          <p>${summary.replace(/\n/g, ' ').substring(0, 150)}…</p>
+        </div>
+      </a>`;
+    }
+    grid.style.display = 'grid';
+    document.getElementById('obs-landing-loading').style.display = 'none';
+  }
+} catch(e) { console.warn('Observations unavailable:', e); }
+</script>
 
 </div>
 
