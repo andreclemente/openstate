@@ -1148,3 +1148,38 @@ html { scroll-behavior: smooth; }
   margin-top: auto;
   padding-top: 12px;
 }
+
+// ==========================================
+// === TWO-COLUMN LANDING SECTION
+// ==========================================
+
+.os-two-col-section {
+  padding: 88px 24px;
+  border-bottom: 1px solid var(--os-border);
+}
+
+.os-two-col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.os-two-col-col .os-section-label {
+  margin-bottom: 20px;
+}
+
+.os-two-col-col .os-section-intro:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .os-two-col-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .os-two-col-section {
+    padding: 64px 20px;
+  }
+}

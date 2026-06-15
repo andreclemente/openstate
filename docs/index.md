@@ -60,66 +60,30 @@ description: Building a collective memory about how public services behave
     <p class="os-hero-sub">Notícias desaparecem. Queixas perdem-se. Experiências repetem-se sem que ninguém as ligue. OpenState existe para que o conhecimento não desapareça.</p>
     <div class="os-hero-links">
       <a href="/pt/observations" class="os-btn os-btn-primary">Explorar observações</a>
+      <a href="/pt/how-it-works" class="os-btn os-btn-outline">Como funciona</a>
       <a href="/pt/contribute" class="os-btn os-btn-outline">Contribuir</a>
     </div>
   </div>
 </div>
 
-<!-- THE REALITY -->
-<div class="os-section" id="why">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">O problema</h2>
-    <p class="os-section-intro">Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam os mesmos problemas — repetidos, previsíveis, invisíveis.</p>
-    <p class="os-section-intro">Alguém muda de morada. Actualiza nas Finanças. Actualiza na Segurança Social. Actualiza no SNS. A mesma informação, três vezes, três sistemas que não comunicam.</p>
-    <p class="os-section-intro">Isto não é um caso isolado. É um padrão. Mas não existe estrutura que o documente.</p>
-    <p class="os-section-intro">Notícias são publicadas. Pessoas queixam-se. Relatórios são escritos. Discussões acontecem.</p>
-    <p class="os-section-intro os-section-intro-strong">Dias depois, tudo desaparece. E a mesma situação repete-se.</p>
-  </div>
-</div>
-
-<!-- THE RESPONSE -->
-<div class="os-section" id="what">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">A resposta</h2>
-    <p class="os-section-intro">OpenState constrói uma memória colectiva sobre como os serviços públicos funcionam na realidade.</p>
-    <p class="os-section-intro">Cada situação documentada com evidência torna-se parte de um conhecimento permanente — verificável, aberto, acessível.</p>
-    <p class="os-section-intro">Não prometemos resolver nada. Prometemos que o conhecimento não se perde.</p>
-  </div>
-</div>
-
-<!-- HOW IT WORKS (visual) -->
-<div class="os-section" id="how">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">Como funciona</h2>
-    <div class="os-chain">
-      <div class="os-chain-step"><div class="os-chain-num">1</div><p>Alguém documenta uma situação real</p></div>
-      <div class="os-chain-arrow">↓</div>
-      <div class="os-chain-step"><div class="os-chain-num">2</div><p>Situações semelhantes são ligadas</p></div>
-      <div class="os-chain-arrow">↓</div>
-      <div class="os-chain-step"><div class="os-chain-num">3</div><p>Padrões tornam-se visíveis</p></div>
-      <div class="os-chain-arrow">↓</div>
-      <div class="os-chain-step os-chain-step-final"><div class="os-chain-num">4</div><p>O conhecimento permanece</p></div>
+<!-- PROBLEMA + RESPOSTA (2 columns) -->
+<div class="os-section os-two-col-section" id="why-what">
+  <div class="os-two-col-grid">
+    <div class="os-two-col-col">
+      <h2 class="os-section-label">O problema</h2>
+      <p class="os-section-intro">Todos os dias, milhões de pessoas interagem com serviços públicos. Muitas enfrentam os mesmos problemas — repetidos, previsíveis, invisíveis.</p>
+      <p class="os-section-intro">Alguém muda de morada. Actualiza nas Finanças. Actualiza na Segurança Social. Actualiza no SNS. A mesma informação, três vezes, três sistemas que não comunicam.</p>
+      <p class="os-section-intro">Isto não é um caso isolado. É um padrão. Mas não existe estrutura que o documente.</p>
+      <p class="os-section-intro os-section-intro-strong">Dias depois, tudo desaparece. E a mesma situação repete-se.</p>
     </div>
-    <div class="os-cta-row">
-      <a href="/pt/how-it-works" class="os-btn os-btn-outline">Ver em detalhe →</a>
+    <div class="os-two-col-col">
+      <h2 class="os-section-label">A resposta</h2>
+      <p class="os-section-intro">OpenState constrói uma memória colectiva sobre como os serviços públicos funcionam na realidade.</p>
+      <p class="os-section-intro">Cada situação documentada com evidência torna-se parte de um conhecimento permanente — verificável, aberto, acessível.</p>
+      <p class="os-section-intro">Não prometemos resolver nada. Prometemos que o conhecimento não se perde.</p>
     </div>
   </div>
 </div>
-
-<!-- OBSERVATIONS -->
-<div class="os-section" id="observations">
-  <div class="os-section-inner">
-    <h2 class="os-section-label">Observações</h2>
-    <div id="obs-landing-loading" class="os-obs-loading">A carregar…</div>
-    <div class="os-examples" id="obs-landing-grid" style="display:none"></div>
-    <div class="os-cta-row">
-      <a href="/pt/observations" class="os-btn os-btn-outline">Ver todas →</a>
-    </div>
-  </div>
-</div>
-
-<script src="/assets/js/github.v3.js"></script>
-<script src="/assets/js/landing-obs.js"></script>
 
 </div>
 
