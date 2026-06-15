@@ -37,7 +37,7 @@ function osNormalizeIssue(issue) {
 
   return {
     number: issue.number,
-    title: issue.title.replace(/^\[(?:Observação|Observation)\]\s*/i, '').trim(),
+    title: issue.title.replace(/^\[(?:Observação|Observation|Exemplo|Teste)\]\s*/i, '').trim(),
     body: body,
     area: osExtractArea(body),
     status: labels.includes('confirmed') ? 'confirmed' : 'draft',
