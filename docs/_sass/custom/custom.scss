@@ -411,9 +411,21 @@ html { scroll-behavior: smooth; }
 
 .os-examples {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.os-example-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.os-example-card-link:hover .os-example-card {
+  border-color: var(--os-border-hover);
+  background: var(--os-card-hover);
 }
 
 .os-example-card {
@@ -421,10 +433,10 @@ html { scroll-behavior: smooth; }
   border: 1px solid var(--os-border);
   border-radius: 10px;
   padding: 28px;
-}
-.os-example-card:hover {
-  border-color: var(--os-border-hover);
-  background: var(--os-card-hover);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .os-example-tag {
@@ -449,23 +461,22 @@ html { scroll-behavior: smooth; }
   margin: 0 0 10px;
   color: var(--os-text);
   line-height: 1.3;
-}
-
-.os-example-card-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-.os-example-card-link:hover .os-example-card {
-  border-color: var(--os-border-hover);
-  background: var(--os-card-hover);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .os-example-card p {
   font-size: 14px;
   line-height: 1.7;
   color: var(--os-muted);
-  margin: 0 0 16px;
+  margin: 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .os-example-evidence {
@@ -616,62 +627,108 @@ html { scroll-behavior: smooth; }
 }
 
 // ==========================================
+// === BREADCRUMB
+// ==========================================
+
+.os-breadcrumb {
+  padding: 16px 0 8px;
+  font-size: 13px;
+}
+.os-breadcrumb a {
+  color: var(--os-dim) !important;
+  text-decoration: none !important;
+}
+.os-breadcrumb a:hover {
+  color: var(--os-accent) !important;
+}
+
+// ==========================================
 // === OBSERVATION DETAIL PAGE
 // ==========================================
 
 .os-obs-detail {
-  padding: 20px 0 60px;
+  padding: 0 0 80px;
+}
+
+.os-obs-detail-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--os-border);
 }
 
 .os-obs-detail-meta {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
   margin-bottom: 16px;
 }
 
 .os-obs-detail h1 {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--os-text);
-  line-height: 1.3;
-  margin-bottom: 32px;
-  padding-bottom: 20px;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.os-obs-section {
+  margin-bottom: 40px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--os-border);
 }
+.os-obs-section:last-child {
+  border-bottom: none;
+}
 
-.os-obs-detail-body {
+.os-obs-section h2 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--os-dim);
+  margin: 0 0 14px;
+}
+
+.os-obs-section p {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--os-text);
-}
-
-.os-obs-detail-body p {
-  margin-bottom: 16px;
   color: var(--os-muted);
+  margin: 0 0 14px;
+}
+.os-obs-section p:last-child {
+  margin-bottom: 0;
 }
 
-.os-obs-detail-body h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 32px 0 12px;
-  color: var(--os-text);
-}
-
-.os-obs-detail-body ul {
-  margin-bottom: 16px;
+.os-obs-section ul {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--os-muted);
   padding-left: 20px;
-  color: var(--os-muted);
+  margin: 0 0 14px;
 }
 
-.os-obs-detail-body li {
-  margin-bottom: 8px;
+.os-obs-section li {
+  margin-bottom: 6px;
+}
+
+.os-obs-section a {
+  color: var(--os-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--os-border);
+}
+.os-obs-section a:hover {
+  color: var(--os-accent-hover);
+  text-decoration-color: var(--os-accent);
 }
 
 .os-obs-detail-footer {
-  margin-top: 40px;
+  margin-top: 48px;
   padding-top: 24px;
   border-top: 1px solid var(--os-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 // ==========================================
@@ -889,7 +946,7 @@ html { scroll-behavior: smooth; }
 .os-doc-content strong { color: var(--os-text); font-weight: 600; }
 
 .os-doc-content a { color: var(--os-accent); text-decoration: none; }
-.os-doc-content a:hover { text-decoration: underline; color: var(--os-accent-hover); }
+.os-doc-content a:hover { color: var(--os-accent-hover); }
 
 .os-doc-content hr {
   border: none;
