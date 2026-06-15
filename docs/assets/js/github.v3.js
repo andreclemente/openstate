@@ -133,6 +133,27 @@ function getObservation(number) {
     });
 }
 
+function getComments(number) {
+  var cached = osGetCache('comments_' + number);
+  if (cached) return Promise.resolve(cached);
+
+  return osFetchJSON(OS_API_BASE + '/repos/' + OS_REPO + '/issues/' + number + '/comments')
+    .then(function(comments) {
+      osSetCache('comments_' + number, comments);
+      return comments;
+    });
+}
+
+function findTranslation(comments) {
+  for (var i = 0; i < comments.length; i++) {
+    var body = comments[i].body || '';
+    if (body.indexOf('🇬🇧 English Translation') !== -1 || body.indexOf('## English Translation') !== -1) {
+      return body;
+    }
+  }
+  return null;
+}
+
 function renderMarkdown(text) {
   if (!text) return '';
   var html = text
