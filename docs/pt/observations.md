@@ -20,61 +20,65 @@ Situações reais documentadas com evidência. Cada uma é um pedaço de memóri
 
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
 
-<script type="module">
-import { getObservations, renderMarkdown } from '/assets/js/github.js?v=2';
+<script src="/assets/js/github.v3.js"></script>
+<script>
+(function() {
+  var grid = document.getElementById('obs-grid');
+  var filters = document.getElementById('obs-filters');
+  var loading = document.getElementById('obs-loading');
+  var errorDiv = document.getElementById('obs-error');
 
-const grid = document.getElementById('obs-grid');
-const filters = document.getElementById('obs-filters');
-const loading = document.getElementById('obs-loading');
-const errorDiv = document.getElementById('obs-error');
+  function slugify(s) {
+    return s.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+  }
 
-function slugify(s) {
-  return s.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
-}
+  getObservations().then(function(observations) {
+    if (observations.length === 0) {
+      loading.textContent = 'Ainda não existem observações publicadas.';
+      return;
+    }
 
-try {
-  const observations = await getObservations();
-
-  if (observations.length === 0) {
-    loading.textContent = 'Ainda não existem observações publicadas.';
-  } else {
     // Build area filters
-    const areas = [...new Set(observations.map(o => o.area))].sort();
-    for (const area of areas) {
-      const btn = document.createElement('button');
+    var areas = [];
+    var seen = {};
+    for (var i = 0; i < observations.length; i++) {
+      if (!seen[observations[i].area]) { areas.push(observations[i].area); seen[observations[i].area] = true; }
+    }
+    areas.sort();
+    for (var j = 0; j < areas.length; j++) {
+      var btn = document.createElement('button');
       btn.className = 'os-filter-btn';
-      btn.setAttribute('data-filter', slugify(area));
-      btn.textContent = area;
+      btn.setAttribute('data-filter', slugify(areas[j]));
+      btn.textContent = areas[j];
       filters.appendChild(btn);
     }
 
     // Render cards
     function renderCards(filter) {
       grid.innerHTML = '';
-      const filtered = filter === 'all' ? observations : observations.filter(o => slugify(o.area) === filter);
+      var filtered = filter === 'all' ? observations : observations.filter(function(o) { return slugify(o.area) === filter; });
 
-      for (const obs of filtered) {
-        const card = document.createElement('a');
-        card.href = '/pt/observations/' + obs.number;
+      for (var k = 0; k < filtered.length; k++) {
+        var obs = filtered[k];
+        var card = document.createElement('a');
+        card.href = '/pt/observation/?id=' + obs.number;
         card.className = 'os-obs-card-link';
 
-        const sections = obs.sections;
-        const summary = sections.what_happens || obs.body.substring(0, 200);
+        var sections = obs.sections;
+        var summary = sections.what_happens || obs.body.substring(0, 200);
 
-        card.innerHTML = `
-        <div class="os-obs-card" data-area="${slugify(obs.area)}">
-          <div class="os-obs-header">
-            <span class="os-obs-area">${obs.area}</span>
-            <span class="os-obs-status os-obs-status-${obs.status}">${obs.status === 'confirmed' ? 'Confirmado' : 'Rascunho'}</span>
-          </div>
-          <h3>${obs.title}</h3>
-          <p>${summary.replace(/\n/g, ' ').substring(0, 180)}…</p>
-          <div class="os-obs-footer">
-            <span>${obs.date}</span>
-            <span>${obs.sources} fontes</span>
-          </div>
-        </div>
-      `;
+        card.innerHTML = '<div class="os-obs-card" data-area="' + slugify(obs.area) + '">' +
+          '<div class="os-obs-header">' +
+            '<span class="os-obs-area">' + obs.area + '</span>' +
+            '<span class="os-obs-status os-obs-status-' + obs.status + '">' + (obs.status === 'confirmed' ? 'Confirmado' : 'Rascunho') + '</span>' +
+          '</div>' +
+          '<h3>' + obs.title + '</h3>' +
+          '<p>' + summary.replace(/\n/g, ' ').substring(0, 180) + '…</p>' +
+          '<div class="os-obs-footer">' +
+            '<span>' + obs.date + '</span>' +
+            '<span>' + obs.sources + ' fontes</span>' +
+          '</div>' +
+        '</div>';
         grid.appendChild(card);
       }
     }
@@ -82,9 +86,10 @@ try {
     renderCards('all');
 
     // Filter handlers
-    filters.addEventListener('click', e => {
+    filters.addEventListener('click', function(e) {
       if (!e.target.classList.contains('os-filter-btn')) return;
-      filters.querySelectorAll('.os-filter-btn').forEach(b => b.classList.remove('active'));
+      var btns = filters.querySelectorAll('.os-filter-btn');
+      for (var b = 0; b < btns.length; b++) btns[b].classList.remove('active');
       e.target.classList.add('active');
       renderCards(e.target.getAttribute('data-filter'));
     });
@@ -92,10 +97,10 @@ try {
     loading.style.display = 'none';
     filters.style.display = 'flex';
     grid.style.display = 'grid';
-  }
-} catch (err) {
-  console.error(err);
-  loading.style.display = 'none';
-  errorDiv.style.display = 'block';
-}
+  }).catch(function(err) {
+    console.error(err);
+    loading.style.display = 'none';
+    errorDiv.style.display = 'block';
+  });
+})();
 </script>

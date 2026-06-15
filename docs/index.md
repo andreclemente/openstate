@@ -118,27 +118,26 @@ description: Building a collective memory about how public services behave
   </div>
 </div>
 
-<script type="module">
-import { getObservations } from '/assets/js/github.js?v=2';
-try {
-  const all = await getObservations();
-  const latest = all.slice(0, 3);
+<script src="/assets/js/github.v3.js"></script>
+<script>
+getObservations().then(function(all) {
+  var latest = all.slice(0, 3);
   if (latest.length > 0) {
-    const grid = document.getElementById('obs-landing-grid');
-    for (const obs of latest) {
-      const summary = obs.sections.what_happens || obs.body.substring(0, 200);
-      grid.innerHTML += `<a href="/pt/observations/${obs.number}" class="os-example-card-link">
-        <div class="os-example-card">
-          <div class="os-example-tag">${obs.area}</div>
-          <h3>${obs.title}</h3>
-          <p>${summary.replace(/\n/g, ' ').substring(0, 150)}…</p>
-        </div>
-      </a>`;
+    var grid = document.getElementById('obs-landing-grid');
+    for (var i = 0; i < latest.length; i++) {
+      var obs = latest[i];
+      var summary = obs.sections.what_happens || obs.body.substring(0, 200);
+      grid.innerHTML += '<a href="/pt/observation/?id=' + obs.number + '" class="os-example-card-link">' +
+        '<div class="os-example-card">' +
+          '<div class="os-example-tag">' + obs.area + '</div>' +
+          '<h3>' + obs.title + '</h3>' +
+          '<p>' + summary.replace(/\n/g, ' ').substring(0, 150) + '…</p>' +
+        '</div></a>';
     }
     grid.style.display = 'grid';
     document.getElementById('obs-landing-loading').style.display = 'none';
   }
-} catch(e) { console.warn('Observations unavailable:', e); }
+}).catch(function(e) { console.warn('Observations unavailable:', e); });
 </script>
 
 </div>

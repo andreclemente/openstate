@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /pt/observation/
 ---
 
 <div class="os-page">
@@ -17,6 +18,7 @@ layout: default
       <div class="os-obs-detail-body" id="obs-body"></div>
       <div class="os-obs-detail-footer">
         <a id="obs-github-link" href="#" class="os-btn os-btn-outline" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+        <a href="/pt/observations" class="os-btn os-btn-link">← Voltar</a>
       </div>
     </div>
   </div>
@@ -24,34 +26,32 @@ layout: default
 
 </div>
 
-<script type="module">
-import { getObservation, renderMarkdown } from '/assets/js/github.js?v=2';
+<script src="/assets/js/github.v3.js"></script>
+<script>
+(function() {
+  var loading = document.getElementById('obs-loading');
+  var errorDiv = document.getElementById('obs-error');
+  var content = document.getElementById('obs-content');
 
-const loading = document.getElementById('obs-loading');
-const errorDiv = document.getElementById('obs-error');
-const content = document.getElementById('obs-content');
+  var params = new URLSearchParams(window.location.search);
+  var issueNumber = parseInt(params.get('id'));
 
-// Get issue number from URL: /pt/observations/10 or /en/observations/10
-const match = window.location.pathname.match(/observations\/(\d+)/);
-const issueNumber = match ? parseInt(match[1]) : null;
+  if (!issueNumber) {
+    loading.style.display = 'none';
+    errorDiv.style.display = 'block';
+    errorDiv.textContent = 'Observação não encontrada.';
+    return;
+  }
 
-if (!issueNumber) {
-  loading.style.display = 'none';
-  errorDiv.style.display = 'block';
-  errorDiv.textContent = 'Observação não encontrada.';
-} else {
-  try {
-    const obs = await getObservation(issueNumber);
-
+  getObservation(issueNumber).then(function(obs) {
     document.getElementById('obs-area').textContent = obs.area;
-    const statusEl = document.getElementById('obs-status');
+    var statusEl = document.getElementById('obs-status');
     statusEl.textContent = obs.status === 'confirmed' ? 'Confirmado' : 'Rascunho';
     statusEl.className = 'os-obs-status os-obs-status-' + obs.status;
     document.getElementById('obs-title').textContent = obs.title;
 
-    // Build body from sections
-    const sections = obs.sections;
-    let bodyHtml = '';
+    var sections = obs.sections;
+    var bodyHtml = '';
     if (sections.what_happens) bodyHtml += '<h2>O que acontece</h2>' + renderMarkdown(sections.what_happens);
     if (sections.affected) bodyHtml += '<h2>Quem é afetado</h2>' + renderMarkdown(sections.affected);
     if (sections.impact) bodyHtml += '<h2>Impacto</h2>' + renderMarkdown(sections.impact);
@@ -63,10 +63,10 @@ if (!issueNumber) {
 
     loading.style.display = 'none';
     content.style.display = 'block';
-  } catch (err) {
+  }).catch(function(err) {
     console.error(err);
     loading.style.display = 'none';
     errorDiv.style.display = 'block';
-  }
-}
+  });
+})();
 </script>
