@@ -25,7 +25,6 @@
     var tDraft = lang === 'en' ? 'Draft' : 'Rascunho';
     var tConfirmed = lang === 'en' ? 'Confirmed' : 'Confirmado';
     var tSources = lang === 'en' ? 'sources' : 'fontes';
-    var tOriginalLang = lang === 'en' ? '<span class="os-card-lang">🇵🇹 Original em português</span>' : '';
 
     // Build area filters
     var areas = [];
@@ -42,7 +41,7 @@
       filters.appendChild(btn);
     }
 
-    // Render cards
+    // Render cards function
     function renderCards(filter) {
       grid.innerHTML = '';
       var filtered = filter === 'all' ? observations : observations.filter(function(o) { return slugify(o.area) === filter; });
@@ -56,18 +55,31 @@
         var sections = obs.sections;
         var summary = sections.what_happens || obs.body.substring(0, 200);
 
+        // Title: show translated if available on EN pages
+        var displayTitle = obs._transTitle || obs.title;
+
+        // Translation status badge for EN pages
+        var transBadge = '';
+        if (lang === 'en') {
+          if (obs._hasTranslation) {
+            transBadge = '<div class="os-card-lang-row os-card-lang-translated">🇬🇧 Translation available</div>';
+          } else {
+            transBadge = '<div class="os-card-lang-row os-card-lang-no-trans">🇵🇹 No translation yet</div>';
+          }
+        }
+
         card.innerHTML = '<div class="os-obs-card" data-area="' + slugify(obs.area) + '">' +
           '<div class="os-obs-header">' +
             '<span class="os-obs-area">' + obs.area + '</span>' +
             '<span class="os-obs-status os-obs-status-' + obs.status + '">' + (obs.status === 'confirmed' ? tConfirmed : tDraft) + '</span>' +
           '</div>' +
-          '<h3>' + obs.title + '</h3>' +
+          '<h3>' + displayTitle + '</h3>' +
           '<p>' + summary.replace(/\n/g, ' ').substring(0, 180) + '…</p>' +
           '<div class="os-obs-footer">' +
             '<span>' + obs.date + '</span>' +
             '<span>' + obs.sources + ' ' + tSources + '</span>' +
           '</div>' +
-          (lang === 'en' ? '<div class="os-card-lang-row">🇵🇹 Original em português</div>' : '') +
+          transBadge +
         '</div>';
         grid.appendChild(card);
       }
@@ -86,6 +98,38 @@
     if (loading) loading.style.display = 'none';
     filters.style.display = 'flex';
     grid.style.display = 'grid';
+
+    // On EN pages, fetch comments to check translations and get translated titles
+    if (lang === 'en' && typeof getComments === 'function') {
+      observations.forEach(function(obs) {
+        getComments(obs.number).then(function(comments) {
+          var translationBody = findTranslation(comments);
+          obs._hasTranslation = !!translationBody;
+          if (translationBody) {
+            var titleMatch = translationBody.match(/###\s+([^\n]+)/);
+            obs._transTitle = titleMatch ? titleMatch[1].trim() : obs.title;
+          }
+          // Update the card
+          var cardEl = grid.querySelector('a[href*="?id=' + obs.number + '"]');
+          if (cardEl) {
+            var titleEl = cardEl.querySelector('h3');
+            if (titleEl && obs._transTitle) titleEl.textContent = obs._transTitle;
+            var badgeEl = cardEl.querySelector('.os-card-lang-row');
+            if (badgeEl) {
+              if (obs._hasTranslation) {
+                badgeEl.className = 'os-card-lang-row os-card-lang-translated';
+                badgeEl.textContent = '🇬🇧 Translation available';
+              } else {
+                badgeEl.className = 'os-card-lang-row os-card-lang-no-trans';
+                badgeEl.textContent = '🇵🇹 No translation yet';
+              }
+            }
+          }
+        }).catch(function() {
+          obs._hasTranslation = false;
+        });
+      });
+    }
   }).catch(function(err) {
     console.error(err);
     if (loading) loading.style.display = 'none';

@@ -21,30 +21,42 @@
   var lang = document.documentElement.lang || 'pt';
   var tDraft = lang === 'en' ? 'Draft' : 'Rascunho';
   var tConfirmed = lang === 'en' ? 'Confirmed' : 'Confirmado';
-  var sectionTitles = lang === 'en'
-    ? { what_happens: 'What happens', affected: 'Who is affected', impact: 'Impact', evidence: 'Evidence', root_cause: 'Possible root cause' }
-    : { what_happens: 'O que acontece', affected: 'Quem é afetado', impact: 'Impacto', evidence: 'Evidência', root_cause: 'Causa raiz possível' };
+  var enTitles = { what_happens: 'What happens', affected: 'Who is affected', impact: 'Impact', evidence: 'Evidence', root_cause: 'Possible root cause' };
+  var ptTitles = { what_happens: 'O que acontece', affected: 'Quem é afetado', impact: 'Impacto', evidence: 'Evidência', root_cause: 'Causa raiz possível' };
+
+  var order = ['what_happens', 'affected', 'impact', 'evidence', 'root_cause'];
+
+  function buildSectionsHtml(sections, titles) {
+    var html = '';
+    for (var i = 0; i < order.length; i++) {
+      var key = order[i];
+      if (sections[key]) {
+        html += '<section class="os-obs-section"><h2>' + titles[key] + '</h2>' + renderMarkdown(sections[key]) + '</section>';
+      }
+    }
+    return html;
+  }
 
   getObservation(issueNumber).then(function(obs) {
     document.getElementById('obs-area').textContent = obs.area;
     var statusEl = document.getElementById('obs-status');
     statusEl.textContent = obs.status === 'confirmed' ? tConfirmed : tDraft;
     statusEl.className = 'os-obs-status os-obs-status-' + obs.status;
-    document.getElementById('obs-title').textContent = obs.title;
+    document.getElementById('obs-github-link').href = obs.htmlUrl;
 
-    var sections = obs.sections;
-    var bodyHtml = '';
+    // Build original PT body with PT section titles
+    var originalBodyHtml = buildSectionsHtml(obs.sections, ptTitles);
 
     // On EN pages, try to fetch and show the translation comment
     if (lang === 'en' && typeof getComments === 'function') {
       getComments(issueNumber).then(function(comments) {
         var translationBody = findTranslation(comments);
         if (translationBody) {
-          // Parse the translation: extract title and body sections
+          // Parse translation title
           var titleMatch = translationBody.match(/###\s+([^\n]+)/);
           var transTitle = titleMatch ? titleMatch[1].trim() : obs.title;
 
-          // Extract sections from translation (same structure as original)
+          // Parse translation sections
           var transSections = {};
           var transLines = translationBody.split('\n');
           var transCurrent = null;
@@ -77,73 +89,48 @@
             transSections[tk] = transSections[tk].join('\n').trim();
           }
 
-          // Update title
-          document.getElementById('obs-title').textContent = transTitle;
+          // Build translation body with EN section titles
+          var transBodyHtml = buildSectionsHtml(transSections, enTitles);
 
-          // Build body from translation sections
-          var transBodyHtml = '';
-          transBodyHtml += '<div class="os-translation-notice">' +
+          // Build both views
+          var transView = '<div class="os-translation-notice">' +
             '<span class="os-translation-icon">🌐</span>' +
             '<span>Showing English translation.</span> ' +
-            '<a href="#" id="os-show-original">Show original (Portuguese)</a>' +
-            '</div>';
+            '<a href="#" class="os-toggle-lang" data-mode="original">Show original (Portuguese)</a>' +
+            '</div>' + transBodyHtml;
 
-          var order = ['what_happens', 'affected', 'impact', 'evidence', 'root_cause'];
-          for (var oi = 0; oi < order.length; oi++) {
-            var oKey = order[oi];
-            if (transSections[oKey]) {
-              transBodyHtml += '<section class="os-obs-section"><h2>' + sectionTitles[oKey] + '</h2>' + renderMarkdown(transSections[oKey]) + '</section>';
+          var origView = '<div class="os-translation-notice">' +
+            '<span class="os-translation-icon">🇵🇹</span>' +
+            '<span>Showing original (Portuguese).</span> ' +
+            '<a href="#" class="os-toggle-lang" data-mode="translation">Show English translation</a>' +
+            '</div>' + originalBodyHtml;
+
+          // Set translated title and body
+          document.getElementById('obs-title').textContent = transTitle;
+          document.getElementById('obs-body').innerHTML = transView;
+
+          // Toggle handler — use event delegation on the body container
+          var bodyEl = document.getElementById('obs-body');
+          bodyEl.onclick = function(e) {
+            if (!e.target.classList.contains('os-toggle-lang')) return;
+            e.preventDefault();
+            var mode = e.target.getAttribute('data-mode');
+            var titleEl = document.getElementById('obs-title');
+            if (mode === 'original') {
+              bodyEl.innerHTML = origView;
+              titleEl.textContent = obs.title;
+            } else {
+              bodyEl.innerHTML = transView;
+              titleEl.textContent = transTitle;
             }
-          }
-
-          document.getElementById('obs-body').innerHTML = transBodyHtml;
-
-          // Store original for toggle
-          var originalHtml = '';
-          for (var oi2 = 0; oi2 < order.length; oi2++) {
-            var oKey2 = order[oi2];
-            if (sections[oKey2]) {
-              originalHtml += '<section class="os-obs-section"><h2>' + sectionTitles[oKey2] + '</h2>' + renderMarkdown(sections[oKey2]) + '</section>';
-            }
-          }
-
-          var toggleBtn = document.getElementById('os-show-original');
-          if (toggleBtn) {
-            toggleBtn.addEventListener('click', function(e) {
-              e.preventDefault();
-              var bodyEl = document.getElementById('obs-body');
-              var isShowingOriginal = toggleBtn.textContent.indexOf('translation') !== -1;
-              if (isShowingOriginal) {
-                bodyEl.innerHTML = transBodyHtml;
-                toggleBtn = document.getElementById('os-show-original');
-                if (toggleBtn) toggleBtn.addEventListener('click', arguments.callee);
-              } else {
-                var origHtml = '<div class="os-translation-notice">' +
-                  '<span class="os-translation-icon">🌐</span>' +
-                  '<span>Showing original (Portuguese).</span> ' +
-                  '<a href="#" id="os-show-original">Show English translation</a>' +
-                  '</div>' + originalHtml;
-                bodyEl.innerHTML = origHtml;
-                toggleBtn = document.getElementById('os-show-original');
-                if (toggleBtn) toggleBtn.addEventListener('click', arguments.callee);
-              }
-            });
-          }
+          };
         }
-      }).catch(function() { /* ignore comment fetch errors */ });
+      }).catch(function() { /* ignore */ });
     }
 
-    // Build original content (shown on PT pages or as fallback)
-    var order = ['what_happens', 'affected', 'impact', 'evidence', 'root_cause'];
-    for (var i = 0; i < order.length; i++) {
-      var key = order[i];
-      if (sections[key]) {
-        bodyHtml += '<section class="os-obs-section"><h2>' + sectionTitles[key] + '</h2>' + renderMarkdown(sections[key]) + '</section>';
-      }
-    }
-
-    document.getElementById('obs-body').innerHTML = bodyHtml;
-    document.getElementById('obs-github-link').href = obs.htmlUrl;
+    // Set original content (PT pages or EN fallback)
+    document.getElementById('obs-title').textContent = obs.title;
+    document.getElementById('obs-body').innerHTML = originalBodyHtml;
 
     if (loading) loading.style.display = 'none';
     content.style.display = 'block';

@@ -13,7 +13,7 @@ description: Building a collective memory about how public services behave
 
 <div class="os-doc-header">
   <a href="/en/" class="os-doc-header-logo">
-    <img src="/assets/logo-dark.webp" alt="OpenState">
+    <img src="/assets/logo-wordmark-dark.webp" alt="OpenState">
   </a>
   <div class="os-doc-header-nav">
     <a href="/en/how-it-works">How it works</a>

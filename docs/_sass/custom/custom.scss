@@ -1141,6 +1141,13 @@ html { scroll-behavior: smooth; }
   padding-top: 10px;
   border-top: 1px solid var(--os-border);
 }
+.os-card-lang-translated {
+  color: var(--os-accent);
+}
+.os-card-lang-no-trans {
+  color: var(--os-dim);
+  opacity: 0.7;
+}
 
 .os-landing-lang {
   font-size: 11px;
