@@ -25,7 +25,7 @@ layout: default
 </div>
 
 <script type="module">
-import { getObservation, renderMarkdown } from '/assets/js/github.js';
+import { getObservation, renderMarkdown } from '/assets/js/github.js?v=2';
 
 const loading = document.getElementById('obs-loading');
 const errorDiv = document.getElementById('obs-error');

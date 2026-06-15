@@ -64,7 +64,10 @@ export async function getObservations() {
     new Date(b.date) - new Date(a.date)
   );
 
-  setCache('observations', result);
+  // Don't cache empty results — they might be errors
+  if (result.length > 0) {
+    setCache('observations', result);
+  }
   return result;
 }
 

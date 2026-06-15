@@ -21,7 +21,7 @@ Real situations documented with evidence. Each one is a piece of collective memo
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
 
 <script type="module">
-import { getObservations, renderMarkdown } from '/assets/js/github.js';
+import { getObservations, renderMarkdown } from '/assets/js/github.js?v=2';
 
 const grid = document.getElementById('obs-grid');
 const filters = document.getElementById('obs-filters');

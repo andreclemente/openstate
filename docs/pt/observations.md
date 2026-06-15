@@ -21,7 +21,7 @@ Situações reais documentadas com evidência. Cada uma é um pedaço de memóri
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
 
 <script type="module">
-import { getObservations, renderMarkdown } from '/assets/js/github.js';
+import { getObservations, renderMarkdown } from '/assets/js/github.js?v=2';
 
 const grid = document.getElementById('obs-grid');
 const filters = document.getElementById('obs-filters');

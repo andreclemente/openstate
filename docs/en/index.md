@@ -119,7 +119,7 @@ description: Building a collective memory about how public services behave
 </div>
 
 <script type="module">
-import { getObservations } from '/assets/js/github.js';
+import { getObservations } from '/assets/js/github.js?v=2';
 try {
   const all = await getObservations();
   const latest = all.slice(0, 3);
