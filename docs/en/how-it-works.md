@@ -3,6 +3,7 @@ title: How It Works
 nav_order: 2
 parent: English
 layout: page
+lang: en
 ---
 
 # How it works

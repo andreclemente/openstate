@@ -3,6 +3,7 @@ title: About
 nav_order: 5
 parent: English
 layout: page
+lang: en
 ---
 
 # About

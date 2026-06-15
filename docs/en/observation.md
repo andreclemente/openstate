@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /en/observation/
+lang: en
 ---
 
 <nav class="os-breadcrumb">

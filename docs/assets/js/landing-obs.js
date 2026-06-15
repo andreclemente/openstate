@@ -13,6 +13,7 @@
     if (latest.length > 0) {
       var lang = document.documentElement.lang || 'pt';
       var prefix = lang === 'en' ? '/en' : '/pt';
+      var tOriginal = lang === 'en' ? '<div class="os-landing-lang">🇵🇹 Original em português</div>' : '';
       for (var i = 0; i < latest.length; i++) {
         var obs = latest[i];
         var summary = obs.sections.what_happens || obs.body.substring(0, 200);
@@ -21,6 +22,7 @@
             '<div class="os-example-tag">' + obs.area + '</div>' +
             '<h3>' + obs.title + '</h3>' +
             '<p>' + summary.replace(/\n/g, ' ').substring(0, 150) + '…</p>' +
+            tOriginal +
           '</div></a>';
       }
       grid.style.display = 'grid';

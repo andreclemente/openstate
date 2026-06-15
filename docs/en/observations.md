@@ -3,6 +3,7 @@ title: Observations
 nav_order: 3
 parent: English
 layout: page
+lang: en
 ---
 
 # Observations

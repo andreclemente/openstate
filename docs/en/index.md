@@ -3,6 +3,7 @@ title: OpenState
 nav_exclude: true
 search_exclude: true
 layout: default
+lang: en
 description: Building a collective memory about how public services behave
 ---
 

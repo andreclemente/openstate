@@ -34,6 +34,16 @@
 
     var sections = obs.sections;
     var bodyHtml = '';
+
+    // Translation notice for EN pages
+    if (lang === 'en') {
+      bodyHtml += '<div class="os-translation-notice">' +
+        '<span class="os-translation-icon">🌐</span>' +
+        '<span>This observation was originally written in Portuguese.</span> ' +
+        '<a href="https://translate.google.com/?sl=pt&tl=en&text=' + encodeURIComponent(obs.title) + '" target="_blank" rel="noopener noreferrer">Translate with Google →</a>' +
+        '</div>';
+    }
+
     var order = ['what_happens', 'affected', 'impact', 'evidence', 'root_cause'];
     for (var i = 0; i < order.length; i++) {
       var key = order[i];

@@ -24,6 +24,8 @@
     var prefix = lang === 'en' ? '/en' : '/pt';
     var tDraft = lang === 'en' ? 'Draft' : 'Rascunho';
     var tConfirmed = lang === 'en' ? 'Confirmed' : 'Confirmado';
+    var tSources = lang === 'en' ? 'sources' : 'fontes';
+    var tOriginalLang = lang === 'en' ? '<span class="os-card-lang">🇵🇹 Original em português</span>' : '';
 
     // Build area filters
     var areas = [];
@@ -63,8 +65,9 @@
           '<p>' + summary.replace(/\n/g, ' ').substring(0, 180) + '…</p>' +
           '<div class="os-obs-footer">' +
             '<span>' + obs.date + '</span>' +
-            '<span>' + obs.sources + (lang === 'en' ? ' sources' : ' fontes') + '</span>' +
+            '<span>' + obs.sources + ' ' + tSources + '</span>' +
           '</div>' +
+          (lang === 'en' ? '<div class="os-card-lang-row">🇵🇹 Original em português</div>' : '') +
         '</div>';
         grid.appendChild(card);
       }

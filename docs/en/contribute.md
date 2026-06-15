@@ -3,6 +3,7 @@ title: Contribute
 nav_order: 4
 parent: English
 layout: page
+lang: en
 ---
 
 # Contribute

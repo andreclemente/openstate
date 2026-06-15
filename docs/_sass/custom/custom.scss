@@ -1103,3 +1103,48 @@ html { scroll-behavior: smooth; }
   .os-hero { padding: 48px 16px 56px; }
   .os-hero-logo { max-width: 170px; }
 }
+
+// ==========================================
+// === TRANSLATION NOTICE
+// ==========================================
+
+.os-translation-notice {
+  background: var(--os-accent-bg);
+  border: 1px solid var(--os-border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 28px;
+  font-size: 13px;
+  color: var(--os-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.os-translation-notice a {
+  color: var(--os-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+.os-translation-notice a:hover {
+  text-decoration: underline;
+}
+.os-translation-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.os-card-lang-row {
+  font-size: 11px;
+  color: var(--os-dim);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--os-border);
+}
+
+.os-landing-lang {
+  font-size: 11px;
+  color: var(--os-dim);
+  margin-top: auto;
+  padding-top: 12px;
+}
