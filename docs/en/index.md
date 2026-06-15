@@ -110,9 +110,15 @@ description: Building a collective memory about how public services behave
 <div class="os-section" id="observations">
   <div class="os-section-inner">
     <h2 class="os-section-label">Observations</h2>
-    <p class="os-section-intro">No observations published yet. The first contribution could be yours.</p>
+    <div class="os-examples">
+      <div class="os-example-card">
+        <div class="os-example-tag os-example-tag-emergency">Emergency</div>
+        <h3>SIRESP fails during storm Kristin</h3>
+        <p>Emergency communications network down again. Fixed stations torn from bases by wind. Government injected €36M — new system in 10 years.</p>
+      </div>
+    </div>
     <div class="os-cta-row">
-      <a href="/en/contribute" class="os-btn os-btn-outline">Contribute →</a>
+      <a href="/en/observations" class="os-btn os-btn-outline">See all →</a>
     </div>
   </div>
 </div>
