@@ -522,7 +522,51 @@ html { scroll-behavior: smooth; }
   font-size: 14px;
   line-height: 1.7;
   color: var(--os-muted);
-  margin: 0;
+  margin: 0 0 16px;
+}
+
+.os-obs-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--os-dim);
+  padding-top: 14px;
+  border-top: 1px solid var(--os-border);
+}
+
+// ==========================================
+// === OBSERVATION FILTERS
+// ==========================================
+
+.os-obs-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.os-filter-btn {
+  padding: 5px 14px;
+  border: 1px solid var(--os-border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--os-muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+
+.os-filter-btn:hover {
+  border-color: var(--os-border-hover);
+  color: var(--os-text);
+}
+
+.os-filter-btn.active {
+  background: var(--os-accent-bg);
+  border-color: var(--os-accent);
+  color: var(--os-accent);
 }
 
 // ==========================================

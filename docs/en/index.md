@@ -111,11 +111,13 @@ description: Building a collective memory about how public services behave
   <div class="os-section-inner">
     <h2 class="os-section-label">Observations</h2>
     <div class="os-examples">
+      {% for obs in site.observations reversed limit:3 %}
       <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-emergency">Emergency</div>
-        <h3>SIRESP fails during storm Kristin</h3>
-        <p>Emergency communications network down again. Fixed stations torn from bases by wind. Government injected €36M — new system in 10 years.</p>
+        <div class="os-example-tag os-example-tag-{{ obs.area | slugify }}">{{ obs.area }}</div>
+        <h3>{{ obs.title }}</h3>
+        <p>{{ obs.content | strip_html | truncatewords: 20 }}</p>
       </div>
+      {% endfor %}
     </div>
     <div class="os-cta-row">
       <a href="/en/observations" class="os-btn os-btn-outline">See all →</a>

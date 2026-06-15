@@ -2,10 +2,10 @@
 title: SIRESP — Rede de comunicações de emergência falha repetidamente
 area: Emergência
 status: confirmed
-evidence: 7
+date: 2026-06-15
+sources: 7
+github_issue: 10
 ---
-
-# SIRESP — Rede de comunicações de emergência falha repetidamente
 
 O SIRESP (Sistema Integrado de Redes de Emergência e Segurança de Portugal) é a rede de comunicações exclusiva do Estado para comando e coordenação de emergências — usada por PSP, GNR, INEM, Bombeiros e Proteção Civil. Serve mais de 40.000 utilizadores.
 

@@ -11,19 +11,48 @@ Real situations documented with evidence. Each one is a piece of collective memo
 
 ---
 
-<div class="os-obs-grid">
-
-<div class="os-obs-card">
-<div class="os-obs-header">
-<span class="os-obs-area">Emergency</span>
-<span class="os-obs-status os-obs-status-confirmed">Confirmed</span>
-</div>
-<h3>SIRESP — Emergency communications network fails repeatedly</h3>
-<p>SIRESP failed during the 2017 wildfires, the 2025 blackout, and storm Kristin (Jan 2026). Fixed stations were torn from their bases by wind. Government injected €36M — new system won't be operational for 10 years. Siresp S.A. has had no leadership since 2024.</p>
-<div class="os-obs-footer">
-<span>PT</span>
-<span>7 sources</span>
-</div>
+<div class="os-obs-filters" id="obs-filters">
+  <button class="os-filter-btn active" data-filter="all">All</button>
+  {% assign areas = site.observations | map: 'area' | uniq | sort %}
+  {% for area in areas %}
+  <button class="os-filter-btn" data-filter="{{ area | slugify }}">{{ area }}</button>
+  {% endfor %}
 </div>
 
+<div class="os-obs-grid" id="obs-grid">
+  {% for obs in site.observations reversed %}
+  <div class="os-obs-card" data-area="{{ obs.area | slugify }}">
+    <div class="os-obs-header">
+      <span class="os-obs-area">{{ obs.area }}</span>
+      <span class="os-obs-status os-obs-status-{{ obs.status }}">{{ obs.status | capitalize }}</span>
+    </div>
+    <h3>{{ obs.title }}</h3>
+    <p>{{ obs.content | strip_html | truncatewords: 30 }}</p>
+    <div class="os-obs-footer">
+      <span>{{ obs.date | date: "%d/%m/%Y" }}</span>
+      <span>{{ obs.sources }} sources</span>
+    </div>
+  </div>
+  {% endfor %}
 </div>
+
+<script>
+(function() {
+  var filterBtns = document.querySelectorAll('.os-filter-btn');
+  var cards = document.querySelectorAll('.os-obs-card');
+  filterBtns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var filter = btn.getAttribute('data-filter');
+      cards.forEach(function(card) {
+        if (filter === 'all' || card.getAttribute('data-area') === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
