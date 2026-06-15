@@ -110,25 +110,9 @@ description: Building a collective memory about how public services behave
 <div class="os-section" id="observations">
   <div class="os-section-inner">
     <h2 class="os-section-label">Observações</h2>
-    <div class="os-examples">
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-health">Saúde</div>
-        <h3>8 meses por uma consulta</h3>
-        <p>Utentes esperam em média 8 meses para primeira consulta de especialidade. 15% desistem.</p>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-education">Educação</div>
-        <h3>12 dias sem aula por ano</h3>
-        <p>Quando um professor falta, a turma fica sem aula. Média de 12 dias/ano por turma.</p>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-digital">Serviços Digitais</div>
-        <h3>3 portais, 3 moradas</h3>
-        <p>A mesma morada é pedida três vezes porque os sistemas não comunicam.</p>
-      </div>
-    </div>
+    <p class="os-section-intro">Ainda não existem observações publicadas. A primeira contribuição pode ser tua.</p>
     <div class="os-cta-row">
-      <a href="/pt/observations" class="os-btn os-btn-outline">Ver todas →</a>
+      <a href="/pt/contribute" class="os-btn os-btn-outline">Contribuir →</a>
     </div>
   </div>
 </div>

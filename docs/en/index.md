@@ -110,25 +110,9 @@ description: Building a collective memory about how public services behave
 <div class="os-section" id="observations">
   <div class="os-section-inner">
     <h2 class="os-section-label">Observations</h2>
-    <div class="os-examples">
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-health">Healthcare</div>
-        <h3>8 months for an appointment</h3>
-        <p>Patients wait an average of 8 months for a first specialist consultation. 15% give up.</p>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-education">Education</div>
-        <h3>12 days without class per year</h3>
-        <p>When a teacher is absent, the class has no lesson. An average of 12 days/year per class.</p>
-      </div>
-      <div class="os-example-card">
-        <div class="os-example-tag os-example-tag-digital">Digital Services</div>
-        <h3>3 portals, 3 addresses</h3>
-        <p>The same address is requested three times because the systems don't communicate.</p>
-      </div>
-    </div>
+    <p class="os-section-intro">No observations published yet. The first contribution could be yours.</p>
     <div class="os-cta-row">
-      <a href="/en/observations" class="os-btn os-btn-outline">See all →</a>
+      <a href="/en/contribute" class="os-btn os-btn-outline">Contribute →</a>
     </div>
   </div>
 </div>
