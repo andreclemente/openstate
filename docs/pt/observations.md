@@ -37,33 +37,31 @@ try {
 
   if (observations.length === 0) {
     loading.textContent = 'Ainda não existem observações publicadas.';
-    return;
-  }
+  } else {
+    // Build area filters
+    const areas = [...new Set(observations.map(o => o.area))].sort();
+    for (const area of areas) {
+      const btn = document.createElement('button');
+      btn.className = 'os-filter-btn';
+      btn.setAttribute('data-filter', slugify(area));
+      btn.textContent = area;
+      filters.appendChild(btn);
+    }
 
-  // Build area filters
-  const areas = [...new Set(observations.map(o => o.area))].sort();
-  for (const area of areas) {
-    const btn = document.createElement('button');
-    btn.className = 'os-filter-btn';
-    btn.setAttribute('data-filter', slugify(area));
-    btn.textContent = area;
-    filters.appendChild(btn);
-  }
+    // Render cards
+    function renderCards(filter) {
+      grid.innerHTML = '';
+      const filtered = filter === 'all' ? observations : observations.filter(o => slugify(o.area) === filter);
 
-  // Render cards
-  function renderCards(filter) {
-    grid.innerHTML = '';
-    const filtered = filter === 'all' ? observations : observations.filter(o => slugify(o.area) === filter);
+      for (const obs of filtered) {
+        const card = document.createElement('a');
+        card.href = '/pt/observations/' + obs.number;
+        card.className = 'os-obs-card-link';
 
-    for (const obs of filtered) {
-      const card = document.createElement('a');
-      card.href = '/pt/observations/' + obs.number;
-      card.className = 'os-obs-card-link';
+        const sections = obs.sections;
+        const summary = sections.what_happens || obs.body.substring(0, 200);
 
-      const sections = obs.sections;
-      const summary = sections.what_happens || obs.body.substring(0, 200);
-
-      card.innerHTML = `
+        card.innerHTML = `
         <div class="os-obs-card" data-area="${slugify(obs.area)}">
           <div class="os-obs-header">
             <span class="os-obs-area">${obs.area}</span>
@@ -77,24 +75,24 @@ try {
           </div>
         </div>
       `;
-      grid.appendChild(card);
+        grid.appendChild(card);
+      }
     }
+
+    renderCards('all');
+
+    // Filter handlers
+    filters.addEventListener('click', e => {
+      if (!e.target.classList.contains('os-filter-btn')) return;
+      filters.querySelectorAll('.os-filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderCards(e.target.getAttribute('data-filter'));
+    });
+
+    loading.style.display = 'none';
+    filters.style.display = 'flex';
+    grid.style.display = 'grid';
   }
-
-  renderCards('all');
-
-  // Filter handlers
-  filters.addEventListener('click', e => {
-    if (!e.target.classList.contains('os-filter-btn')) return;
-    filters.querySelectorAll('.os-filter-btn').forEach(b => b.classList.remove('active'));
-    e.target.classList.add('active');
-    renderCards(e.target.getAttribute('data-filter'));
-  });
-
-  loading.style.display = 'none';
-  filters.style.display = 'flex';
-  grid.style.display = 'grid';
-
 } catch (err) {
   console.error(err);
   loading.style.display = 'none';

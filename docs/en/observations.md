@@ -12,7 +12,7 @@ Real situations documented with evidence. Each one is a piece of collective memo
 ---
 
 <div id="obs-loading" class="os-obs-loading">Loading observations…</div>
-<div id="obs-error" class="os-obs-error" style="display:none">Failed to load. <a href="#" onclick="location.reload()">Try again</a>.</div>
+<div id="obs-error" class="os-obs-error" style="display:none">Error loading. <a href="#" onclick="location.reload()">Try again</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">
   <button class="os-filter-btn active" data-filter="all">All</button>
@@ -37,31 +37,31 @@ try {
 
   if (observations.length === 0) {
     loading.textContent = 'No observations published yet.';
-    return;
-  }
+  } else {
+    // Build area filters
+    const areas = [...new Set(observations.map(o => o.area))].sort();
+    for (const area of areas) {
+      const btn = document.createElement('button');
+      btn.className = 'os-filter-btn';
+      btn.setAttribute('data-filter', slugify(area));
+      btn.textContent = area;
+      filters.appendChild(btn);
+    }
 
-  const areas = [...new Set(observations.map(o => o.area))].sort();
-  for (const area of areas) {
-    const btn = document.createElement('button');
-    btn.className = 'os-filter-btn';
-    btn.setAttribute('data-filter', slugify(area));
-    btn.textContent = area;
-    filters.appendChild(btn);
-  }
+    // Render cards
+    function renderCards(filter) {
+      grid.innerHTML = '';
+      const filtered = filter === 'all' ? observations : observations.filter(o => slugify(o.area) === filter);
 
-  function renderCards(filter) {
-    grid.innerHTML = '';
-    const filtered = filter === 'all' ? observations : observations.filter(o => slugify(o.area) === filter);
+      for (const obs of filtered) {
+        const card = document.createElement('a');
+        card.href = '/en/observations/' + obs.number;
+        card.className = 'os-obs-card-link';
 
-    for (const obs of filtered) {
-      const card = document.createElement('a');
-      card.href = '/en/observations/' + obs.number;
-      card.className = 'os-obs-card-link';
+        const sections = obs.sections;
+        const summary = sections.what_happens || obs.body.substring(0, 200);
 
-      const sections = obs.sections;
-      const summary = sections.what_happens || obs.body.substring(0, 200);
-
-      card.innerHTML = `
+        card.innerHTML = `
         <div class="os-obs-card" data-area="${slugify(obs.area)}">
           <div class="os-obs-header">
             <span class="os-obs-area">${obs.area}</span>
@@ -75,23 +75,24 @@ try {
           </div>
         </div>
       `;
-      grid.appendChild(card);
+        grid.appendChild(card);
+      }
     }
+
+    renderCards('all');
+
+    // Filter handlers
+    filters.addEventListener('click', e => {
+      if (!e.target.classList.contains('os-filter-btn')) return;
+      filters.querySelectorAll('.os-filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      renderCards(e.target.getAttribute('data-filter'));
+    });
+
+    loading.style.display = 'none';
+    filters.style.display = 'flex';
+    grid.style.display = 'grid';
   }
-
-  renderCards('all');
-
-  filters.addEventListener('click', e => {
-    if (!e.target.classList.contains('os-filter-btn')) return;
-    filters.querySelectorAll('.os-filter-btn').forEach(b => b.classList.remove('active'));
-    e.target.classList.add('active');
-    renderCards(e.target.getAttribute('data-filter'));
-  });
-
-  loading.style.display = 'none';
-  filters.style.display = 'flex';
-  grid.style.display = 'grid';
-
 } catch (err) {
   console.error(err);
   loading.style.display = 'none';
