@@ -57,7 +57,13 @@ function osExtractArea(body) {
 function osCountSources(body) {
   var sections = osExtractSections(body);
   var evidence = sections.evidence || '';
-  return (evidence.match(/^-|\d+\./g) || []).length;
+  var lines = evidence.split('\n');
+  var count = 0;
+  for (var i = 0; i < lines.length; i++) {
+    var t = lines[i].trim();
+    if (t.indexOf('- ') === 0 || /^\d+\./.test(t)) count++;
+  }
+  return count;
 }
 
 function osExtractSections(body) {

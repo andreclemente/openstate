@@ -1157,8 +1157,20 @@ html { scroll-behavior: smooth; }
 }
 
 // ==========================================
-// === TWO-COLUMN LANDING SECTION
+// === LANDING PAGE
 // ==========================================
+
+.os-landing .os-hero {
+  margin-top: -44px; /* counteract os-doc-content padding */
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .os-landing .os-hero {
+    margin-top: -32px;
+    padding-top: 56px;
+  }
+}
 
 .os-two-col-section {
   padding: 88px 24px;
