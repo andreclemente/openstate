@@ -60,23 +60,23 @@
           var transSections = {};
           var transLines = translationBody.split('\n');
           var transCurrent = null;
-          var transHeaderMap = {
-            'observation': 'skip',
-            'what happens': 'what_happens', 'o que acontece': 'what_happens',
-            'who is affected': 'affected', 'quem é afetado': 'affected',
-            'impact': 'impact', 'impacto': 'impact',
-            'evidence': 'evidence', 'evidência': 'evidence',
-            'possible root cause': 'root_cause', 'causa raiz': 'root_cause'
-          };
+          var transHeaderMap = [
+            ['observation', 'skip'],
+            ['what happens', 'what_happens'], ["what's happening", 'what_happens'], ['o que acontece', 'what_happens'],
+            ['who is affected', 'affected'], ['quem é afetado', 'affected'],
+            ['impact', 'impact'], ['impacto', 'impact'],
+            ['evidence', 'evidence'], ['evidência', 'evidence'],
+            ['possible root cause', 'root_cause'], ['causa raiz', 'root_cause']
+          ];
           for (var ti = 0; ti < transLines.length; ti++) {
             var tLine = transLines[ti];
             var tTrimmed = tLine.trim();
             if (tTrimmed.indexOf('## ') === 0) {
-              var tHeading = tTrimmed.replace('## ', '').trim().toLowerCase();
+              var tHeading = tTrimmed.replace(/^##\s+/, '').trim().toLowerCase();
               transCurrent = null;
-              for (var tKey in transHeaderMap) {
-                if (tHeading.indexOf(tKey) !== -1 && transHeaderMap[tKey] !== 'skip') {
-                  transCurrent = transHeaderMap[tKey];
+              for (var tk = 0; tk < transHeaderMap.length; tk++) {
+                if (tHeading.indexOf(transHeaderMap[tk][0]) !== -1 && transHeaderMap[tk][1] !== 'skip') {
+                  transCurrent = transHeaderMap[tk][1];
                   break;
                 }
               }

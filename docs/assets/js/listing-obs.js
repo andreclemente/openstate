@@ -61,10 +61,13 @@
         // Translation status badge for EN pages
         var transBadge = '';
         if (lang === 'en') {
-          if (obs._hasTranslation) {
+          if (obs._hasTranslation === true) {
             transBadge = '<div class="os-card-lang-row os-card-lang-translated">🇬🇧 Translation available</div>';
-          } else {
+          } else if (obs._hasTranslation === false) {
             transBadge = '<div class="os-card-lang-row os-card-lang-no-trans">🇵🇹 No translation yet</div>';
+          } else {
+            // Still loading — show placeholder that will be updated
+            transBadge = '<div class="os-card-lang-row os-card-lang-loading" data-obs-num="' + obs.number + '">…</div>';
           }
         }
 
@@ -127,6 +130,14 @@
           }
         }).catch(function() {
           obs._hasTranslation = false;
+          var cardEl = grid.querySelector('a[href*="?id=' + obs.number + '"]');
+          if (cardEl) {
+            var badgeEl = cardEl.querySelector('.os-card-lang-row');
+            if (badgeEl) {
+              badgeEl.className = 'os-card-lang-row os-card-lang-no-trans';
+              badgeEl.textContent = '🇵🇹 No translation yet';
+            }
+          }
         });
       });
     }
