@@ -144,7 +144,26 @@ async function main() {
     );
 
     if (postResp.status === 201) {
-      console.log('✅ Translation posted successfully');
+      const commentId = JSON.parse(postResp.body).id;
+      console.log('✅ Translation posted successfully (comment #' + commentId + ')');
+      
+      // Pin the comment
+      await new Promise(r => setTimeout(r, 1000)); // small delay
+      const pinResp = await httpsPost(
+        `https://api.github.com/repos/${owner}/${repo}/issues/comments/${commentId}/pin`,
+        {},
+        {
+          'Authorization': 'Bearer ' + ghToken,
+          'Accept': 'application/vnd.github+json',
+          'User-Agent': 'OpenState/1.0',
+          'X-GitHub-Api-Version': '2022-11-28'
+        }
+      );
+      if (pinResp.status === 204 || pinResp.status === 200) {
+        console.log('📌 Comment pinned');
+      } else {
+        console.warn('Could not pin comment:', pinResp.status);
+      }
     } else {
       console.error('Failed to post comment:', postResp.status, postResp.body);
       process.exit(1);
