@@ -84,7 +84,7 @@ async function main() {
   try {
     // Translate via OpenRouter
     const resp = await httpsPost('https://openrouter.ai/api/v1/chat/completions', {
-      model: 'google/gemini-2.5-flash',
+      model: 'google/gemma-4-31b-it:free',
       messages: [
         { role: 'system', content: 'You are a professional Portuguese-to-English translator. Preserve markdown structure and formatting.' },
         { role: 'user', content: translatePrompt }
