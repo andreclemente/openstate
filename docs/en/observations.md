@@ -16,7 +16,6 @@ Real situations documented with evidence. Each one is a piece of collective memo
 <div id="obs-error" class="os-obs-error" style="display:none">Error loading. <a href="#" onclick="location.reload()">Try again</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">
-  <button class="os-filter-btn active" data-filter="all">All</button>
 </div>
 
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>

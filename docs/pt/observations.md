@@ -15,7 +15,6 @@ Situações reais documentadas com evidência. Cada uma é um pedaço de memóri
 <div id="obs-error" class="os-obs-error" style="display:none">Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">
-  <button class="os-filter-btn active" data-filter="all">Todas</button>
 </div>
 
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
