@@ -138,6 +138,7 @@ async function main() {
       {
         'Authorization': 'Bearer ' + ghToken,
         'Accept': 'application/vnd.github+json',
+        'User-Agent': 'OpenState/1.0',
         'X-GitHub-Api-Version': '2022-11-28'
       }
     );
