@@ -176,9 +176,9 @@ function renderMarkdown(text) {
 }
 
 function renderEvidenceLine(text) {
-  // Match evidence lines: - **Source (date)**: description. URL
-  // Make the source name a link to the URL, hide the raw URL
-  return text.replace(/^(\s*[-*]\s*)\*\*([^*]+)\*\*([^]*?)(https?:\/\/[^\s]+)/gm, function(match, prefix, source, middle, url) {
+  // Match evidence lines: - **Source (date)**: description URL
+  // Make the source name a link to the URL, remove the raw URL from display
+  return text.replace(/^(\s*[-*]\s*)\*\*([^*]+)\*\*([^\n]*?)(https?:\/\/[^\s]+)/gm, function(match, prefix, source, middle, url) {
     return prefix + '<a href="' + url + '" target="_blank" rel="noopener noreferrer"><strong>' + source.trim() + '</strong></a>' + middle;
   });
 }
