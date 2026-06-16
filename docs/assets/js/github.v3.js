@@ -35,11 +35,20 @@ function osNormalizeIssue(issue) {
   var body = issue.body || '';
   var labels = issue.labels.map(function(l) { return l.name; });
 
+var areaMap = {
+    'transport': 'Transportes',
+    'healthcare': 'Saúde',
+    'justice': 'Justiça',
+    'security-social': 'Segurança Social'
+  };
+  var areaLabel = labels.filter(function(l) { return areaMap[l]; })[0];
+  var area = areaLabel ? areaMap[areaLabel] : osExtractArea(body);
+
   return {
     number: issue.number,
     title: issue.title.replace(/^\[(?:Observação|Observation|Exemplo|Teste)\]\s*/i, '').trim(),
     body: body,
-    area: osExtractArea(body),
+    area: area,
     status: labels.includes('confirmed') ? 'confirmed' : 'draft',
     date: issue.created_at.substring(0, 10),
     sources: osCountSources(body),

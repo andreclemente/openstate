@@ -22,5 +22,5 @@ This list is being built. New observations will be added as they are confirmed.
 
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
 
-<script src="/assets/js/github.v3.js?v=4"></script>
+<script src="/assets/js/github.v3.js?v=5"></script>
 <script src="/assets/js/listing-obs.js?v=4"></script>
