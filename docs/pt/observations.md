@@ -13,7 +13,7 @@ Esta lista está em construção. Novas observações serão adicionadas à medi
 
 ---
 
-<div id="obs-loading" class="os-obs-loading">A verificar…</div>
+<div id="obs-loading" class="os-obs-loading" aria-live="polite" aria-busy="true">A verificar…</div>
 <div id="obs-error" class="os-obs-error" style="display:none">Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">

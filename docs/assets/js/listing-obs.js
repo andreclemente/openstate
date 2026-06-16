@@ -138,6 +138,7 @@
       var btn = document.createElement('button');
       btn.className = 'os-filter-btn' + (statuses[s].key === 'all' ? ' active' : '');
       btn.setAttribute('data-filter', statuses[s].key);
+      btn.setAttribute('aria-pressed', statuses[s].key === 'all' ? 'true' : 'false');
       btn.textContent = statuses[s].label;
       filters.appendChild(btn);
     }
@@ -145,15 +146,16 @@
     // Render all cards initially
     renderCards(observations, 'all');
 
-    if (loading) loading.style.display = 'none';
+    if (loading) { loading.style.display = 'none'; loading.setAttribute('aria-busy', 'false'); }
     filters.style.display = 'flex';
     grid.style.display = 'grid';
 
     // Filter click handler
     filters.addEventListener('click', function(e) {
       if (!e.target.classList.contains('os-filter-btn')) return;
-      filters.querySelectorAll('.os-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      filters.querySelectorAll('.os-filter-btn').forEach(function(b) { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
       e.target.classList.add('active');
+      e.target.setAttribute('aria-pressed', 'true');
       renderCards(observations, e.target.getAttribute('data-filter'));
     });
 

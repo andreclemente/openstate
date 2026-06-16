@@ -132,7 +132,7 @@
     document.getElementById('obs-title').textContent = obs.title;
     document.getElementById('obs-body').innerHTML = originalBodyHtml;
 
-    if (loading) loading.style.display = 'none';
+    if (loading) { loading.style.display = 'none'; loading.setAttribute('aria-busy', 'false'); }
     content.style.display = 'block';
   }).catch(function(err) {
     console.error(err);

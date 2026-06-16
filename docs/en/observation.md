@@ -4,12 +4,12 @@ permalink: /en/observation/
 lang: en
 ---
 
-<nav class="os-breadcrumb">
+<nav class="os-breadcrumb" aria-label="Breadcrumb">
   <a href="/en/observations">← Observations</a>
 </nav>
 
-<article class="os-obs-detail">
-  <div id="obs-loading" class="os-obs-loading">Loading observation…</div>
+<article class="os-obs-detail" aria-label="Observation detail">
+  <div id="obs-loading" class="os-obs-loading" aria-live="polite" aria-busy="true">Loading observation…</div>
   <div id="obs-error" class="os-obs-error" style="display:none">
     Failed to load. <a href="#" onclick="location.reload()">Try again</a>.
   </div>

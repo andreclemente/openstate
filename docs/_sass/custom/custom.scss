@@ -770,6 +770,23 @@ html { scroll-behavior: smooth; }
   color: var(--os-text);
 }
 
+.os-skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--os-accent);
+  color: #fff !important;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none !important;
+  z-index: 1000;
+  border-radius: 0 0 6px 0;
+}
+.os-skip-link:focus {
+  left: 0;
+}
+
 .os-theme-icon { display: none; line-height: 1; }
 
 // ==========================================

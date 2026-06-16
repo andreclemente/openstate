@@ -14,7 +14,7 @@ This list is being built. New observations will be added as they are confirmed.
 
 ---
 
-<div id="obs-loading" class="os-obs-loading">Checking…</div>
+<div id="obs-loading" class="os-obs-loading" aria-live="polite" aria-busy="true">Checking…</div>
 <div id="obs-error" class="os-obs-error" style="display:none">Error loading. <a href="#" onclick="location.reload()">Try again</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">

@@ -3,12 +3,12 @@ layout: page
 permalink: /pt/observation/
 ---
 
-<nav class="os-breadcrumb">
+<nav class="os-breadcrumb" aria-label="Breadcrumb">
   <a href="/pt/observations">← Observações</a>
 </nav>
 
-<article class="os-obs-detail">
-  <div id="obs-loading" class="os-obs-loading">A carregar observação…</div>
+<article class="os-obs-detail" aria-label="Observation detail">
+  <div id="obs-loading" class="os-obs-loading" aria-live="polite" aria-busy="true">A carregar observação…</div>
   <div id="obs-error" class="os-obs-error" style="display:none">
     Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.
   </div>
