@@ -21,5 +21,5 @@ Esta lista está em construção. Novas observações serão adicionadas à medi
 
 <div class="os-obs-grid" id="obs-grid" style="display:none"></div>
 
-<script src="/assets/js/github.v3.js?v=3"></script>
-<script src="/assets/js/listing-obs.js?v=3"></script>
+<script src="/assets/js/github.v3.js?v=4"></script>
+<script src="/assets/js/listing-obs.js?v=4"></script>
