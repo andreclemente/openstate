@@ -54,15 +54,19 @@ Respond with exactly this format:
 
 function httpsPost(url, data, headers) {
   return new Promise((resolve, reject) => {
-    const body = data != null ? JSON.stringify(data) : '';
+    const hasBody = data != null;
+    const body = hasBody ? JSON.stringify(data) : '';
     const u = new URL(url);
     const req = https.request({
       hostname: u.hostname,
       path: u.pathname,
       method: 'POST',
-      headers: {
+      headers: hasBody ? {
         'Content-Type': 'application/json',
         'Content-Length': Buffer.byteLength(body),
+        ...headers
+      } : {
+        'Content-Length': 0,
         ...headers
       }
     }, res => {
@@ -162,7 +166,7 @@ async function main() {
       if (pinResp.status === 204 || pinResp.status === 200) {
         console.log('📌 Comment pinned');
       } else {
-        console.warn('Could not pin comment:', pinResp.status);
+        console.warn('Could not pin comment:', pinResp.status, pinResp.body);
       }
     } else {
       console.error('Failed to post comment:', postResp.status, postResp.body);
