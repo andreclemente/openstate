@@ -8,17 +8,31 @@ lang: en
 
 # Contribute
 
-If you have observed a public service problem, you can document it. It takes less than five minutes.
+If you experienced a public service problem, you can document it. Just describe what happened and include evidence.
+
+A good observation is:
+- **concrete** — describes a real situation, not a general opinion
+- **documented** — includes verifiable sources (news, reports, public data)
+- **neutral** — no political or ideological language
+- **unique** — one observation per situation. If similar to an existing one, confirm the existing
+
+A bad observation:
+- contains personal data of third parties
+- uses political or partisan language
+- describes opinions without evidence
+- tries to solve the problem instead of documenting it
 
 ---
 
-## How it works
+## How to submit
 
-**1.** Sign in with a GitHub account (free).
+**1.** Create an account at [github.com](https://github.com) (free).
 
-**2.** Create the observation. Describe what happened and include evidence — news, reports, public data.
+**2.** Open a new observation (issue) in the OpenState repository.
 
-**3.** Submit. The observation is reviewed and published.
+**3.** Fill in the form — describe the situation, include sources, choose the service area.
+
+**4.** Submit. The observation is reviewed and published on the site.
 
 ---
 
@@ -26,6 +40,4 @@ If you have observed a public service problem, you can document it. It takes les
 
 ---
 
-## Simple rules
-
-Describe what happened. Include verifiable sources. No personal data of third parties. No political language.
+GitHub is the tool used to submit and manage observations. You don't need to know how to code — just fill in a form.

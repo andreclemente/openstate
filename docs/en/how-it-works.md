@@ -8,31 +8,29 @@ lang: en
 
 # How it works
 
-A real situation becomes collective knowledge in four steps.
+A real situation becomes collective knowledge.
 
 ---
 
-## 1. Someone documents
+## 1. Someone notices a problem
 
-Anyone can document a situation they experienced in a public service. Just describe what happened and include evidence — news, reports, public data.
+Anyone can document a situation they experienced with a public service. Just describe what happened and include evidence — news, reports, public data.
 
-**Example:** A patient waits 8 months for a specialist consultation. They document the situation with data from the Health Regulatory Authority report and news articles.
+**Example:** A patient waits 8 months for a specialist consultation. They document it with data from the health regulator's report and published news.
 
-## 2. Similar situations are connected
+## 2. Other people confirm
 
 When several people document similar situations, those observations are linked together.
 
-**Example:** Waiting times for consultations are linked to the shortage of GPs and the triage system. They are different problems, but part of the same pattern.
+**Example:** Long waiting times at several hospitals are not isolated cases — they are part of the same pattern.
 
-## 3. Patterns become visible
+## 3. The pattern becomes visible
 
-With enough connected observations, it stops being "one case" and becomes "a system pattern" — documented, verifiable, public.
+With enough observations, it stops being "one case" and becomes a documented pattern — verifiable, public, permanent.
 
-**Example:** It is not one hospital failing. It is a pattern of insufficient capacity across the entire health system.
+## 4. The knowledge stays
 
-## 4. Knowledge remains
-
-The documented pattern becomes part of collective memory. Anyone can consult it, today or ten years from now.
+What was documented becomes part of collective memory. Anyone can consult it, today or ten years from now.
 
 ---
 
@@ -42,8 +40,6 @@ The documented pattern becomes part of collective memory. Anyone can consult it,
 |:-------|:--------|
 | **Draft** | Situation described, awaiting evidence |
 | **Confirmed** | Evidence attached, verifiable |
-| **Analyzed** | Root cause identified |
-| **Proposed** | Solution submitted separately |
 
 ---
 

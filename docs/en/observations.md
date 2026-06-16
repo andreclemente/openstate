@@ -8,11 +8,13 @@ lang: en
 
 # Observations
 
-Real situations documented with evidence. Each one is a piece of collective memory.
+Each card is a piece of collective memory: a real situation, documented with verifiable evidence.
+
+This list is being built. New observations will be added as they are confirmed.
 
 ---
 
-<div id="obs-loading" class="os-obs-loading">Loading observations…</div>
+<div id="obs-loading" class="os-obs-loading">Checking…</div>
 <div id="obs-error" class="os-obs-error" style="display:none">Error loading. <a href="#" onclick="location.reload()">Try again</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">

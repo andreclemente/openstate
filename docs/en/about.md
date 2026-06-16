@@ -8,29 +8,21 @@ lang: en
 
 # About
 
-OpenState builds a collective memory about how public services behave in reality.
+Societies forget quickly.
 
-It is not a complaint platform. It is not a political initiative. It is not a software project.
+News disappear. Complaints are filed away. Problems repeat without anyone connecting them. Knowledge about how public services work is lost — and with it, the ability to learn from the past.
 
-It is a public knowledge infrastructure — built to last.
-
----
-
-## Why this matters
-
-Societies progress because they accumulate knowledge. But when it comes to public services, that knowledge is lost.
-
-News disappear. Complaints are filed away. Situations repeat without anyone connecting them.
-
-OpenState exists to prevent that. Every situation documented with evidence becomes part of a permanent memory — verifiable, open, accessible.
+OpenState exists to prevent that.
 
 ---
 
-## Why neutrality
+## What it is
 
-Any document about public services must be factual and verifiable. No ideology, no parties, no agendas.
+OpenState is a collective memory about how public services behave in reality.
 
-OpenState documents what happens. It does not take positions. It does not propose solutions.
+It is not a complaint platform. It is not a political initiative. It is not a discussion forum.
+
+It is a knowledge infrastructure — public, open, built to last.
 
 ---
 
@@ -38,7 +30,15 @@ OpenState documents what happens. It does not take positions. It does not propos
 
 An opinion without a source is an opinion. An observation with evidence is a documented fact.
 
-Every entry requires verifiable sources — news, reports, public data, legislation, real cases.
+Every entry requires verifiable sources: news, reports, public data, legislation.
+
+---
+
+## Why neutrality
+
+OpenState documents what happens. It does not take positions. It does not propose solutions. It has no political agenda.
+
+The knowledge here belongs to everyone — and serves everyone.
 
 ---
 
@@ -52,4 +52,4 @@ OpenState is built to last. The knowledge preserved here belongs to present and 
 
 ## License
 
-All content is published under the CC BY 4.0 license. Open, without restrictions.
+All content is published under CC BY 4.0. Open, without restrictions.

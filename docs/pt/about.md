@@ -7,29 +7,21 @@ layout: page
 
 # Sobre
 
-OpenState constrói uma memória colectiva sobre como os serviços públicos funcionam na realidade.
+As sociedades esquecem depressa.
 
-Não é uma plataforma de queixas. Não é uma iniciativa política. Não é um projecto de software.
+Notícias desaparecem. Queixas arquivam-se. Problemas repetem-se sem que ninguém os ligue. O conhecimento sobre como os serviços públicos funcionam perde-se — e com ele, a capacidade de aprender com o passado.
 
-É uma infraestrutura de conhecimento público — construída para durar.
-
----
-
-## Porque é que isto importa
-
-As sociedades progridem porque acumulam conhecimento. Mas sobre os serviços públicos, esse conhecimento perde-se.
-
-Notícias desaparecem. Queixas arquivam-se. Experiências repetem-se sem que ninguém as ligue.
-
-OpenState existe para que isso não aconteça. Cada situação documentada com evidência torna-se parte de uma memória permanente — verificável, aberta, acessível.
+OpenState existe para que isso não aconteça.
 
 ---
 
-## Porquê a neutralidade
+## O que é
 
-Qualquer documento sobre serviços públicos deve ser factual e verificável. Sem ideologia, sem partidos, sem agendas.
+OpenState é uma memória colectiva sobre como os serviços públicos funcionam na realidade.
 
-OpenState documenta o que acontece. Não toma posições. Não propõe soluções.
+Não é uma plataforma de queixas. Não é uma iniciativa política. Não é um fórum de discussão.
+
+É uma infraestrutura de conhecimento — pública, aberta, construída para durar.
 
 ---
 
@@ -37,7 +29,15 @@ OpenState documenta o que acontece. Não toma posições. Não propõe soluçõe
 
 Uma opinião sem fonte é uma opinião. Uma observação com evidência é um facto documentado.
 
-Cada entrada exige fontes verificáveis — notícias, relatórios, dados públicos, legislação, casos reais.
+Cada entrada exige fontes verificáveis: notícias, relatórios, dados públicos, legislação.
+
+---
+
+## Porquê a neutralidade
+
+OpenState documenta o que acontece. Não toma posições. Não propõe soluções. Não tem agenda política.
+
+O conhecimento aqui pertence a todos — e serve a todos.
 
 ---
 
@@ -45,7 +45,7 @@ Cada entrada exige fontes verificáveis — notícias, relatórios, dados públi
 
 Os problemas dos serviços públicos compreendem-se ao longo de anos. Documentam-se ao longo de décadas.
 
-OpenState é construído para durar. O conhecimento aqui preservado pertence às gerações presentes e futuras.
+OpenState é construído para durar. O conhecimento preservado aqui pertence às gerações presentes e futuras.
 
 ---
 

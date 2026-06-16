@@ -7,11 +7,13 @@ layout: page
 
 # Observações
 
-Situações reais documentadas com evidência. Cada uma é um pedaço de memória colectiva.
+Cada cartão é um pedaço de memória colectiva: uma situação real, documentada com evidência verificável.
+
+Esta lista está em construção. Novas observações serão adicionadas à medida que forem confirmadas.
 
 ---
 
-<div id="obs-loading" class="os-obs-loading">A carregar observações…</div>
+<div id="obs-loading" class="os-obs-loading">A verificar…</div>
 <div id="obs-error" class="os-obs-error" style="display:none">Erro ao carregar. <a href="#" onclick="location.reload()">Tentar novamente</a>.</div>
 
 <div class="os-obs-filters" id="obs-filters" style="display:none">

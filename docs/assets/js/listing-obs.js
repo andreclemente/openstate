@@ -17,7 +17,7 @@
   var tConfirmed = isEN ? 'Confirmed' : 'Confirmado';
   var tSources = isEN ? 'sources' : 'fontes';
   var tAll = isEN ? 'All' : 'Todas';
-  var tNoObs = isEN ? 'No observations published yet.' : 'Ainda não existem observações publicadas.';
+  var tNoObs = isEN ? 'The memory is being built.' : 'A memória está a ser construída.';
 
   function slugify(s) {
     return s.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');

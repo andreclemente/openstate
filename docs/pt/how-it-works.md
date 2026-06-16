@@ -7,31 +7,29 @@ layout: page
 
 # Como funciona
 
-Uma situação real torna-se conhecimento colectivo em quatro passos.
+Uma situação real torna-se conhecimento colectivo.
 
 ---
 
-## 1. Alguém documenta
+## 1. Alguém nota um problema
 
-Qualquer pessoa pode documentar uma situação que viveu num serviço público. Basta descrever o que aconteceu e incluir evidência — notícias, relatórios, dados públicos.
+Qualquer pessoa pode documentar uma situação que viveu num serviço público. Basta descrever o que aconteceu e incluir provas — notícias, relatórios, dados públicos.
 
-**Exemplo:** Um utente espera 8 meses por uma consulta de especialidade. Documenta a situação com dados do relatório da ERS e notícias do Público.
+**Exemplo:** Um utente espera 8 meses por uma consulta de especialidade. Documenta a situação com dados do relatório da ERS e notícias publicadas.
 
-## 2. Situações semelhantes são ligadas
+## 2. Outras pessoas confirmam
 
-Quando várias pessoas documentam situações semelhantes, essas observações são ligadas entre si.
+Quando várias pessoas documentam situações semelhantes, essas observações ficam ligadas entre si.
 
-**Exemplo:** O tempo de espera para consultas está ligado à falta de médicos de família e à triagem do SNS24. São problemas diferentes, mas fazem parte do mesmo padrão.
+**Exemplo:** Tempos de espera longos em vários hospitais não são casos isolados — são parte do mesmo padrão.
 
-## 3. Padrões tornam-se visíveis
+## 3. O padrão torna-se visível
 
-Com observações suficientes ligadas, deixa de ser "um caso" e passa a ser "um padrão do sistema" — documentado, verificável, público.
+Com observações suficientes, deixa de ser "um caso" e passa a ser um padrão documentado — verificável, público, permanente.
 
-**Exemplo:** Não é um hospital que falha. É um padrão de capacidade insuficiente em todo o sistema de saúde.
+## 4. O conhecimento fica
 
-## 4. O conhecimento permanece
-
-O padrão documentado torna-se parte da memória colectiva. Qualquer pessoa pode consultá-lo, hoje ou daqui a dez anos.
+O que foi documentado passa a fazer parte da memória colectiva. Qualquer pessoa pode consultá-lo, hoje ou daqui a dez anos.
 
 ---
 
@@ -41,8 +39,6 @@ O padrão documentado torna-se parte da memória colectiva. Qualquer pessoa pode
 |:-------|:------------|
 | **Rascunho** | Situação descrita, aguarda evidência |
 | **Confirmado** | Evidência anexada, verificável |
-| **Analisado** | Causa raiz identificada |
-| **Proposto** | Solução submetida separadamente |
 
 ---
 
