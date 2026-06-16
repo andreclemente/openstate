@@ -54,7 +54,7 @@ Respond with exactly this format:
 
 function httpsPost(url, data, headers) {
   return new Promise((resolve, reject) => {
-    const body = JSON.stringify(data);
+    const body = data != null ? JSON.stringify(data) : '';
     const u = new URL(url);
     const req = https.request({
       hostname: u.hostname,
@@ -151,7 +151,7 @@ async function main() {
       await new Promise(r => setTimeout(r, 1000)); // small delay
       const pinResp = await httpsPost(
         `https://api.github.com/repos/${owner}/${repo}/issues/comments/${commentId}/pin`,
-        {},
+        null,
         {
           'Authorization': 'Bearer ' + ghToken,
           'Accept': 'application/vnd.github+json',
