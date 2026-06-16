@@ -26,6 +26,7 @@
   {% assign label_contact = "Contact" %}
   {% assign mission = "A collective memory about how public services behave." %}
   {% assign nav_aria = "Main navigation" %}
+  {% assign other_lang = "pt" %}
 {% else %}
   {% assign home_url = "/" %}
   {% assign nav_how = "/pt/how-it-works" %}
@@ -39,11 +40,23 @@
   {% assign label_contact = "Contacto" %}
   {% assign mission = "Uma memória colectiva sobre como os serviços públicos funcionam." %}
   {% assign nav_aria = "Navegação principal" %}
+  {% assign other_lang = "en" %}
+{% endif %}
+
+{% comment %}Build the other-language URL for the current page{% endcomment %}
+{% if lang == "en" %}
+  {% assign other_url = page.url | replace: "/en", "/pt" %}
+{% else %}
+  {% if page.url == "/" %}
+    {% assign other_url = "/en/" %}
+  {% else %}
+    {% assign other_url = page.url | replace: "/pt", "/en" %}
+  {% endif %}
 {% endif %}
 
 <header class="os-doc-header" role="banner">
   <a href="{{ home_url }}" class="os-doc-header-logo" aria-label="{% if lang == 'en' %}OpenState — home{% else %}OpenState — página inicial{% endif %}">
-    <img src="/assets/logo-wordmark-dark.webp" alt="{% if lang == 'en' %}OpenState{% else %}OpenState{% endif %}" class="os-doc-header-logo-img">
+    <img src="/assets/logo-wordmark-dark.webp" alt="OpenState" class="os-doc-header-logo-img">
   </a>
   <nav class="os-doc-header-nav" aria-label="{{ nav_aria }}">
     <a href="{{ nav_how }}" {% if page.url == nav_how or page.url == nav_how | append: "/" %}aria-current="page"{% endif %}>{{ label_how }}</a>
@@ -51,9 +64,9 @@
     <a href="{{ nav_contribute }}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
     <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
-      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %} aria-label="{% if lang == 'en' %}English — current{% else %}English{% endif %}">EN</a>
+      <a href="{% if lang == 'en' %}{{ other_url }}{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %} aria-label="{% if lang == 'en' %}English — current{% else %}English{% endif %}">EN</a>
       <span class="sep" aria-hidden="true">/</span>
-      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %} aria-label="{% if lang != 'en' %}Português — atual{% else %}Português{% endif %}">PT</a>
+      <a href="{% if lang != 'en' %}{{ other_url }}{% else %}/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %} aria-label="{% if lang != 'en' %}Português — atual{% else %}Português{% endif %}">PT</a>
     </div>
     <div class="os-theme-toggle" role="group" aria-label="{% if lang == 'en' %}Theme{% else %}Tema{% endif %}">
       <button type="button" id="theme-toggle" aria-label="{% if lang == 'en' %}Switch to light theme{% else %}Mudar para tema claro{% endif %}" aria-pressed="false" data-theme-btn="light">
@@ -73,9 +86,9 @@
   <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
   <div class="os-nav-mobile-footer">
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
-      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>EN</a>
+      <a href="{% if lang == 'en' %}{{ other_url }}{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>EN</a>
       <span class="sep" aria-hidden="true">/</span>
-      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %}>PT</a>
+      <a href="{% if lang != 'en' %}{{ other_url }}{% else %}/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %}>PT</a>
     </div>
     <button type="button" class="os-theme-toggle" id="theme-toggle-mobile" aria-label="{% if lang == 'en' %}Switch to light theme{% else %}Mudar para tema claro{% endif %}" aria-pressed="false" data-theme-btn="light">
       <span class="os-theme-icon" data-theme="system" aria-hidden="true">○</span>
@@ -133,15 +146,15 @@
       var isOpen = navMobile.classList.toggle('open');
       navBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       navBtn.setAttribute('aria-label', isOpen ?
-        (lang === 'en' ? 'Close menu' : 'Fechar menu') :
-        (lang === 'en' ? 'Open menu' : 'Abrir menu')
+        (document.documentElement.lang === 'en' ? 'Close menu' : 'Fechar menu') :
+        (document.documentElement.lang === 'en' ? 'Open menu' : 'Abrir menu')
       );
     });
     navMobile.querySelectorAll('a').forEach(function(a) {
       a.addEventListener('click', function() {
         navMobile.classList.remove('open');
         navBtn.setAttribute('aria-expanded', 'false');
-        navBtn.setAttribute('aria-label', lang === 'en' ? 'Open menu' : 'Abrir menu');
+        navBtn.setAttribute('aria-label', document.documentElement.lang === 'en' ? 'Open menu' : 'Abrir menu');
       });
     });
   }
