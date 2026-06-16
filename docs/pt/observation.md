@@ -27,5 +27,5 @@ permalink: /pt/observation/
   </div>
 </article>
 
-<script src="/assets/js/github.v3.js?v=2></script>
-<script src="/assets/js/detail-obs.js?v=2></script>
+<script src="/assets/js/github.v3.js?v=2"></script>
+<script src="/assets/js/detail-obs.js?v=2"></script>
