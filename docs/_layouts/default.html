@@ -57,6 +57,11 @@
     {% assign other_url = page.url | replace: "/pt", "/en" %}
   {% endif %}
 {% endif %}
+{% comment %}For observation detail pages, preserve query params via JS{% endcomment %}
+{% if page.url contains "/observation/" %}
+  <span id="os-other-url" data-other-url="{{ other_url }}" data-lang="{{ lang }}" style="display:none"></span>
+  <script src="/assets/js/lang-toggle-fix.js?v=1"></script>
+{% endif %}
 
 <header class="os-doc-header" role="banner">
   <a href="{{ home_url }}" class="os-doc-header-logo" aria-label="{% if lang == 'en' %}OpenState — home{% else %}OpenState — página inicial{% endif %}">
