@@ -2,7 +2,7 @@
  * OpenState — Fix language toggle on observation detail pages
  * Preserves query params (e.g. ?id=12) when switching languages
  */
-document.addEventListener('DOMContentLoaded', function() {
+(function() {
   var marker = document.getElementById('os-other-url');
   if (!marker) return;
 
@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!params) return;
 
   var toggles = document.querySelectorAll('.os-doc-lang-toggle');
+  if (!toggles.length) return;
+
   toggles.forEach(function(toggle) {
     var links = toggle.querySelectorAll('a');
     links.forEach(function(a) {
@@ -24,4 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-});
+})();

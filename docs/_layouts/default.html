@@ -60,7 +60,6 @@
 {% comment %}For observation detail pages, preserve query params via JS{% endcomment %}
 {% if page.url contains "/observation/" %}
   <span id="os-other-url" data-other-url="{{ other_url }}" data-lang="{{ lang }}" style="display:none"></span>
-  <script src="/assets/js/lang-toggle-fix.js?v=1"></script>
 {% endif %}
 
 <header class="os-doc-header" role="banner">
@@ -169,6 +168,10 @@
   }
 })();
 </script>
+
+{% if page.url contains "/observation/" %}
+<script src="/assets/js/lang-toggle-fix.js?v=2"></script>
+{% endif %}
 
 </body>
 </html>
