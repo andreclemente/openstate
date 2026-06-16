@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title == site.title or page.title == "OpenState" %}{{ site.title }}{% elsif page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="/assets/css/style.css?v=7">
+  <link rel="stylesheet" href="/assets/css/style.css?v=8">
   {% include head-custom.html %}
 </head>
 <body>
@@ -51,9 +51,9 @@
     <a href="{{ nav_contribute }}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
     <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
-      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %} aria-label="{% if lang == 'en' %}English — current{% else %}English{% endif %}">EN</a>
+      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %} aria-label="{% if lang == 'en' %}English — current{% else %}English{% endif %}">EN</a>
       <span class="sep" aria-hidden="true">/</span>
-      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %} aria-label="{% if lang != 'en' %}Português — atual{% else %}Português{% endif %}">PT</a>
+      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %} aria-label="{% if lang != 'en' %}Português — atual{% else %}Português{% endif %}">PT</a>
     </div>
     <div class="os-theme-toggle" role="group" aria-label="{% if lang == 'en' %}Theme{% else %}Tema{% endif %}">
       <button type="button" id="theme-toggle" aria-label="{% if lang == 'en' %}Switch to light theme{% else %}Mudar para tema claro{% endif %}" aria-pressed="false" data-theme-btn="light">
@@ -73,9 +73,9 @@
   <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
   <div class="os-nav-mobile-footer">
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
-      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>EN</a>
+      <a href="{% if lang == 'en' %}/{% else %}/en/{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>EN</a>
       <span class="sep" aria-hidden="true">/</span>
-      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %}>PT</a>
+      <a href="{% if lang == 'en' %}/{% else %}/pt/{% endif %}" class="{% if lang != 'en' %}active{% endif %}" {% if lang != 'en' %}aria-current="true"{% endif %}>PT</a>
     </div>
     <button type="button" class="os-theme-toggle" id="theme-toggle-mobile" aria-label="{% if lang == 'en' %}Switch to light theme{% else %}Mudar para tema claro{% endif %}" aria-pressed="false" data-theme-btn="light">
       <span class="os-theme-icon" data-theme="system" aria-hidden="true">○</span>
