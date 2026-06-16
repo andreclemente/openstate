@@ -804,6 +804,8 @@ html { scroll-behavior: smooth; }
 .os-doc-header-logo img {
   height: 32px;
   width: auto;
+  max-width: 180px;
+  object-fit: contain;
 }
 
 .os-doc-header-nav {

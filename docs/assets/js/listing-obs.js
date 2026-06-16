@@ -10,137 +10,158 @@
   var errorDiv = document.getElementById('obs-error');
   if (!grid || !filters) return;
 
+  var lang = document.documentElement.lang || 'pt';
+  var isEN = lang === 'en';
+  var prefix = isEN ? '/en' : '/pt';
+  var tDraft = isEN ? 'Draft' : 'Rascunho';
+  var tConfirmed = isEN ? 'Confirmed' : 'Confirmado';
+  var tSources = isEN ? 'sources' : 'fontes';
+  var tAll = isEN ? 'All' : 'Todas';
+  var tNoObs = isEN ? 'No observations published yet.' : 'Ainda não existem observações publicadas.';
+
   function slugify(s) {
     return s.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
   }
 
-  getObservations().then(function(observations) {
-    if (observations.length === 0) {
-      if (loading) loading.textContent = 'Ainda não existem observações publicadas.';
-      return;
-    }
+  function renderCard(obs) {
+    var card = document.createElement('a');
+    card.href = prefix + '/observation/?id=' + obs.number;
+    card.className = 'os-obs-card-link';
 
-    var lang = document.documentElement.lang || 'pt';
-    var prefix = lang === 'en' ? '/en' : '/pt';
-    var tDraft = lang === 'en' ? 'Draft' : 'Rascunho';
-    var tConfirmed = lang === 'en' ? 'Confirmed' : 'Confirmado';
-    var tSources = lang === 'en' ? 'sources' : 'fontes';
+    // Use translated title/summary if available
+    var displayTitle = obs._transTitle || obs.title;
+    var summarySource = (obs._transSections && obs._transSections.what_happens) || obs.sections.what_happens || '';
+    var summary = summarySource.replace(/\n/g, ' ').substring(0, 180);
 
-    // Build area filters
-    var areas = [];
-    var seen = {};
-    for (var i = 0; i < observations.length; i++) {
-      if (!seen[observations[i].area]) { areas.push(observations[i].area); seen[observations[i].area] = true; }
-    }
-    areas.sort();
-    for (var j = 0; j < areas.length; j++) {
-      var btn = document.createElement('button');
-      btn.className = 'os-filter-btn';
-      btn.setAttribute('data-filter', slugify(areas[j]));
-      btn.textContent = areas[j];
-      filters.appendChild(btn);
-    }
-
-    // Render cards function
-    function renderCards(filter) {
-      grid.innerHTML = '';
-      var filtered = filter === 'all' ? observations : observations.filter(function(o) { return slugify(o.area) === filter; });
-
-      for (var k = 0; k < filtered.length; k++) {
-        var obs = filtered[k];
-        var card = document.createElement('a');
-        card.href = prefix + '/observation/?id=' + obs.number;
-        card.className = 'os-obs-card-link';
-
-        var sections = obs.sections;
-        var summary = sections.what_happens || obs.body.substring(0, 200);
-
-        // Title: show translated if available on EN pages
-        var displayTitle = obs._transTitle || obs.title;
-
-        // Translation status badge for EN pages
-        var transBadge = '';
-        if (lang === 'en') {
-          if (obs._hasTranslation === true) {
-            transBadge = '<div class="os-card-lang-row os-card-lang-translated">🇬🇧 Translation available</div>';
-          } else if (obs._hasTranslation === false) {
-            transBadge = '<div class="os-card-lang-row os-card-lang-no-trans">🇵🇹 No translation yet</div>';
-          } else {
-            // Still loading — show placeholder that will be updated
-            transBadge = '<div class="os-card-lang-row os-card-lang-loading" data-obs-num="' + obs.number + '">…</div>';
-          }
-        }
-
-        card.innerHTML = '<div class="os-obs-card" data-area="' + slugify(obs.area) + '">' +
-          '<div class="os-obs-header">' +
-            '<span class="os-obs-area">' + obs.area + '</span>' +
-            '<span class="os-obs-status os-obs-status-' + obs.status + '">' + (obs.status === 'confirmed' ? tConfirmed : tDraft) + '</span>' +
-          '</div>' +
-          '<h3>' + displayTitle + '</h3>' +
-          '<p>' + summary.replace(/\n/g, ' ').substring(0, 180) + '…</p>' +
-          '<div class="os-obs-footer">' +
-            '<span>' + obs.date + '</span>' +
-            '<span>' + obs.sources + ' ' + tSources + '</span>' +
-          '</div>' +
-          transBadge +
-        '</div>';
-        grid.appendChild(card);
+    // Translation status badge for EN pages
+    var transBadge = '';
+    if (isEN) {
+      if (obs._hasTranslation === true) {
+        transBadge = '<div class="os-card-lang-row os-card-lang-translated">🇬🇧 Translation available</div>';
+      } else if (obs._hasTranslation === false) {
+        transBadge = '<div class="os-card-lang-row os-card-lang-no-trans">🇵🇹 No translation yet</div>';
+      } else {
+        transBadge = '<div class="os-card-lang-row os-card-lang-loading" data-obs-num="' + obs.number + '">…</div>';
       }
     }
 
-    renderCards('all');
+    card.innerHTML = '<div class="os-obs-card" data-status="' + obs.status + '">' +
+      '<div class="os-obs-header">' +
+        '<span class="os-obs-area">' + obs.area + '</span>' +
+        '<span class="os-obs-status os-obs-status-' + obs.status + '">' + (obs.status === 'confirmed' ? tConfirmed : tDraft) + '</span>' +
+      '</div>' +
+      '<h3>' + displayTitle + '</h3>' +
+      '<p>' + summary + '…</p>' +
+      '<div class="os-obs-footer">' +
+        '<span>' + obs.date + '</span>' +
+        '<span>' + obs.sources + ' ' + tSources + '</span>' +
+      '</div>' +
+      transBadge +
+    '</div>';
+    return card;
+  }
 
-    filters.addEventListener('click', function(e) {
-      if (!e.target.classList.contains('os-filter-btn')) return;
-      var btns = filters.querySelectorAll('.os-filter-btn');
-      for (var b = 0; b < btns.length; b++) btns[b].classList.remove('active');
-      e.target.classList.add('active');
-      renderCards(e.target.getAttribute('data-filter'));
+  function renderCards(observations, filter) {
+    grid.innerHTML = '';
+    var filtered = filter === 'all' ? observations : observations.filter(function(o) { return o.status === filter; });
+    for (var k = 0; k < filtered.length; k++) {
+      grid.appendChild(renderCard(filtered[k]));
+    }
+  }
+
+  // Fetch translations for all observations on EN pages
+  function fetchTranslations(observations) {
+    if (!isEN || typeof getComments !== 'function') return Promise.resolve();
+
+    var promises = observations.map(function(obs) {
+      return getComments(obs.number).then(function(comments) {
+        var translationBody = findTranslation(comments);
+        obs._hasTranslation = !!translationBody;
+        if (translationBody) {
+          // Parse translated title
+          var titleMatch = translationBody.match(/###\s+([^\n]+)/);
+          obs._transTitle = titleMatch ? titleMatch[1].trim() : obs.title;
+
+          // Parse translated sections
+          obs._transSections = {};
+          var transLines = translationBody.split('\n');
+          var transCurrent = null;
+          var transHeaderMap = [
+            ['observation', 'skip'],
+            ['what happens', 'what_happens'], ["what's happening", 'what_happens'], ['o que acontece', 'what_happens'],
+            ['who is affected', 'affected'], ['quem é afetado', 'affected'],
+            ['impact', 'impact'], ['impacto', 'impact'],
+            ['evidence', 'evidence'], ['evidência', 'evidence'],
+            ['possible root cause', 'root_cause'], ['causa raiz', 'root_cause']
+          ];
+          for (var ti = 0; ti < transLines.length; ti++) {
+            var tTrimmed = transLines[ti].trim();
+            if (tTrimmed.indexOf('## ') === 0) {
+              var tHeading = tTrimmed.replace(/^##\s+/, '').trim().toLowerCase();
+              transCurrent = null;
+              for (var tk = 0; tk < transHeaderMap.length; tk++) {
+                if (tHeading.indexOf(transHeaderMap[tk][0]) !== -1 && transHeaderMap[tk][1] !== 'skip') {
+                  transCurrent = transHeaderMap[tk][1];
+                  break;
+                }
+              }
+            } else if (transCurrent && tTrimmed) {
+              if (!obs._transSections[transCurrent]) obs._transSections[transCurrent] = [];
+              obs._transSections[transCurrent].push(transLines[ti]);
+            }
+          }
+          for (var sk in obs._transSections) {
+            obs._transSections[sk] = obs._transSections[sk].join('\n').trim();
+          }
+        }
+      }).catch(function() {
+        obs._hasTranslation = false;
+      });
     });
+
+    return Promise.all(promises);
+  }
+
+  getObservations().then(function(observations) {
+    if (observations.length === 0) {
+      if (loading) loading.textContent = tNoObs;
+      return;
+    }
+
+    // Build status filter buttons (All / Draft / Confirmed)
+    var statuses = [
+      { key: 'all', label: tAll },
+      { key: 'draft', label: tDraft },
+      { key: 'confirmed', label: tConfirmed }
+    ];
+    for (var s = 0; s < statuses.length; s++) {
+      var btn = document.createElement('button');
+      btn.className = 'os-filter-btn' + (statuses[s].key === 'all' ? ' active' : '');
+      btn.setAttribute('data-filter', statuses[s].key);
+      btn.textContent = statuses[s].label;
+      filters.appendChild(btn);
+    }
+
+    // Render all cards initially
+    renderCards(observations, 'all');
 
     if (loading) loading.style.display = 'none';
     filters.style.display = 'flex';
     grid.style.display = 'grid';
 
-    // On EN pages, fetch comments to check translations and get translated titles
-    if (lang === 'en' && typeof getComments === 'function') {
-      observations.forEach(function(obs) {
-        getComments(obs.number).then(function(comments) {
-          var translationBody = findTranslation(comments);
-          obs._hasTranslation = !!translationBody;
-          if (translationBody) {
-            var titleMatch = translationBody.match(/###\s+([^\n]+)/);
-            obs._transTitle = titleMatch ? titleMatch[1].trim() : obs.title;
-          }
-          // Update the card
-          var cardEl = grid.querySelector('a[href*="?id=' + obs.number + '"]');
-          if (cardEl) {
-            var titleEl = cardEl.querySelector('h3');
-            if (titleEl && obs._transTitle) titleEl.textContent = obs._transTitle;
-            var badgeEl = cardEl.querySelector('.os-card-lang-row');
-            if (badgeEl) {
-              if (obs._hasTranslation) {
-                badgeEl.className = 'os-card-lang-row os-card-lang-translated';
-                badgeEl.textContent = '🇬🇧 Translation available';
-              } else {
-                badgeEl.className = 'os-card-lang-row os-card-lang-no-trans';
-                badgeEl.textContent = '🇵🇹 No translation yet';
-              }
-            }
-          }
-        }).catch(function() {
-          obs._hasTranslation = false;
-          var cardEl = grid.querySelector('a[href*="?id=' + obs.number + '"]');
-          if (cardEl) {
-            var badgeEl = cardEl.querySelector('.os-card-lang-row');
-            if (badgeEl) {
-              badgeEl.className = 'os-card-lang-row os-card-lang-no-trans';
-              badgeEl.textContent = '🇵🇹 No translation yet';
-            }
-          }
-        });
-      });
-    }
+    // Filter click handler
+    filters.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('os-filter-btn')) return;
+      filters.querySelectorAll('.os-filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      e.target.classList.add('active');
+      renderCards(observations, e.target.getAttribute('data-filter'));
+    });
+
+    // On EN pages, fetch translations then re-render
+    fetchTranslations(observations).then(function() {
+      renderCards(observations, document.querySelector('.os-filter-btn.active') ? document.querySelector('.os-filter-btn.active').getAttribute('data-filter') : 'all');
+    });
+
   }).catch(function(err) {
     console.error(err);
     if (loading) loading.style.display = 'none';
