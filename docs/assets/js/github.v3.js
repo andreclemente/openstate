@@ -167,9 +167,18 @@ function renderMarkdown(text) {
     .replace(/^## (.+)$/gm, '<h2>$1</h2>')
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+    .replace(/(https?:\/\/[^\s\)]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>')
     .replace(/^- (.+)$/gm, '<li>$1</li>')
     .replace(/(<li>.*<\/li>\n?)+/g, '<ul>$&</ul>')
     .replace(/\n\n/g, '</p><p>')
     .replace(/\n/g, '<br>');
   return '<p>' + html + '</p>';
+}
+
+function renderEvidenceLine(text) {
+  // Match evidence lines: - **Source (date)**: description. URL
+  // Make the source name a link to the URL, hide the raw URL
+  return text.replace(/^(\s*[-*]\s*)\*\*([^*]+)\*\*([^]*?)(https?:\/\/[^\s]+)/gm, function(match, prefix, source, middle, url) {
+    return prefix + '<a href="' + url + '" target="_blank" rel="noopener noreferrer"><strong>' + source.trim() + '</strong></a>' + middle;
+  });
 }

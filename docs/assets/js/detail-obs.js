@@ -31,7 +31,10 @@
     for (var i = 0; i < order.length; i++) {
       var key = order[i];
       if (sections[key]) {
-        html += '<section class="os-obs-section"><h2>' + titles[key] + '</h2>' + renderMarkdown(sections[key]) + '</section>';
+        var content = (key === 'evidence' && typeof renderEvidenceLine === 'function')
+          ? renderEvidenceLine(sections[key])
+          : sections[key];
+        html += '<section class="os-obs-section"><h2>' + titles[key] + '</h2>' + renderMarkdown(content) + '</section>';
       }
     }
     return html;
