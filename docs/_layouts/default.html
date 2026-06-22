@@ -67,10 +67,10 @@
     <img src="/assets/logo-wordmark-dark.webp" alt="OpenState" class="os-doc-header-logo-img">
   </a>
   <nav class="os-doc-header-nav" aria-label="{{ nav_aria }}">
-    <a href="{{ nav_how }}" {% if page.url == nav_how or page.url == nav_how | append: "/" %}aria-current="page"{% endif %}>{{ label_how }}</a>
-    <a href="{{ nav_obs }}" {% if page.url == nav_obs or page.url == nav_obs | append: "/" %}aria-current="page"{% endif %}>{{ label_obs }}</a>
-    <a href="{{ nav_contribute }}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
-    <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
+    <a href="{{ nav_how }}" class="{% if page.url == nav_how or page.url == nav_how | append: "/" or page.url contains nav_how %}active{% endif %}" {% if page.url == nav_how or page.url == nav_how | append: "/" or page.url contains nav_how %}aria-current="page"{% endif %}>{{ label_how }}</a>
+    <a href="{{ nav_obs }}" class="{% if page.url == nav_obs or page.url == nav_obs | append: "/" or page.url contains nav_obs %}active{% endif %}" {% if page.url == nav_obs or page.url == nav_obs | append: "/" or page.url contains nav_obs %}aria-current="page"{% endif %}>{{ label_obs }}</a>
+    <a href="{{ nav_contribute }}" class="{% if page.url == nav_contribute or page.url == nav_contribute | append: "/" or page.url contains nav_contribute %}active{% endif %}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" or page.url contains nav_contribute %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
+    <a href="{{ nav_about }}" class="{% if page.url == nav_about or page.url == nav_about | append: "/" or page.url contains nav_about %}active{% endif %}" {% if page.url == nav_about or page.url == nav_about | append: "/" or page.url contains nav_about %}aria-current="page"{% endif %}>{{ label_about }}</a>
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
       <a href="{% if lang == 'en' %}{{ page.url }}{% else %}{{ other_url }}{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %} aria-label="{% if lang == 'en' %}English — current{% else %}English{% endif %}">EN</a>
       <span class="sep" aria-hidden="true">/</span>
@@ -88,10 +88,10 @@
 </header>
 
 <nav class="os-nav-mobile" id="nav-mobile" aria-label="{% if lang == 'en' %}Mobile navigation{% else %}Navegação móvel{% endif %}" role="navigation">
-  <a href="{{ nav_how }}" {% if page.url == nav_how or page.url == nav_how | append: "/" %}aria-current="page"{% endif %}>{{ label_how }}</a>
-  <a href="{{ nav_obs }}" {% if page.url == nav_obs or page.url == nav_obs | append: "/" %}aria-current="page"{% endif %}>{{ label_obs }}</a>
-  <a href="{{ nav_contribute }}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
-  <a href="{{ nav_about }}" {% if page.url == nav_about or page.url == nav_about | append: "/" %}aria-current="page"{% endif %}>{{ label_about }}</a>
+  <a href="{{ nav_how }}" class="{% if page.url == nav_how or page.url == nav_how | append: "/" or page.url contains nav_how %}active{% endif %}" {% if page.url == nav_how or page.url == nav_how | append: "/" or page.url contains nav_how %}aria-current="page"{% endif %}>{{ label_how }}</a>
+  <a href="{{ nav_obs }}" class="{% if page.url == nav_obs or page.url == nav_obs | append: "/" or page.url contains nav_obs %}active{% endif %}" {% if page.url == nav_obs or page.url == nav_obs | append: "/" or page.url contains nav_obs %}aria-current="page"{% endif %}>{{ label_obs }}</a>
+  <a href="{{ nav_contribute }}" class="{% if page.url == nav_contribute or page.url == nav_contribute | append: "/" or page.url contains nav_contribute %}active{% endif %}" {% if page.url == nav_contribute or page.url == nav_contribute | append: "/" or page.url contains nav_contribute %}aria-current="page"{% endif %}>{{ label_contribute }}</a>
+  <a href="{{ nav_about }}" class="{% if page.url == nav_about or page.url == nav_about | append: "/" or page.url contains nav_about %}active{% endif %}" {% if page.url == nav_about or page.url == nav_about | append: "/" or page.url contains nav_about %}aria-current="page"{% endif %}>{{ label_about }}</a>
   <div class="os-nav-mobile-footer">
     <div class="os-doc-lang-toggle" role="group" aria-label="{% if lang == 'en' %}Language{% else %}Idioma{% endif %}">
       <a href="{% if lang == 'en' %}{{ page.url }}{% else %}{{ other_url }}{% endif %}" class="{% if lang == 'en' %}active{% endif %}" {% if lang == 'en' %}aria-current="true"{% endif %}>EN</a>
